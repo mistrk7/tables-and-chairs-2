@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "interact_with_chair": {
+        "trigger": "minecraft:player_interacted_with_entity",
+        "conditions": {
+          "entity": {
+            "tag": "chair"
+          }
+        }
+      }
+    },
+    "rewards": {
+        "function": "tac:interact/chair_rclick"
+    }
+  }
+  
