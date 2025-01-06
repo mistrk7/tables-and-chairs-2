@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "place_jungle_trapdoor_with_chair_tag": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:jungle_trapdoor",
+        "state": {
+          "nbt": "{Tags:[\"t&c\",\"chair\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "tac:placed/chair_place"
+  }
+}
