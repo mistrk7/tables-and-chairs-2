@@ -1,0 +1,97 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:block/jungle_trapdoor_bottom"
+    },
+    "cases": [
+      {
+        "when": "oak_basic_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/basic_1/oak_basic_chair"
+        }
+      },
+      {
+        "when": "pale_oak_basic_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/basic_1/pale_oak_basic_chair"
+        }
+      },
+      {
+        "when": "birch_basic_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/basic_1/birch_basic_chair"
+        }
+      },
+      {
+        "when": "spruce_basic_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/basic_1/spruce_basic_chair"
+        }
+      },
+      {
+        "when": "jungle_basic_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/basic_1/jungle_basic_chair"
+        }
+      },
+      {
+        "when": "acacia_basic_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/basic_1/acacia_basic_chair"
+        }
+      },
+      {
+        "when": "dark_oak_basic_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/basic_1/dark_oak_basic_chair"
+        }
+      },
+      {
+        "when": "crimson_basic_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/basic_1/crimson_basic_chair"
+        }
+      },
+      {
+        "when": "warped_basic_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/basic_1/warped_basic_chair"
+        }
+      },
+      {
+        "when": "mangrove_basic_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/basic_1/mangrove_basic_chair"
+        }
+      },
+      {
+        "when": "bamboo_basic_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/basic_1/bamboo_basic_chair"
+        }
+      },
+      {
+        "when": "cherry_basic_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/basic_1/cherry_basic_chair"
+        }
+      }
+    ]
+
+  }
+}
