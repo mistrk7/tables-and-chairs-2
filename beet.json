@@ -1,0 +1,19 @@
+{
+    "name": "Tables & Chairs 2",
+    "description": "Tables and Chairs for your game",
+    "require":[
+        "bolt"
+    ],
+
+    "data_pack":{
+        "load":["src"],
+        "pack_format": 61
+    },
+    "resource_pack":{
+        "load":["src"],
+        "pack_format": 40
+    },
+    
+    "pipeline":["mecha"],
+    "output": "build"
+}
