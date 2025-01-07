@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "tac:placed/chair_place"
+    "function": "tac:chair/place_chair"
   }
 }

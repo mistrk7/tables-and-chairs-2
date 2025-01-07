@@ -10,7 +10,7 @@
       }
     },
     "rewards": {
-        "function": "tac:interact/chair_rclick"
+        "function": "tac:chair/rclick_chair"
     }
   }
   

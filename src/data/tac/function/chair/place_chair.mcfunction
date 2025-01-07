@@ -12,8 +12,8 @@ scoreboard players reset dir tac.main
 # Summon Chair based on item
 execute at @n[type=armor_stand,tag=chair] with entity @s SelectedItem.components."minecraft:custom_data":
     #$say $(type) $(mat)
-    $execute as @n[type=armor_stand,tag=east] align xyz positioned ~.5 ~ ~.5 run function tac:summon/chair {type:$(type),mat:$(mat),facing: 270 }
-    $execute as @n[type=armor_stand,tag=south] align xyz positioned ~.5 ~ ~.5 run function tac:summon/chair {type:$(type),mat:$(mat),facing: 0 }
-    $execute as @n[type=armor_stand,tag=west] align xyz positioned ~.5 ~ ~.5 run function tac:summon/chair {type:$(type),mat:$(mat),facing: 90 }
-    $execute as @n[type=armor_stand,tag=north] align xyz positioned ~.5 ~ ~.5 run function tac:summon/chair {type:$(type),mat:$(mat),facing: 180 }
+    $execute as @n[type=armor_stand,tag=east] align xyz positioned ~.5 ~ ~.5 run function tac:chair/summon_chair {type:$(type),mat:$(mat),facing: 270 }
+    $execute as @n[type=armor_stand,tag=south] align xyz positioned ~.5 ~ ~.5 run function tac:chair/summon_chair {type:$(type),mat:$(mat),facing: 0 }
+    $execute as @n[type=armor_stand,tag=west] align xyz positioned ~.5 ~ ~.5 run function tac:chair/summon_chair {type:$(type),mat:$(mat),facing: 90 }
+    $execute as @n[type=armor_stand,tag=north] align xyz positioned ~.5 ~ ~.5 run function tac:chair/summon_chair {type:$(type),mat:$(mat),facing: 180 }
     kill @n[type=armor_stand,tag=chair]
