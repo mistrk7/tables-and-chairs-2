@@ -1,23 +1,19 @@
 advancement revoke @s only tac:chair_place
+playsound minecraft:block.wood.place block @a ~ ~ ~ 0.5 0.8
 
-scoreboard players set dist= tac.main 501
+# Get facing direction
+scoreboard players set dir tac.main 0
+execute store success score dir tac.main if entity @s[y_rotation= -135..-45] run tag @n[type=armor_stand,tag=chair] add east
+execute store success score dir tac.main if entity @s[y_rotation= -45..45] run tag @n[type=armor_stand,tag=chair] add south
+execute store success score dir tac.main if entity @s[y_rotation= 45..135] run tag @n[type=armor_stand,tag=chair] add west
+execute if score dir tac.main matches 0 run tag @n[type=armor_stand,tag=chair] add north
+scoreboard players reset dir tac.main
 
-execute anchored eyes run function ./chair_place/raycast:
-    scoreboard players remove dist= tac.main 1
-
-    #Once found
-    execute if block ~ ~ ~ minecraft:jungle_trapdoor run function ./chair_place/found with entity @s SelectedItem.components."minecraft:custom_data":
-        scoreboard players set dist= tac.main 0
-        $execute if block ~ ~ ~ minecraft:jungle_trapdoor[facing= north ] align xyz positioned ~.5 ~ ~.5 run function tac:summon/chair {type:$(type),mat:$(mat),facing: 0 }
-        $execute if block ~ ~ ~ minecraft:jungle_trapdoor[facing= east ] align xyz positioned ~.5 ~ ~.5 run function tac:summon/chair {type:$(type),mat:$(mat),facing: 90 }
-        $execute if block ~ ~ ~ minecraft:jungle_trapdoor[facing= south ] align xyz positioned ~.5 ~ ~.5 run function tac:summon/chair {type:$(type),mat:$(mat),facing: 180 }
-        $execute if block ~ ~ ~ minecraft:jungle_trapdoor[facing= west ] align xyz positioned ~.5 ~ ~.5 run function tac:summon/chair {type:$(type),mat:$(mat),facing: 270 }
-        setblock ~ ~ ~ air
-    
-    execute if score dist= tac.main matches 1.. positioned ^ ^ ^0.01 run function ./chair_place/raycast
-
-scoreboard players reset dist=
-
-#raycast and find the birch trapdoor
-#look at what item the player is holding
-#summon that item in the position
+# Summon Chair based on item
+execute at @n[type=armor_stand,tag=chair] with entity @s SelectedItem.components."minecraft:custom_data":
+    #$say $(type) $(mat)
+    $execute as @n[type=armor_stand,tag=east] align xyz positioned ~.5 ~ ~.5 run function tac:summon/chair {type:$(type),mat:$(mat),facing: 270 }
+    $execute as @n[type=armor_stand,tag=south] align xyz positioned ~.5 ~ ~.5 run function tac:summon/chair {type:$(type),mat:$(mat),facing: 0 }
+    $execute as @n[type=armor_stand,tag=west] align xyz positioned ~.5 ~ ~.5 run function tac:summon/chair {type:$(type),mat:$(mat),facing: 90 }
+    $execute as @n[type=armor_stand,tag=north] align xyz positioned ~.5 ~ ~.5 run function tac:summon/chair {type:$(type),mat:$(mat),facing: 180 }
+    kill @n[type=armor_stand,tag=chair]
