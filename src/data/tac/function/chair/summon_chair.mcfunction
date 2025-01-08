@@ -27,7 +27,7 @@ $summon minecraft:item_display ~ ~.6 ~ {\
                 strings:["$(mat)_$(type)_chair"]\
             },\
             "minecraft:custom_name":\
-                '{"translate":"$(type).$(mat).chair","italic":false}'\
+                '{"translate":"tac.chair.$(mat).$(type)","italic":false}'\
         }\
     }\
 }
