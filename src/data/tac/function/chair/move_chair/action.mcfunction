@@ -10,33 +10,36 @@ execute as @n[type=item_display,tag=chair]:
     # Setup check to see if it's too close
     scoreboard players set close tac.main 0
     scoreboard players set close-block tac.main 0
+    scoreboard players set close-floor tac.main 0
     
     execute store result score close tac.main at @n[type=minecraft:block_display,tag=tac] run data get entity @n[distance=0..0.79,type=interaction,tag=tac]
     execute store result score close-block tac.main at @n[type=minecraft:block_display,tag=tac] align xyz run execute unless block ~ ~ ~ #minecraft:air
+    execute store result score close-floor tac.main at @n[type=minecraft:block_display,tag=tac] align xyz run execute if block ~ ~-1 ~ #minecraft:air
     scoreboard players operation close tac.main += close-block tac.main
+    scoreboard players operation close tac.main += close-floor tac.main
 
     # If projected space is free from another chair (close=0 & )
     execute if score close tac.main matches 0:
 
         # Facing East, tp
         execute if entity @n[type=minecraft:block_display,tag=east]:
-            execute positioned over world_surface run tp @s ~.5 ~.6 ~
-            execute positioned over world_surface run tp @n[type=interaction,tag=chair] ~.5 ~ ~
+            tp @s ~.5 ~.6 ~
+            tp @n[type=interaction,tag=chair] ~.5 ~ ~
         
         # Facing South, tp
         execute if entity @n[type=minecraft:block_display,tag=south]:
-            execute positioned over world_surface run tp @s ~ ~.6 ~.5
-            execute positioned over world_surface run tp @n[type=interaction,tag=chair] ~ ~ ~.5
+            tp @s ~ ~.6 ~.5
+            tp @n[type=interaction,tag=chair] ~ ~ ~.5
 
         # Facing West, tp
         execute if entity @n[type=minecraft:block_display,tag=west]:
-            execute positioned over world_surface run tp @s ~-.5 ~.6 ~
-            execute positioned over world_surface run tp @n[type=interaction,tag=chair] ~-.5 ~ ~
+            tp @s ~-.5 ~.6 ~
+            tp @n[type=interaction,tag=chair] ~-.5 ~ ~
 
         # Facing North, tp
         execute if score dire tac.main matches 0:
-            execute positioned over world_surface run tp @s ~ ~.6 ~-.5
-            execute positioned over world_surface run tp @n[type=interaction,tag=chair] ~ ~ ~-.5
+            tp @s ~ ~.6 ~-.5
+            tp @n[type=interaction,tag=chair] ~ ~ ~-.5
 
 # Kills all tac-tagged block displays. If this causes issues in the futurue please revise.
 kill @e[type=block_display, tag=tac]
@@ -44,3 +47,4 @@ kill @e[type=block_display, tag=tac]
 scoreboard players reset dire tac.main
 scoreboard players reset close tac.main
 scoreboard players reset close-block tac.main
+scoreboard players reset close-floor tac.main
