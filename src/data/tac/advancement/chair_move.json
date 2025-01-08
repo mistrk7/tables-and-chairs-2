@@ -5,7 +5,7 @@
       "conditions": {
         "player": {
           "flags": {
-            "is_sneaking": false
+            "is_sneaking": true
           }
         },
         "entity": {
@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "tac:chair/break_chair"
+    "function": "tac:chair/move_chair"
   }
 }
