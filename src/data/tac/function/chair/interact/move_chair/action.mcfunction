@@ -20,6 +20,8 @@ execute as @n[type=item_display,tag=chair]:
 
     # If projected space is free from another chair (close=0 & )
     execute if score close tac.main matches 0:
+        playsound minecraft:item.brush.brushing.generic block @a ~ ~ ~ 0.7 1.2
+        playsound minecraft:block.wood.hit block @a ~ ~ ~ 0.3 1
 
         # Facing East, tp
         execute if entity @n[type=minecraft:block_display,tag=east]:
