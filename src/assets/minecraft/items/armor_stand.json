@@ -11,84 +11,168 @@
         "when": "oak_basic_chair",
         "model": {
           "type": "minecraft:model",
-          "model": "tac:chair/basic_1/oak_basic_chair"
+          "model": "tac:chair/basic/oak_basic_chair"
         }
       },
       {
         "when": "pale_oak_basic_chair",
         "model": {
           "type": "minecraft:model",
-          "model": "tac:chair/basic_1/pale_oak_basic_chair"
+          "model": "tac:chair/basic/pale_oak_basic_chair"
         }
       },
       {
         "when": "birch_basic_chair",
         "model": {
           "type": "minecraft:model",
-          "model": "tac:chair/basic_1/birch_basic_chair"
+          "model": "tac:chair/basic/birch_basic_chair"
         }
       },
       {
         "when": "spruce_basic_chair",
         "model": {
           "type": "minecraft:model",
-          "model": "tac:chair/basic_1/spruce_basic_chair"
+          "model": "tac:chair/basic/spruce_basic_chair"
         }
       },
       {
         "when": "jungle_basic_chair",
         "model": {
           "type": "minecraft:model",
-          "model": "tac:chair/basic_1/jungle_basic_chair"
+          "model": "tac:chair/basic/jungle_basic_chair"
         }
       },
       {
         "when": "acacia_basic_chair",
         "model": {
           "type": "minecraft:model",
-          "model": "tac:chair/basic_1/acacia_basic_chair"
+          "model": "tac:chair/basic/acacia_basic_chair"
         }
       },
       {
         "when": "dark_oak_basic_chair",
         "model": {
           "type": "minecraft:model",
-          "model": "tac:chair/basic_1/dark_oak_basic_chair"
+          "model": "tac:chair/basic/dark_oak_basic_chair"
         }
       },
       {
         "when": "crimson_basic_chair",
         "model": {
           "type": "minecraft:model",
-          "model": "tac:chair/basic_1/crimson_basic_chair"
+          "model": "tac:chair/basic/crimson_basic_chair"
         }
       },
       {
         "when": "warped_basic_chair",
         "model": {
           "type": "minecraft:model",
-          "model": "tac:chair/basic_1/warped_basic_chair"
+          "model": "tac:chair/basic/warped_basic_chair"
         }
       },
       {
         "when": "mangrove_basic_chair",
         "model": {
           "type": "minecraft:model",
-          "model": "tac:chair/basic_1/mangrove_basic_chair"
+          "model": "tac:chair/basic/mangrove_basic_chair"
         }
       },
       {
         "when": "bamboo_basic_chair",
         "model": {
           "type": "minecraft:model",
-          "model": "tac:chair/basic_1/bamboo_basic_chair"
+          "model": "tac:chair/basic/bamboo_basic_chair"
         }
       },
       {
         "when": "cherry_basic_chair",
         "model": {
           "type": "minecraft:model",
-          "model": "tac:chair/basic_1/cherry_basic_chair"
+          "model": "tac:chair/basic/cherry_basic_chair"
+        }
+      },
+      {
+        "when": "oak_neat_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/neat/oak_neat_chair"
+        }
+      },
+      {
+        "when": "pale_oak_neat_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/neat/pale_oak_neat_chair"
+        }
+      },
+      {
+        "when": "birch_neat_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/neat/birch_neat_chair"
+        }
+      },
+      {
+        "when": "spruce_neat_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/neat/spruce_neat_chair"
+        }
+      },
+      {
+        "when": "jungle_neat_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/neat/jungle_neat_chair"
+        }
+      },
+      {
+        "when": "acacia_neat_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/neat/acacia_neat_chair"
+        }
+      },
+      {
+        "when": "dark_oak_neat_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/neat/dark_oak_neat_chair"
+        }
+      },
+      {
+        "when": "crimson_neat_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/neat/crimson_neat_chair"
+        }
+      },
+      {
+        "when": "warped_neat_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/neat/warped_neat_chair"
+        }
+      },
+      {
+        "when": "mangrove_neat_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/neat/mangrove_neat_chair"
+        }
+      },
+      {
+        "when": "bamboo_neat_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/neat/bamboo_neat_chair"
+        }
+      },
+      {
+        "when": "cherry_neat_chair",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:chair/neat/cherry_neat_chair"
         }
       }
     ]

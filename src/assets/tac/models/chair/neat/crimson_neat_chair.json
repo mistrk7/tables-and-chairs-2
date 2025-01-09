@@ -1,5 +1,5 @@
 {
-  "parent": "tac:chair/basic_1/basic_chair_1",
+  "parent": "tac:chair/neat/neat_chair_1",
   "textures": {
     "0": "minecraft:block/crimson_planks"
   }

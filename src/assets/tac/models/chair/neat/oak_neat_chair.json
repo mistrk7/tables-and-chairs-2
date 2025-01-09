@@ -1,0 +1,6 @@
+{
+  "parent": "tac:chair/neat/neat_chair_1",
+  "textures": {
+    "0": "minecraft:block/oak_planks"
+  }
+}
