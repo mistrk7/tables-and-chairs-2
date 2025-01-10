@@ -7,7 +7,7 @@ execute if entity @s[tag=wait]:
     data modify entity @n[type=item,nbt={Item:{components:{"minecraft:custom_data":{tac:0b}}}}] Item merge from entity @n[type=item_display,tag=chair] item
     #Destroy the chair
     kill @s
-    kill @e[sort=nearest,limit=1,type=item_display,tag=chair]
+    kill @e[sort=nearest,limit=1,type=item_display,tag=chair,distance=0..0.8]
 
 # First hit: Put into 'disturbed' state for one second
 execute unless entity @s[tag=wait]:
@@ -15,8 +15,8 @@ execute unless entity @s[tag=wait]:
     
     # Start wiggle animation
     playsound minecraft:block.wood.step block @a ~ ~ ~ 0.5 1.2
-    execute as @n[type=item_display,tag=chair] at @s run tp @s ~ ~ ~ ~12 ~
-    tag @n[type=item_display,tag=chair] add anibreak1
+    execute as @n[type=item_display,tag=chair,distance=0..0.8] at @s run tp @s ~ ~ ~ ~12 ~
+    tag @n[type=item_display,tag=chair,distance=0..0.8] add anibreak1
 
     schedule function ./animate/1 0.1s append:
         execute as @e[type=item_display,tag=anibreak1] at @s:
