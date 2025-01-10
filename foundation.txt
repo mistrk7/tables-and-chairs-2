@@ -32,6 +32,9 @@ Chairs are made up of two entities;
 The four leg models: Full, one-edge, one-corner, none
 Secondary four leg models: Full, post-side, post-wall, none
 
+Make a Netherite gold chair
+Consider the remaining quartz, stone_brick, deepslate, blackstone, blackstone_brick, endstone, obsidian variants. Maybe copper variants all around?
+
 Don't forget about chair carpets, these things can be added as it gets worked on.
 
 --- File structure --- 

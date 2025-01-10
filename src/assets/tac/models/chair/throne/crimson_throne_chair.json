@@ -1,0 +1,7 @@
+{
+	"parent": "tac:chair/throne/throne_chair_1",
+	"textures": {
+    "0": "block/crimson_planks",
+    "1": "block/stripped_crimson_stem"
+  }
+}

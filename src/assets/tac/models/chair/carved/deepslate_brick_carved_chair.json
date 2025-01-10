@@ -1,0 +1,4 @@
+{
+	"parent": "tac:chair/carved/stone_brick_carved_chair",
+	"textures": {"0": "block/deepslate_bricks"}
+}

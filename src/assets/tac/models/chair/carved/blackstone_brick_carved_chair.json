@@ -1,0 +1,4 @@
+{
+	"parent": "tac:chair/carved/stone_brick",
+	"textures": {"0": "block/polished_blackstone_bricks"}
+}

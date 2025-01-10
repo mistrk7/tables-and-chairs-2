@@ -1,0 +1,7 @@
+{
+	"parent": "tac:chair/throne/throne_chair_1",
+	"textures": {
+    "0": "block/end_stone_bricks",
+    "1": "block/end_stone"
+  }
+}
