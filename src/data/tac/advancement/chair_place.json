@@ -9,11 +9,10 @@
             "predicate": {
               "items": "minecraft:armor_stand",
               "predicates": {
-                "minecraft:custom_data": "{tac:1b}"
+                "minecraft:custom_data": "{model:\"chair\",tac:1b}"
               }
             }
-          }
-        ]
+          }]
       }
     }
   },
