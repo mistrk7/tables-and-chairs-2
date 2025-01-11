@@ -1,3 +1,6 @@
+#Put item data safely in storage
+data modify storage tac:main item set from entity @s SelectedItem.components."minecraft:custom_data"
+
 advancement revoke @s only tac:chair_place
 playsound minecraft:block.wood.place block @a ~ ~ ~ 0.5 0.8
 
@@ -10,7 +13,7 @@ execute if score dir tac.main matches 0 run tag @n[type=armor_stand,tag=chair] a
 scoreboard players reset dir tac.main
 
 # Summon Chair based on item
-execute at @n[type=armor_stand,tag=chair] with entity @s SelectedItem.components."minecraft:custom_data":
+execute at @n[type=armor_stand,tag=chair] with storage tac:main item:
     #$say $(type) $(mat)
     $execute as @n[type=armor_stand,tag=east] align xyz positioned ~.5 ~ ~.5 run function tac:chair/summon_chair {type:$(type),mat:$(mat),facing: 270 }
     $execute as @n[type=armor_stand,tag=south] align xyz positioned ~.5 ~ ~.5 run function tac:chair/summon_chair {type:$(type),mat:$(mat),facing: 0 }
