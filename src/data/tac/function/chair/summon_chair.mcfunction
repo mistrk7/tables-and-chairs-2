@@ -34,9 +34,6 @@ $summon minecraft:item_display ~ ~.6 ~ {\
                 mat:"$(mat)",\
                 tac:1b\
             },\
-            "minecraft:custom_model_data":{\
-                strings:["$(mat)_$(type)_chair"]\
-            },\
             "minecraft:custom_name":\
                 '{"translate":"tac.chair.$(mat).$(type)","italic":false}'\
         }\
