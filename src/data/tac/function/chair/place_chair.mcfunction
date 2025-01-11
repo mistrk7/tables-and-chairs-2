@@ -1,6 +1,3 @@
-#Put item data safely in storage
-data modify storage tac:main item set from entity @s SelectedItem.components."minecraft:custom_data"
-
 advancement revoke @s only tac:chair_place
 playsound minecraft:block.wood.place block @a ~ ~ ~ 0.5 0.8
 
