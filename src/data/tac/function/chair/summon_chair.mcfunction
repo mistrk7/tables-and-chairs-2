@@ -15,7 +15,18 @@ $summon minecraft:item_display ~ ~.6 ~ {\
             "minecraft:entity_data":{\
                 id:"armor_stand",\
                 Invisible:1b,\
-                Tags:["chair","tac"]\
+                Tags:["chair","tac"],\
+                ArmorItems:[{\
+                    id:"minecraft:armor_stand",\
+                    components:{\
+                        "minecraft:custom_data":{\
+                            model:"chair",\
+                            type:"$(type)",\
+                            mat:"$(mat)",\
+                            tac:1b\
+                        }\
+                    }\
+                }]\
             },\
             "minecraft:custom_data":{\
                 model:"chair",\
