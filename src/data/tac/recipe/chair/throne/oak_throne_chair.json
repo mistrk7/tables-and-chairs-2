@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "chair_throne",
+  "key": {
+    "#": "minecraft:stripped_oak_log",
+    "X": "minecraft:stick"
+  },
+  "pattern": [
+    "#X ",
+    "###",
+    "X X"
+  ],
+  "result": {
+    "components": {
+      "minecraft:custom_model_data": {
+        "strings": [
+          "oak_throne_chair"
+        ]
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:entity_data": {
+        "id": "minecraft:armor_stand",
+        "Tags": [
+          "chair",
+          "tac"
+        ],
+        "ArmorItems": [
+          {
+            "id": "minecraft:armor_stand",
+            "components": {
+              "minecraft:custom_data": {
+                "model": "chair",
+                "type": "throne",
+                "mat": "oak",
+                "tac": true
+              }
+            }
+          }
+        ],
+        "Invisible": true
+      },
+      "minecraft:custom_data": {
+        "model": "chair",
+        "type": "throne",
+        "mat": "oak",
+        "tac": true
+      },
+      "minecraft:custom_name": "{\"translate\":\"tac.chair.oak.throne\",\"italic\":false}"
+    },
+    "count": 1,
+    "id": "minecraft:armor_stand"
+  }
+}
