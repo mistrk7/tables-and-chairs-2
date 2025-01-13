@@ -3,6 +3,11 @@
       "interact_with_chair": {
         "trigger": "minecraft:player_interacted_with_entity",
         "conditions": {
+          "player": {
+            "flags": {
+              "is_sneaking": false
+            }
+          },
           "entity": {
             "tag": "chair"
           }

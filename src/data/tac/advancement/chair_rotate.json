@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "interact_with_chair": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": {
+          "flags": {
+            "is_sneaking": true
+          }
+        },
+        "entity": {
+          "tag": "chair"
+        }
+      }
+    }
+  },
+  "rewards": {
+      "function": "tac:chair/rotate_chair"
+  }
+}
