@@ -59,7 +59,19 @@ basic_type (x2)
 carved_type (x2)
 	material_base_model (x12) 
 
-		
+
+-- Reversion Plan ---
+
+When you want to get rid of the datapack, I want there to be a promise that NOTHING WILL BREAK. 
+So here's the logic for how we could have something convert tables & chairs back into vanilla blocks.
+
+- Save the positions of every table and chair placed in storage.
+- When reverting, march through each one.
+	1. Teleport to the nearest furniture, while saving your old position and going into spectator. Has to be done because block replacements need to be in range.
+	2. Replace all furnitures with block-equivalents in a 12-block range, removing changed ones out the list. Also means conversion needs to happen with a 12-block render distance minimum.
+	3. When no more can be found, move over to a next batch, and repeat step 2 until we're all clear.
+
+Will be organised into categories, [Overworld]>[Tables]+[Chairs], [Nether]>[Tables]+[Chairs], [End]>[Tables]+[Chairs], and will loop through respectively.
 
 	
 
