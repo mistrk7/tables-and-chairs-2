@@ -13,7 +13,7 @@ $summon minecraft:item_display ~ ~.6 ~ {\
             },\
             "minecraft:max_stack_size":64,\
             "minecraft:entity_data":{\
-                id:"armor_stand",\
+                id:"minecraft:armor_stand",\
                 Invisible:1b,\
                 Tags:["chair","tac"],\
                 ArmorItems:[{\
