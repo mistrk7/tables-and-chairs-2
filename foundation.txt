@@ -73,6 +73,11 @@ So here's the logic for how we could have something convert tables & chairs back
 
 Will be organised into categories, [Overworld]>[Tables]+[Chairs], [Nether]>[Tables]+[Chairs], [End]>[Tables]+[Chairs], and will loop through respectively.
 
+
+--- Table destruction idea ---
+
+Check for tables without a block in them every two seconds
+Trigger an advancement when damage is dealt to an axe, on the off-chance it is destroyed with one, so that it looks better.
 	
 
 	
