@@ -145,58 +145,76 @@
 
 
 
-    "tac.table.oak.basic": "Basic Oak Table",
+    "tac.table.oak.basic": "Oak Table",
+    "tac.table.oak.pedestal": "Pedestal Oak Table",
     "tac.table.oak.carved": "Carved Oak Table",
 
-    "tac.table.spruce.basic": "Basic Spruce Table",
+    "tac.table.spruce.basic": "Spruce Table",
+    "tac.table.spruce.pedestal": "Pedestal Spruce Table",
     "tac.table.spruce.carved": "Carved Spruce Table",
 
-    "tac.table.birch.basic": "Basic Birch Table",
+    "tac.table.birch.basic": "Birch Table",
+    "tac.table.birch.pedestal": "Pedestal Birch Table",
     "tac.table.birch.carved": "Carved Birch Table",
 
-    "tac.table.jungle.basic": "Basic Jungle Table",
+    "tac.table.jungle.basic": "Jungle Table",
+    "tac.table.jungle.pedestal": "Pedestal Jungle Table",
     "tac.table.jungle.carved": "Carved Jungle Table",
 
-    "tac.table.acacia.basic": "Basic Acacia Table",
+    "tac.table.acacia.basic": "Acacia Table",
+    "tac.table.acacia.pedestal": "Pedestal Acacia Table",
     "tac.table.acacia.carved": "Carved Acacia Table",
     
-    "tac.table.dark_oak.basic": "Basic Dark Oak Table",
+    "tac.table.dark_oak.basic": "Dark Oak Table",
+    "tac.table.dark_oak.pedestal": "Pedestal Dark Oak Table",
     "tac.table.dark_oak.carved": "Carved Dark Oak Table",
 
-    "tac.table.crimson.basic": "Basic Crimson Table",
+    "tac.table.crimson.basic": "Crimson Table",
+    "tac.table.crimson.pedestal": "Pedestal Crimson Table",
     "tac.table.crimson.carved": "Carved Crimson Table",
 
-    "tac.table.warped.basic": "Basic Warped Table",
+    "tac.table.warped.basic": "Warped Table",
+    "tac.table.warped.pedestal": "Pedestal Warped Table",
     "tac.table.warped.carved": "Carved Warped Table",
 
-    "tac.table.mangrove.basic": "Basic Mangrove Table",
+    "tac.table.mangrove.basic": "Mangrove Table",
+    "tac.table.mangrove.pedestal": "Pedestal Mangrove Table",
     "tac.table.mangrove.carved": "Carved Mangrove Table",
 
-    "tac.table.cherry.basic": "Basic Cherry Table",
+    "tac.table.cherry.basic": "Cherry Table",
+    "tac.table.cherry.pedestal": "Pedestal Cherry Table",
     "tac.table.cherry.carved": "Carved Cherry Table",
 
-    "tac.table.bamboo.basic": "Basic Bamboo Table",
+    "tac.table.bamboo.basic": "Bamboo Table",
+    "tac.table.bamboo.pedestal": "Pedestal Bamboo Table",
     "tac.table.bamboo.carved": "Carved Bamboo Table",
 
-    "tac.table.obsidian.basic": "Basic Obsidian Table",
+    "tac.table.obsidian.basic": "Obsidian Table",
+    "tac.table.obsidian.pedestal": "Pedestal Obsidian Table",
     "tac.table.obsidian.carved": "Carved Obsidian Table",
     
-    "tac.table.quartz.basic": "Basic Quartz Table",
+    "tac.table.quartz.basic": "Quartz Table",
+    "tac.table.quartz.pedestal": "Pedestal Quartz Table",
     "tac.table.quartz.carved": "Carved Quartz Table",
 
-    "tac.table.blackstone.basic": "Basic Blackstone Table",
+    "tac.table.blackstone.basic": "Blackstone Table",
+    "tac.table.blackstone.pedestal": "Pedestal Blackstone Table",
     "tac.table.blackstone.carved": "Carved Blackstone Table",
 
-    "tac.table.stone_brick.basic": "Basic Stone Brick Table",
+    "tac.table.stone_brick.basic": "Stone Brick Table",
+    "tac.table.stone_brick.pedestal": "Pedestal Stone Brick Table",
     "tac.table.stone_brick.carved": "Carved Stone Brick Table",
 
-    "tac.table.deepslate_brick.basic": "Basic Deepslate Brick Table",
+    "tac.table.deepslate_brick.basic": "Deepslate Brick Table",
+    "tac.table.deepslate_brick.pedestal": "Pedestal Deepslate Brick Table",
     "tac.table.deepslate_brick.carved": "Carved Deepslate Brick Table",
     
-    "tac.table.blackstone_brick.basic": "Basic Blackstone Brick Table",
+    "tac.table.blackstone_brick.basic": "Blackstone Brick Table",
+    "tac.table.blackstone_brick.pedestal": "Pedestal Blackstone Brick Table",
     "tac.table.blackstone_brick.carved": "Carved Blackstone Brick Table",
 
-    "tac.table.endstone_brick.basic": "Basic End Stone Brick Table",
+    "tac.table.endstone_brick.basic": "End Stone Brick Table",
+    "tac.table.endstone_brick.pedestal": "Pedestal End Stone Brick Table",
     "tac.table.endstone_brick.carved": "Carved End Stone Brick Table",
 
 
