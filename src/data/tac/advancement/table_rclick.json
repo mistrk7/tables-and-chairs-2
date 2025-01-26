@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "interact_with_oak_trapdoor": {
+      "trigger": "minecraft:any_block_use",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "minecraft:oak_trapdoor",
+                "state": {
+                  "open": "true"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "tac:table/rclick_table"
+  }
+}

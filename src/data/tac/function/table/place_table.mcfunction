@@ -1,0 +1,8 @@
+advancement revoke @s only tac:table_place
+playsound minecraft:block.wood.place block @a ~ ~ ~ 0.5 0.8
+
+# Summon Chair based on item
+execute at @n[type=armor_stand,tag=table] with entity @n[type=armor_stand,tag=table] ArmorItems[0].components."minecraft:custom_data":
+    $say $(type) $(mat)
+    $execute as @n[type=armor_stand,tag=table] align xyz positioned ~.5 ~ ~.5 run function tac:table/summon_table {type:$(type),mat:$(mat)}
+    kill @n[type=armor_stand,tag=table]
