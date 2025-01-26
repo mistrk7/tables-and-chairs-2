@@ -34,7 +34,7 @@
         },
         {
           "type": "minecraft:model",
-          "model": "tac:table/basic/oak/legs_side_basic_oak"
+          "model": "tac:table/basic/oak/legs_side_s_basic_oak"
         }
           ]
         }
@@ -50,7 +50,7 @@
         },
         {
           "type": "minecraft:model",
-          "model": "tac:table/basic/oak/legs_side_basic_oak"
+          "model": "tac:table/basic/oak/legs_side_w_basic_oak"
         }
           ]
         }
@@ -66,7 +66,7 @@
         },
         {
           "type": "minecraft:model",
-          "model": "tac:table/basic/oak/legs_corner_basic_oak"
+          "model": "tac:table/basic/oak/legs_corner_w_basic_oak"
         }
           ]
         }
@@ -82,7 +82,7 @@
         },
         {
           "type": "minecraft:model",
-          "model": "tac:table/basic/oak/legs_side_basic_oak"
+          "model": "tac:table/basic/oak/legs_side_n_basic_oak"
         }
           ]
         }
@@ -110,7 +110,7 @@
         },
         {
           "type": "minecraft:model",
-          "model": "tac:table/basic/oak/legs_corner_basic_oak"
+          "model": "tac:table/basic/oak/legs_corner_n_basic_oak"
         }
           ]
         }
@@ -138,7 +138,7 @@
         },
         {
           "type": "minecraft:model",
-          "model": "tac:table/basic/oak/legs_side_basic_oak"
+          "model": "tac:table/basic/oak/legs_side_e_basic_oak"
         }
           ]
         }
@@ -154,7 +154,7 @@
         },
         {
           "type": "minecraft:model",
-          "model": "tac:table/basic/oak/legs_corner_basic_oak"
+          "model": "tac:table/basic/oak/legs_corner_s_basic_oak"
         }
           ]
         }
@@ -194,7 +194,7 @@
         },
         {
           "type": "minecraft:model",
-          "model": "tac:table/basic/oak/legs_corner_basic_oak"
+          "model": "tac:table/basic/oak/legs_corner_e_basic_oak"
         }
           ]
         }

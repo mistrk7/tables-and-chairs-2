@@ -1,0 +1,15 @@
+{
+  "parent": "tac:table/basic/legs_template/side_basic",
+  "textures": {
+    "0": "block/oak_planks"
+  },
+  "display": {
+    "head": {
+      "rotation": [
+        0,
+        270,
+        0
+      ]
+    }
+  }
+}
