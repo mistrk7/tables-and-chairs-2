@@ -73,6 +73,9 @@ So here's the logic for how we could have something convert tables & chairs back
 
 Will be organised into categories, [Overworld]>[Tables]+[Chairs], [Nether]>[Tables]+[Chairs], [End]>[Tables]+[Chairs], and will loop through respectively.
 
+Large items when holding them.
+Tables as shields?
+
 
 --- Table destruction idea ---
 
