@@ -39,6 +39,7 @@ $summon minecraft:item_display ~ ~ ~ {\
     }\
 }
 setblock ~ ~ ~ minecraft:oak_trapdoor[half=top,powered=true]
+$summon minecraft:interaction ~ ~.3115 ~ {Tags:["$(type)","$(mat)","table","tac","v0"], width: 1.001f, height: 0.1895f}
 
 # Full command
 #/give @s minecraft:armor_stand[minecraft:max_stack_size=64,minecraft:entity_data={id:"armor_stand", Invisible:1b,Tags:["table","tac"]},minecraft:custom_data={model:"table",type:"basic",mat:"oak",tac:1b},"minecraft:custom_name":'{"translate":"$(type).$(mat).table","italic":false}',minecraft:custom_model_data={strings:["oak_basic_table"]}]

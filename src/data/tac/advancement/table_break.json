@@ -1,0 +1,23 @@
+{
+    "criteria": {
+      "example": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "mainhand": {
+                "items": "#minecraft:axes"
+              }
+            }
+          },
+          "entity": {
+            "type": "minecraft:interaction",
+            "nbt": "{Tags:[\"table\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "tac:table/break_table"
+    }
+  }

@@ -1,4 +1,5 @@
 scoreboard objectives add tac.main dummy
+function tac:loop
 
 data merge storage tac:main {\
     version:0,\
