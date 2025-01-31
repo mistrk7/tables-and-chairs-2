@@ -8,7 +8,7 @@ $summon minecraft:item_display ~ ~ ~ {\
         components:{\
             "minecraft:item_model": "tac:table/basic/$(mat)_$(type)_table",\
             "minecraft:custom_model_data":{\
-                floats:[0.0f]\
+                floats:[$(state).0f]\
             },\
             "minecraft:max_stack_size":64,\
             "minecraft:entity_data":{\
