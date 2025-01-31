@@ -6,7 +6,10 @@
           "player": {
             "equipment": {
               "mainhand": {
-                "items": "#minecraft:axes"
+                "count": {
+                  "min": 1,
+                  "max": 99
+                }
               }
             }
           },
