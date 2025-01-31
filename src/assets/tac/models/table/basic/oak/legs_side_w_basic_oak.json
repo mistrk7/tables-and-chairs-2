@@ -4,7 +4,7 @@
     "0": "block/oak_planks"
   },
   "display": {
-    "head": {
+    "fixed": {
       "rotation": [
         0,
         270,
