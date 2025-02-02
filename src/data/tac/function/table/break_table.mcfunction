@@ -15,8 +15,11 @@ function ~/action:
     execute run function ~/check:
         execute as @e[type=interaction,tag=table_break] at @s:
 
+            # When the table is detected to be broken
             execute if entity @n[type=minecraft:item, nbt={Item:{id:"minecraft:oak_trapdoor"}}, distance=0..0.8]:
                 function ./break_table/destroy
+                scoreboard players set repeat_modify tac.main 1
+                function ./modify_table
 
             if entity @s[tag=table_break] run schedule function ~/ 1t
 
