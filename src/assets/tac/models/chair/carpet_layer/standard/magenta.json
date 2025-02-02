@@ -1,0 +1,5 @@
+{
+	"parent" : "tac:chair/carpet_layer/standard/cushion_template",
+	"textures": {"1": "block/magenta_wool",
+		"2": "block/magenta_shulker_box"}
+}

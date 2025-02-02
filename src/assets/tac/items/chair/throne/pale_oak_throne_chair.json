@@ -1,0 +1,268 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "tac:chair/throne/pale_oak_throne_chair"
+    },
+    "cases": [
+      {
+        "when": "minecraft:white_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/throne/pale_oak_throne_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/throne/white"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:orange_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/throne/pale_oak_throne_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/throne/orange"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:magenta_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/throne/pale_oak_throne_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/throne/magenta"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:light_blue_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/throne/pale_oak_throne_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/throne/light_blue"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:yellow_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/throne/pale_oak_throne_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/throne/yellow"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:lime_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/throne/pale_oak_throne_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/throne/lime"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:pink_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/throne/pale_oak_throne_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/throne/pink"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:gray_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/throne/pale_oak_throne_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/throne/gray"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:light_gray_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/throne/pale_oak_throne_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/throne/light_gray"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:cyan_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/throne/pale_oak_throne_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/throne/cyan"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:purple_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/throne/pale_oak_throne_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/throne/purple"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:blue_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/throne/pale_oak_throne_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/throne/blue"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:brown_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/throne/pale_oak_throne_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/throne/brown"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:green_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/throne/pale_oak_throne_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/throne/green"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:red_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/throne/pale_oak_throne_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/throne/red"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:black_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/throne/pale_oak_throne_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/throne/black"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

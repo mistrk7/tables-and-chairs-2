@@ -6,7 +6,7 @@ $summon minecraft:item_display ~ ~ ~ {\
     item:{\
         id:"minecraft:armor_stand",\
         components:{\
-            "minecraft:item_model": "tac:table/basic/$(mat)_$(type)_table",\
+            "minecraft:item_model": "tac:table/$(type)/$(mat)_$(type)_table",\
             "minecraft:custom_model_data":{\
                 floats:[$(state).0f]\
             },\

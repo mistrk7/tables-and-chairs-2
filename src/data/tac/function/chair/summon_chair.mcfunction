@@ -8,8 +8,9 @@ $summon minecraft:item_display ~ ~.6 ~ {\
     item:{\
         id:"minecraft:armor_stand",\
         components:{\
+            "minecraft:item_model": "tac:chair/$(type)/$(mat)_$(type)_chair",\
             "minecraft:custom_model_data":{\
-                strings:["$(mat)_$(type)_chair"]\
+                strings:[""]\
             },\
             "minecraft:max_stack_size":64,\
             "minecraft:entity_data":{\

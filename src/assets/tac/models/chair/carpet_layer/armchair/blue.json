@@ -1,0 +1,5 @@
+{
+	"parent" : "tac:chair/carpet_layer/armchair/cushion_template",
+	"textures": {"1": "block/blue_wool",
+		"2": "block/blue_shulker_box"}
+}

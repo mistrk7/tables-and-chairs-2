@@ -1,0 +1,5 @@
+{
+	"parent" : "tac:chair/carpet_layer/throne/cushion_template",
+	"textures": {"1": "block/yellow_wool",
+		"2": "block/yellow_shulker_box"}
+}

@@ -1,0 +1,268 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "tac:chair/neat/crimson_neat_chair"
+    },
+    "cases": [
+      {
+        "when": "minecraft:white_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/neat/crimson_neat_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/standard/white"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:orange_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/neat/crimson_neat_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/standard/orange"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:magenta_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/neat/crimson_neat_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/standard/magenta"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:light_blue_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/neat/crimson_neat_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/standard/light_blue"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:yellow_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/neat/crimson_neat_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/standard/yellow"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:lime_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/neat/crimson_neat_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/standard/lime"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:pink_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/neat/crimson_neat_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/standard/pink"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:gray_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/neat/crimson_neat_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/standard/gray"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:light_gray_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/neat/crimson_neat_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/standard/light_gray"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:cyan_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/neat/crimson_neat_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/standard/cyan"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:purple_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/neat/crimson_neat_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/standard/purple"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:blue_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/neat/crimson_neat_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/standard/blue"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:brown_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/neat/crimson_neat_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/standard/brown"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:green_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/neat/crimson_neat_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/standard/green"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:red_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/neat/crimson_neat_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/standard/red"
+            }
+          ]
+        }
+      },
+      {
+        "when": "minecraft:black_carpet",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/neat/crimson_neat_chair"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:chair/carpet_layer/standard/black"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
