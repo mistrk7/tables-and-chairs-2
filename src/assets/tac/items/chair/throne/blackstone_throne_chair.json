@@ -18,7 +18,7 @@
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/white"
+				"model": "tac:chair/carpet_layer/throne_luxe/white"
 			  }
 			]
 		  }
@@ -34,7 +34,7 @@
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/orange"
+				"model": "tac:chair/carpet_layer/throne_luxe/orange"
 			  }
 			]
 		  }
@@ -50,7 +50,7 @@
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/magenta"
+				"model": "tac:chair/carpet_layer/throne_luxe/magenta"
 			  }
 			]
 		  }
@@ -66,7 +66,7 @@
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/light_blue"
+				"model": "tac:chair/carpet_layer/throne_luxe/light_blue"
 			  }
 			]
 		  }
@@ -82,7 +82,7 @@
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/yellow"
+				"model": "tac:chair/carpet_layer/throne_luxe/yellow"
 			  }
 			]
 		  }
@@ -98,7 +98,7 @@
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/lime"
+				"model": "tac:chair/carpet_layer/throne_luxe/lime"
 			  }
 			]
 		  }
@@ -114,7 +114,7 @@
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/pink"
+				"model": "tac:chair/carpet_layer/throne_luxe/pink"
 			  }
 			]
 		  }
@@ -130,7 +130,7 @@
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/gray"
+				"model": "tac:chair/carpet_layer/throne_luxe/gray"
 			  }
 			]
 		  }
@@ -146,7 +146,7 @@
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/light_gray"
+				"model": "tac:chair/carpet_layer/throne_luxe/light_gray"
 			  }
 			]
 		  }
@@ -162,7 +162,7 @@
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/cyan"
+				"model": "tac:chair/carpet_layer/throne_luxe/cyan"
 			  }
 			]
 		  }
@@ -178,7 +178,7 @@
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/purple"
+				"model": "tac:chair/carpet_layer/throne_luxe/purple"
 			  }
 			]
 		  }
@@ -194,7 +194,7 @@
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/blue"
+				"model": "tac:chair/carpet_layer/throne_luxe/blue"
 			  }
 			]
 		  }
@@ -210,7 +210,7 @@
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/brown"
+				"model": "tac:chair/carpet_layer/throne_luxe/brown"
 			  }
 			]
 		  }
@@ -226,7 +226,7 @@
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/green"
+				"model": "tac:chair/carpet_layer/throne_luxe/green"
 			  }
 			]
 		  }
@@ -242,7 +242,7 @@
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/red"
+				"model": "tac:chair/carpet_layer/throne_luxe/red"
 			  }
 			]
 		  }
@@ -258,7 +258,7 @@
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/black"
+				"model": "tac:chair/carpet_layer/throne_luxe/black"
 			  }
 			]
 		  }
