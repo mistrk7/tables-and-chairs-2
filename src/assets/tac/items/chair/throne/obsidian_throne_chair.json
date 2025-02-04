@@ -4,7 +4,7 @@
 	  "property": "minecraft:custom_model_data",
 	  "fallback": {
 		"type": "minecraft:model",
-		"model": "tac:chair/throne/obsidian_throne_chair"
+		"model": "tac:chair/throne_luxe/obsidian_throne_chair"
 	  },
 	  "cases": [
 		{
@@ -14,11 +14,11 @@
 			"models": [
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/throne/obsidian_throne_chair"
+				"model": "tac:chair/throne_luxe/obsidian_throne_chair"
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/white"
+				"model": "tac:chair/carpet_layer/throne_luxe/white"
 			  }
 			]
 		  }
@@ -30,11 +30,11 @@
 			"models": [
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/throne/obsidian_throne_chair"
+				"model": "tac:chair/throne_luxe/obsidian_throne_chair"
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/orange"
+				"model": "tac:chair/carpet_layer/throne_luxe/orange"
 			  }
 			]
 		  }
@@ -46,11 +46,11 @@
 			"models": [
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/throne/obsidian_throne_chair"
+				"model": "tac:chair/throne_luxe/obsidian_throne_chair"
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/magenta"
+				"model": "tac:chair/carpet_layer/throne_luxe/magenta"
 			  }
 			]
 		  }
@@ -62,11 +62,11 @@
 			"models": [
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/throne/obsidian_throne_chair"
+				"model": "tac:chair/throne_luxe/obsidian_throne_chair"
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/light_blue"
+				"model": "tac:chair/carpet_layer/throne_luxe/light_blue"
 			  }
 			]
 		  }
@@ -78,11 +78,11 @@
 			"models": [
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/throne/obsidian_throne_chair"
+				"model": "tac:chair/throne_luxe/obsidian_throne_chair"
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/yellow"
+				"model": "tac:chair/carpet_layer/throne_luxe/yellow"
 			  }
 			]
 		  }
@@ -94,11 +94,11 @@
 			"models": [
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/throne/obsidian_throne_chair"
+				"model": "tac:chair/throne_luxe/obsidian_throne_chair"
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/lime"
+				"model": "tac:chair/carpet_layer/throne_luxe/lime"
 			  }
 			]
 		  }
@@ -110,11 +110,11 @@
 			"models": [
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/throne/obsidian_throne_chair"
+				"model": "tac:chair/throne_luxe/obsidian_throne_chair"
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/pink"
+				"model": "tac:chair/carpet_layer/throne_luxe/pink"
 			  }
 			]
 		  }
@@ -126,11 +126,11 @@
 			"models": [
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/throne/obsidian_throne_chair"
+				"model": "tac:chair/throne_luxe/obsidian_throne_chair"
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/gray"
+				"model": "tac:chair/carpet_layer/throne_luxe/gray"
 			  }
 			]
 		  }
@@ -142,11 +142,11 @@
 			"models": [
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/throne/obsidian_throne_chair"
+				"model": "tac:chair/throne_luxe/obsidian_throne_chair"
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/light_gray"
+				"model": "tac:chair/carpet_layer/throne_luxe/light_gray"
 			  }
 			]
 		  }
@@ -158,11 +158,11 @@
 			"models": [
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/throne/obsidian_throne_chair"
+				"model": "tac:chair/throne_luxe/obsidian_throne_chair"
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/cyan"
+				"model": "tac:chair/carpet_layer/throne_luxe/cyan"
 			  }
 			]
 		  }
@@ -174,11 +174,11 @@
 			"models": [
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/throne/obsidian_throne_chair"
+				"model": "tac:chair/throne_luxe/obsidian_throne_chair"
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/purple"
+				"model": "tac:chair/carpet_layer/throne_luxe/purple"
 			  }
 			]
 		  }
@@ -190,11 +190,11 @@
 			"models": [
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/throne/obsidian_throne_chair"
+				"model": "tac:chair/throne_luxe/obsidian_throne_chair"
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/blue"
+				"model": "tac:chair/carpet_layer/throne_luxe/blue"
 			  }
 			]
 		  }
@@ -206,11 +206,11 @@
 			"models": [
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/throne/obsidian_throne_chair"
+				"model": "tac:chair/throne_luxe/obsidian_throne_chair"
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/brown"
+				"model": "tac:chair/carpet_layer/throne_luxe/brown"
 			  }
 			]
 		  }
@@ -222,11 +222,11 @@
 			"models": [
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/throne/obsidian_throne_chair"
+				"model": "tac:chair/throne_luxe/obsidian_throne_chair"
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/green"
+				"model": "tac:chair/carpet_layer/throne_luxe/green"
 			  }
 			]
 		  }
@@ -238,11 +238,11 @@
 			"models": [
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/throne/obsidian_throne_chair"
+				"model": "tac:chair/throne_luxe/obsidian_throne_chair"
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/red"
+				"model": "tac:chair/carpet_layer/throne_luxe/red"
 			  }
 			]
 		  }
@@ -254,11 +254,11 @@
 			"models": [
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/throne/obsidian_throne_chair"
+				"model": "tac:chair/throne_luxe/obsidian_throne_chair"
 			  },
 			  {
 				"type": "minecraft:model",
-				"model": "tac:chair/carpet_layer/throne/black"
+				"model": "tac:chair/carpet_layer/throne_luxe/black"
 			  }
 			]
 		  }
