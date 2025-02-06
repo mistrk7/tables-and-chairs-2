@@ -1,19 +1,19 @@
 {
     "type": "minecraft:crafting_shaped",
     "category": "misc",
-    "group": "chair_basic",
+    "group": "chair_throne",
     "key": {
-      "#": "minecraft:acacia_planks",
+      "#": "minecraft:iron_block",
       "X": "minecraft:stick"
     },
     "pattern": [
-      "#  ",
-      "## ",
-      "XX "
+      "#X ",
+      "###",
+      "X X"
     ],
     "result": {
       "components": {
-        "minecraft:item_model": "tac:chair/basic/acacia_basic_chair",
+        "minecraft:item_model": "tac:chair/throne/iron_throne_chair",
         "minecraft:custom_model_data": {
           "strings": [""]
         },
@@ -30,8 +30,8 @@
               "components": {
                 "minecraft:custom_data": {
                   "model": "chair",
-                  "type": "basic",
-                  "mat": "acacia",
+                  "type": "throne",
+                  "mat": "iron",
                   "tac": true
                 }
               }
@@ -41,11 +41,11 @@
         },
         "minecraft:custom_data": {
           "model": "chair",
-          "type": "basic",
-          "mat": "acacia",
+          "type": "throne",
+          "mat": "iron",
           "tac": true
         },
-        "minecraft:custom_name": "{\"translate\":\"tac.chair.acacia.basic\",\"italic\":false}"
+        "minecraft:custom_name": "{\"translate\":\"tac.chair.iron.throne\",\"italic\":false}"
       },
       "count": 1,
       "id": "minecraft:armor_stand"

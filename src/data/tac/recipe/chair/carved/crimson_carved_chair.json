@@ -1,19 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "category": "misc",
-    "group": "chair_basic",
-    "key": {
-      "#": "minecraft:acacia_planks",
-      "X": "minecraft:stick"
-    },
-    "pattern": [
-      "#  ",
-      "## ",
-      "XX "
-    ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "chair_carved",
+  "key": {
+    "#": "minecraft:crimson_stairs",
+    "X": "minecraft:stick"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "XX "
+  ],
     "result": {
       "components": {
-        "minecraft:item_model": "tac:chair/basic/acacia_basic_chair",
+        "minecraft:item_model": "tac:chair/carved/crimson_carved_chair",
         "minecraft:custom_model_data": {
           "strings": [""]
         },
@@ -30,8 +30,8 @@
               "components": {
                 "minecraft:custom_data": {
                   "model": "chair",
-                  "type": "basic",
-                  "mat": "acacia",
+                  "type": "carved",
+                  "mat": "crimson",
                   "tac": true
                 }
               }
@@ -41,11 +41,11 @@
         },
         "minecraft:custom_data": {
           "model": "chair",
-          "type": "basic",
-          "mat": "acacia",
+          "type": "carved",
+          "mat": "crimson",
           "tac": true
         },
-        "minecraft:custom_name": "{\"translate\":\"tac.chair.acacia.basic\",\"italic\":false}"
+        "minecraft:custom_name": "{\"translate\":\"tac.chair.crimson.carved\",\"italic\":false}"
       },
       "count": 1,
       "id": "minecraft:armor_stand"
