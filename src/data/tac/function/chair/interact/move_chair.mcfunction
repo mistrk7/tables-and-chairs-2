@@ -32,7 +32,7 @@ function ~/action:
             execute store result score close tac.main run data get entity @n[distance=0..0.79,type=interaction,tag=chair]
             execute store result score close-block tac.main align xyz run execute unless block ~ ~ ~ #minecraft:air
             execute store result score close-floor tac.main align xyz run execute if block ~ ~-1 ~ #minecraft:air
-            execute store result score close-table tac.main align xyz run execute if block ~ ~ ~ minecraft:oak_trapdoor[half=top]
+            execute store result score close-table tac.main align xyz run execute if block ~ ~ ~ #minecraft:trapdoors[half=top]
         unless score close-table tac.main matches 1 run scoreboard players operation close tac.main += close-block tac.main
         scoreboard players operation close tac.main += close-floor tac.main
 

@@ -17,7 +17,7 @@ function ~/action:
         execute as @e[type=interaction,tag=table_break] at @s align y positioned ~ ~0.5 ~:
 
             # When the table is detected to be broken
-            unless block ~ ~ ~ minecraft:oak_trapdoor:
+            unless block ~ ~ ~ #minecraft:trapdoors :
                 function ./break_table/destroy
                 scoreboard players set repeat_modify tac.main 1
                 align y run function ./modify_table

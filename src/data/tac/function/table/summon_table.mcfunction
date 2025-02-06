@@ -38,7 +38,9 @@ $summon minecraft:item_display ~ ~ ~ {\
         }\
     }\
 }
-setblock ~ ~ ~ minecraft:oak_trapdoor[half=top,powered=true]
+setblock ~ ~ ~ minecraft:oak_trapdoor[half=top,powered=true,open=false]
+$setblock ~ ~ ~ minecraft:$(mat)_trapdoor[half=top,powered=true]
+
 $summon minecraft:interaction ~ ~.3115 ~ {Tags:["$(type)","$(mat)","table","tac","v0"], width: 1.001f, height: 0.1895f}
 
 # Full command
