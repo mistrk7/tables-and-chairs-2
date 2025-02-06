@@ -13,10 +13,9 @@
     ],
     "result": {
       "components": {
+        "minecraft:item_model": "tac:chair/basic/mangrove_basic_chair",
         "minecraft:custom_model_data": {
-          "strings": [
-            "mangrove_basic_chair"
-          ]
+          "strings": [""]
         },
         "minecraft:max_stack_size": 64,
         "minecraft:entity_data": {
