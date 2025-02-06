@@ -1,0 +1,4 @@
+{
+    "parent": "tac:table/basic/legs_template/whole_basic",
+	"textures": {"0": "block/spruce_planks"}
+}

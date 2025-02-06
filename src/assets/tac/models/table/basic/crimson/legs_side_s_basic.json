@@ -1,0 +1,4 @@
+{
+  "parent": "tac:table/basic/legs_template/side_basic",
+  "textures": {"0": "block/crimson_planks"}
+}

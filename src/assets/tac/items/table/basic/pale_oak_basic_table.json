@@ -1,0 +1,240 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "tac:table/basic/pale_oak/top_table_basic"
+    },
+    "entries": [
+      {
+        "threshold": 0,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/basic/pale_oak/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/basic/pale_oak/legs_whole_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 1,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/top_table_basic"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/legs_side_s_basic"
+        }
+          ]
+        }
+      },
+      {
+        "threshold": 2,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/top_table_basic"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/legs_side_w_basic"
+        }
+          ]
+        }
+      },
+      {
+        "threshold": 3,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/top_table_basic"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/legs_corner_w_basic"
+        }
+          ]
+        }
+      },
+      {
+        "threshold": 4,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/top_table_basic"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/legs_side_n_basic"
+        }
+          ]
+        }
+      },
+      {
+        "threshold": 5,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/top_table_basic"
+        }
+          ]
+        }
+      },
+      {
+        "threshold": 6,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/top_table_basic"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/legs_corner_n_basic"
+        }
+          ]
+        }
+      },
+      {
+        "threshold": 7,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/top_table_basic"
+        }
+          ]
+        }
+      },
+      {
+        "threshold": 8,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/top_table_basic"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/legs_side_e_basic"
+        }
+          ]
+        }
+      },
+      {
+        "threshold": 9,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/top_table_basic"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/legs_corner_s_basic"
+        }
+          ]
+        }
+      },
+      {
+        "threshold": 10,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/top_table_basic"
+        }
+          ]
+        }
+      },
+      {
+        "threshold": 11,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/top_table_basic"
+        }
+          ]
+        }
+      },
+      {
+        "threshold": 12,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/top_table_basic"
+        },
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/legs_corner_e_basic"
+        }
+          ]
+        }
+      },
+      {
+        "threshold": 13,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/top_table_basic"
+        }
+          ]
+        }
+      },
+      {
+        "threshold": 14,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/top_table_basic"
+        }
+          ]
+        }
+      },
+      {
+        "threshold": 15,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+        {
+          "type": "minecraft:model",
+          "model": "tac:table/basic/pale_oak/top_table_basic"
+        }
+          ]
+        }
+      }
+    ]
+  }
+}

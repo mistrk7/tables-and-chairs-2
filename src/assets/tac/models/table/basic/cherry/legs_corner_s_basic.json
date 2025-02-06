@@ -1,0 +1,6 @@
+{
+  "parent": "tac:table/basic/legs_template/corner_basic",
+  "textures": {
+    "0": "block/cherry_planks"
+  }
+}
