@@ -1,16 +1,16 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "category": "misc",
-    "group": "chair_refined",
-    "key": {
-      "#": "minecraft:dark_oak_planks",
-      "X": "minecraft:stick"
-    },
-    "pattern": [
-      "#  ",
-      "## ",
-      "XX "
-    ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "chair_refined",
+  "key": {
+    "#": "minecraft:stripped_dark_oak_log",
+    "X": "minecraft:stick"
+  },
+  "pattern": [
+    "#X ",
+    "## ",
+    "XX "
+  ],
     "result": {
       "components": {
         "minecraft:item_model": "tac:chair/refined/dark_oak_refined_chair",

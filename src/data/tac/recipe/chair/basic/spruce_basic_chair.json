@@ -3,7 +3,7 @@
     "category": "misc",
     "group": "chair_basic",
     "key": {
-      "#": "minecraft:acacia_planks",
+      "#": "minecraft:spruce_planks",
       "X": "minecraft:stick"
     },
     "pattern": [
@@ -13,7 +13,7 @@
     ],
     "result": {
       "components": {
-        "minecraft:item_model": "tac:chair/basic/acacia_basic_chair",
+        "minecraft:item_model": "tac:chair/basic/spruce_basic_chair",
         "minecraft:custom_model_data": {
           "strings": [""]
         },
@@ -31,7 +31,7 @@
                 "minecraft:custom_data": {
                   "model": "chair",
                   "type": "basic",
-                  "mat": "acacia",
+                  "mat": "spruce",
                   "tac": true
                 }
               }
@@ -42,10 +42,10 @@
         "minecraft:custom_data": {
           "model": "chair",
           "type": "basic",
-          "mat": "acacia",
+          "mat": "spruce",
           "tac": true
         },
-        "minecraft:custom_name": "{\"translate\":\"tac.chair.acacia.basic\",\"italic\":false}"
+        "minecraft:custom_name": "{\"translate\":\"tac.chair.spruce.basic\",\"italic\":false}"
       },
       "count": 1,
       "id": "minecraft:armor_stand"

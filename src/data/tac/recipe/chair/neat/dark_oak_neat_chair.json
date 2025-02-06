@@ -3,7 +3,7 @@
     "category": "misc",
     "group": "chair_neat",
     "key": {
-      "#": "minecraft:dark_oak_planks",
+      "#": "minecraft:stripped_dark_oak_log",
       "X": "minecraft:stick"
     },
     "pattern": [
