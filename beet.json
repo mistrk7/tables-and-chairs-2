@@ -1,6 +1,6 @@
 {
     "name": "Tables & Chairs 2",
-    "description": "Tables and Chairs for your game",
+    "description": "Modular, functional and customisable Tables & Chairs for your game of Minecraft. Originally based on Axel's Tables & Chairs!",
     "require":[
         "bolt"
     ],
@@ -11,7 +11,7 @@
     },
     "resource_pack":{
         "load":["src"],
-        "pack_format": 40
+        "pack_format": 46
     },
     
     "pipeline":["mecha"],
