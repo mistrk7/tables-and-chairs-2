@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "interact_with_oak_trapdoor": {
+    "interact_with_trapdoor": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
         "location": [
@@ -8,7 +8,7 @@
             "condition": "minecraft:location_check",
             "predicate": {
               "block": {
-                "blocks": "minecraft:oak_trapdoor",
+                "blocks": "#minecraft:trapdoors",
                 "state": {
                   "open": "true"
                 }
