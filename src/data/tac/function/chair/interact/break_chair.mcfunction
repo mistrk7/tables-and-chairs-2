@@ -11,7 +11,7 @@ function ~/action:
         playsound minecraft:block.wood.break block @a ~ ~ ~ 0.8 1
         
         # Drop the item
-        summon minecraft:item ~ ~0.55 ~ {Tags:["temp"],Item:{id:"minecraft:armor_stand",count:1,components:{"minecraft:custom_model_data":{strings:["oak_basic_chair"]}}},Motion:[0.0,0.2,0.0]}
+        summon minecraft:item ~ ~0.55 ~ {Tags:["temp"],Item:{id:"minecraft:armor_stand",count:1,components:{"minecraft:item_model": "tac:chair/basic/oak_basic_chair"}},Motion:[0.0,0.2,0.0]}
         data modify entity @n[type=item,tag=temp] Item merge from entity @n[type=item_display,tag=chair,distance=..0.61] item
         data modify entity @n[type=item,tag=temp] Item.components."minecraft:custom_model_data".strings[0] set value ""
         tag @n[type=item,tag=temp] remove temp
