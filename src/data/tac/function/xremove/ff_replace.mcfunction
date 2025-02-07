@@ -18,5 +18,8 @@ execute if entity @s[tag=chair]
 #    data remove storage furniture.overworld["$(uuid)"]
 
 execute if entity @s[tag=table]:
-    setblock ~ ~ ~ oak_planks
+    execute with entity @s item.components."minecraft:custom_data":
+        $setblock ~ ~ ~ $(mat)_trapdoor[half=top]
+    kill @n[type=interaction,tag=table,distance=0..0.8]
+    kill @s
     #kill @s (2x)
