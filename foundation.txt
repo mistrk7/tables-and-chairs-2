@@ -76,6 +76,9 @@ Will be organised into categories, [Overworld]>[Tables]+[Chairs], [Nether]>[Tabl
 Large items when holding them.
 Tables as shields?
 
+Right-click interaction entity on table with block = place that block on top of the table
+Commands to give you every table / chair item. 
+
 
 --- Table destruction idea ---
 
