@@ -9,18 +9,18 @@ function ~/action:
     # Second hit (within the last second): Destroy
     execute if entity @s[tag=wait]:
         playsound minecraft:block.wood.break block @a ~ ~ ~ 0.8 1
-        
-        # Drop the item
-        summon minecraft:item ~ ~0.55 ~ {Tags:["temp"],Item:{id:"minecraft:armor_stand",count:1,components:{"minecraft:item_model": "tac:chair/basic/oak_basic_chair"}},Motion:[0.0,0.2,0.0]}
-        data modify entity @n[type=item,tag=temp] Item merge from entity @n[type=item_display,tag=chair,distance=..0.61] item
-        data modify entity @n[type=item,tag=temp] Item.components."minecraft:custom_model_data".strings[0] set value ""
-        tag @n[type=item,tag=temp] remove temp
-        
+
         # Drop its carpet if it has one
-        execute unless data entity @n[type=item_display,tag=chair,distance=..0.61] {item:{components:{"minecraft:custom_model_data":{strings:[""]}}}}:
+        execute as @n[type=item_display,tag=chair,distance=..0.61] unless data entity @n[type=item_display,tag=chair,distance=..0.61] {item:{components:{"minecraft:custom_model_data":{strings:[""]}}}}:
             summon minecraft:item ~ ~0.65 ~ {Tags:["temp"],Item:{id:"minecraft:white_carpet",count:1},Motion:[0.0,0.2,0.0]}
-            data modify entity @n[type=item,tag=temp] Item.id set from entity @n[type=item_display,tag=chair,distance=..0.61] item.components."minecraft:custom_model_data".strings[0]
+            data modify entity @n[type=item,tag=temp] Item.id set from entity @s item.components."minecraft:custom_model_data".strings[0]
             tag @n[type=item,tag=temp] remove temp
+
+        # Drop the item
+        execute as @n[type=item_display,tag=chair,distance=..0.61]:
+            data modify entity @s item.components."minecraft:custom_model_data".strings[0] set value ""
+            execute with entity @s:
+                $summon minecraft:item ~ ~0.55 ~ {Item:$(item),Motion:[0.0,0.2,0.0]}
 
         #Destroy the chair
         kill @s
