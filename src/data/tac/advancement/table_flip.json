@@ -20,6 +20,6 @@
     }
   },
   "rewards": {
-    "function": "tac:table/rclick_table"
+    "function": "tac:table/flip_table"
   }
 }
