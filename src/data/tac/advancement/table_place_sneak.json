@@ -5,7 +5,7 @@
       "conditions": {
         "player": {
           "flags": {
-            "is_sneaking": false
+            "is_sneaking": true
           }
         },
         "location": [
@@ -23,6 +23,6 @@
     }
   },
   "rewards": {
-    "function": "tac:table/place_table"
+    "function": "tac:table/place_table_sneak"
   }
 }
