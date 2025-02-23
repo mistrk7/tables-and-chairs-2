@@ -1,0 +1,29 @@
+{
+	"values": [
+		"#minecraft:buttons",
+        "#minecraft:beds",
+        "#minecraft:doors",
+        "minecraft:ladder",
+        "#minecraft:hanging_signs",
+        "#minecraft:saplings",
+        "#minecraft:small_flowers",
+        "minecraft:pink_petals",
+        "minecraft:mangrove_propagule",
+        "minecraft:spore_blossom",
+        "minecraft:sunflower",
+        "minecraft:lilac",
+        "minecraft:rose_bush",
+        "minecraft:peony",
+        "minecraft:pitcher_plant",
+        "minecraft:chorus_flower",
+        "minecraft:short_grass",
+        "minecraft:tall_grass",
+        "minecraft:seagrass",
+        "minecraft:brown_mushroom",
+        "minecraft:red_mushroom",
+        "minecraft:crimson_fungus",
+        "minecraft:warped_fungus",
+        "minecraft:weeping_vines",
+        "minecraft:vine"
+	]
+}

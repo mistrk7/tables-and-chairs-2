@@ -1,0 +1,26 @@
+{
+    "criteria": {
+      "example": {
+        "trigger": "minecraft:player_interacted_with_entity",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "mainhand": {
+                "count": {
+                  "min": 1,
+                  "max": 99
+                }
+              }
+            }
+          },
+          "entity": {
+            "type": "minecraft:interaction",
+            "nbt": "{Tags:[\"table\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "tac:table/rclick_table"
+    }
+  }
