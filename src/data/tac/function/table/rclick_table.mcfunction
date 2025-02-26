@@ -10,6 +10,7 @@ execute run with entity @s:
             execute store result score place tac.main positioned ~ ~1 ~ run execute if block ~ ~1 ~ #minecraft:air
             execute unless block ~ ~1 ~ #minecraft:air run scoreboard players set place tac.main 0
             execute if items entity @s weapon.mainhand #tac:non_placeable run scoreboard players set place tac.main 0
+            execute align xyz positioned ~.5 ~.5 ~.5 if entity @n[type=minecraft:interaction,tag=chair,distance=..0.5] run scoreboard players set place tac.main 0
 
             #Custom detection for the custom blocks
             execute if score place tac.main matches 1:
