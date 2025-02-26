@@ -51,22 +51,22 @@ execute run with entity @s:
 
                 execute if data entity @s SelectedItem{id:"minecraft:item_frame"} align y positioned ~ ~1 ~ :
                     summon minecraft:item_frame ~ ~ ~ {Facing:1b}
-                    execute unless data entity @s abilities{instabuild:1b} run clear @s minecraft:item_frame 1
+                    execute unless data entity @s abilities{instabuild:1b} run item modify entity @s weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
                     playsound minecraft:entity.item_frame.place block @a ~ ~ ~
                 execute if data entity @s SelectedItem{id:"minecraft:glow_item_frame"} align y positioned ~ ~1 ~ :
                     summon minecraft:glow_item_frame ~ ~ ~ {Facing:1b}
-                    execute unless data entity @s abilities{instabuild:1b} run clear @s minecraft:glow_item_frame 1
+                    execute unless data entity @s abilities{instabuild:1b} run item modify entity @s weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
                     playsound minecraft:entity.item_frame.place block @a ~ ~ ~
 
             # If successful, place and remove the item
             #$say $(id)
             execute if score place tac.main matches 1 unless data entity @s SelectedItem.components."minecraft:custom_data"{tac:1b} with entity @s SelectedItem:
                 $setblock ~ ~1 ~ $(id)
-                $execute unless data entity @s abilities{instabuild:1b} run clear @s $(id) 1
+                execute unless data entity @s abilities{instabuild:1b} run item modify entity @s weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
                 playsound minecraft:block.wood.place block @a ~ ~ ~
             
             execute unless data entity @s abilities{instabuild:1b} if score place tac.main matches 1 if data entity @s SelectedItem.components."minecraft:custom_data"{tac:1b} with entity @s SelectedItem.components."minecraft:custom_data":
-                    $clear @s minecraft:armor_stand[minecraft:custom_data={model:$(model),type:$(type),mat:$(mat),tac:1b}] 1
+                    item modify entity @s weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
             
             scoreboard players reset place tac.main
 

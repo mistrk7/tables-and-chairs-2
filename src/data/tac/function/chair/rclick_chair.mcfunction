@@ -21,6 +21,6 @@ execute run with entity @s:
             function ~/set_carpet:
                 data modify entity @n[type=minecraft:item_display,tag=chair,distance=..0.61] item.components."minecraft:custom_model_data".strings[0] set from entity @s SelectedItem.id
                 playsound minecraft:block.wool.place block @a ~ ~ ~
-                $clear @s $(id) 1
+                item modify entity @s weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
             
     $data remove entity @e[limit=1,tag=chair,type=minecraft:interaction,nbt={interaction:{player:$(UUID)}}] interaction
