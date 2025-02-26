@@ -25,6 +25,7 @@ function ~/action:
         #Destroy the chair
         kill @s
         kill @n[type=item_display,tag=chair,distance=..0.61]
+        scoreboard players remove chairs tac.main 1
 
     # First hit: Put into 'disturbed' state for one second
     execute unless entity @s[tag=wait]:

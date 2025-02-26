@@ -1,4 +1,5 @@
 #variables: type, mat, facing (0=south, 90=west, 180=north 270=east)
+scoreboard players add tables tac.main 1
 
 $summon minecraft:item_display ~ ~ ~ {\
     Tags:["$(type)","$(mat)","table","tac","v0"],\

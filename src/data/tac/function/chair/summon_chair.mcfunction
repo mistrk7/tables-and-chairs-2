@@ -1,4 +1,5 @@
 #variables: type, mat, facing (0=south, 90=west, 180=north 270=east)
+scoreboard players add chairs tac.main 1
 
 $summon minecraft:item_display ~ ~.6 ~ {\
     Rotation:[$(facing).0f,0.0f],\
