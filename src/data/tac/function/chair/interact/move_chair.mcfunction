@@ -6,19 +6,23 @@ execute with entity @s:
     $data remove entity @e[limit=1,tag=chair,type=minecraft:interaction,nbt={attack:{player:$(UUID)}}] attack
 
 function ~/action:
+
+    #Check if the chair is in a table
+    execute store result score in-table tac.main run positioned as @n[type=item_display,tag=chair,distance=..0.8] if entity @n[tag=table,distance=..0.51]
+
     # If not in a table, Place checker based on facing direction
-    execute unless entity @n[type=item_display,tag=table,distance=..0.87]:
+    execute if score in-table tac.main matches 0:
         scoreboard players set dire tac.main 0
         execute store success score dire tac.main if entity @s[y_rotation= -135..-45] run summon minecraft:block_display ~.9 ~.6 ~ {Tags:["tac","east"]}
         execute store success score dire tac.main if entity @s[y_rotation= -45..45] run summon minecraft:block_display ~ ~.6 ~.9 {Tags:["tac","south"]}
         execute store success score dire tac.main if entity @s[y_rotation= 45..135] run summon minecraft:block_display ~-.9 ~.6 ~ {Tags:["tac","west"]}
         execute if score dire tac.main matches 0 run summon minecraft:block_display ~ ~.6 ~-.9 {Tags:["tac","north"]}
 
-    execute as @n[type=item_display,tag=chair]:
-        # If in a table, Place checker based on the opposite last moved direction
-        if entity @n[type=item_display,tag=table,distance=..0.87]:
+    execute as @n[type=item_display,tag=chair,distance=..0.8]:
+        # If in a table, Place checker based on the direction pointing to where it last was.
+        if score in-table tac.main matches 1:
             if entity @s[tag= north] run scoreboard players set dire tac.main 0
-            for y,x,z in [("north",1,0),("east",0,1),("south",-1,0),("west",0,-1)]:
+            for y,x,z in [("east",0.9,0),("south",0,0.9),("west",-0.9,0),("north",0,-0.9)]:
                 if entity @s[tag= y ]:
                     summon minecraft:block_display ~x ~.6 ~z {Tags:["tac", y ]}
         
@@ -32,11 +36,11 @@ function ~/action:
             execute store result score close tac.main run data get entity @n[distance=0..0.79,type=interaction,tag=chair]
             execute store result score close-block tac.main align xyz run execute unless block ~ ~ ~ #tac:non_solid_blocks
             execute store result score close-floor tac.main align xyz run execute if block ~ ~-1 ~ #tac:non_solid_blocks
-            execute store result score close-table tac.main align xyz run execute if block ~ ~ ~ #minecraft:trapdoors[half=top]
+            execute store result score close-table tac.main align xyz positioned ~.5 ~.5 ~.5 run execute if entity @n[type=item_display,tag=table,distance=..0.1]
         unless score close-table tac.main matches 1 run scoreboard players operation close tac.main += close-block tac.main
         scoreboard players operation close tac.main += close-floor tac.main
 
-        # If projected space is free from another chair (close=0)
+        # If projected space is free from another chair, move it (close=0)
         execute if score close tac.main matches 0:
             playsound minecraft:item.brush.brushing.generic block @a ~ ~ ~ 0.7 1.2
             playsound minecraft:block.wood.hit block @a ~ ~ ~ 0.3 1
@@ -62,11 +66,12 @@ function ~/action:
                 tp @n[type=interaction,tag=chair] ~ ~ ~-.5
 
         # Detect the direction moved and add a direction tag in opposite
-        for x in ["north","east","south","west"]: 
-            tag @s remove x
-        for x,y in [("north","south"),("east","west"),("south","north"),("west","east")]: 
-            execute if entity @n[type=block_display, tag= x ] as @s:
-                tag @s add y
+        execute if score in-table tac.main matches 0:
+            for x in ["north","east","south","west"]: 
+                tag @s remove x
+            for x,y in [("north","south"),("east","west"),("south","north"),("west","east")]: 
+                execute if entity @n[type=block_display, tag= x ] as @s:
+                    tag @s add y
 
     # Kills all tac-tagged block displays (checkers). If this causes issues in the futurue please revise.
     kill @e[type=block_display, tag=tac]
@@ -76,3 +81,4 @@ function ~/action:
     scoreboard players reset close-block tac.main
     scoreboard players reset close-floor tac.main
     scoreboard players reset close-table tac.main
+    scoreboard players reset in-table tac.main
