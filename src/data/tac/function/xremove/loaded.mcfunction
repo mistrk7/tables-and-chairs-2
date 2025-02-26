@@ -1,6 +1,23 @@
-execute as @e[type=item_display, tag=tac] at @s run function ./ff_replace
-# MORE TODO. Everything needs to be logged in storage, and for every one removed, remove in ff_replace
-# - Store the UUID as well as the location
-# - For every selected to eliminate, remove itself from 'the list'.
-# - The next area to search (area.mcfunciton) should be the a position linked to the next element in the list. 
-# - The list should be composed like ["myuuid":[0,0,0],"myuuid":[0,0,0]]
+$scoreboard players set nuke tac.main $(nuke)
+#1 = modern furniture, 2 = legacy furniture, 3 = all furniture.
+
+# 1 Modern furniture
+$execute if score nuke tac.main matches 1 as @e[type=item_display, tag=tac] at @s run function tac:xremove/ff_$(x)
+
+# 2 Legacy furniture
+execute if score nuke tac.main matches 2:
+    $execute as @e[tag=tac.V5.0] at @s run function ./ff_$(x)
+    $execute as @e[tag=tac.V5.1] at @s run function ./ff_$(x)
+    $execute as @e[tag=tac.V5.2] at @s run function ./ff_$(x)
+    $execute as @e[tag=tac.V5.3] at @s run function ./ff_$(x)
+
+# 3 All furniture
+execute if score nuke tac.main matches 3:
+    $execute as @e[type=item_display, tag=tac] at @s run function tac:xremove/ff_$(x)
+    $execute as @e[tag=tac.V5.0] at @s run function ./ff_$(x)
+    $execute as @e[tag=tac.V5.1] at @s run function ./ff_$(x)
+    $execute as @e[tag=tac.V5.2] at @s run function ./ff_$(x)
+    $execute as @e[tag=tac.V5.3] at @s run function ./ff_$(x)
+
+scoreboard players reset nuke tac.main
+

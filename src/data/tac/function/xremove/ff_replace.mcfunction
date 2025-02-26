@@ -11,15 +11,8 @@ execute if entity @s[tag=chair]
     kill @s
     scoreboard players reset @s tac.main
 
-
-# Remove from loaded list
-#Test performance before and after this. Big lists may lag a lot.
-#execute if entity @s[tag=chair] with entity @s:
-#    data remove storage furniture.overworld["$(uuid)"]
-
 execute if entity @s[tag=table]:
     execute with entity @s item.components."minecraft:custom_data":
         $setblock ~ ~ ~ $(mat)_trapdoor[half=top]
     kill @n[type=interaction,tag=table,distance=0..0.8]
     kill @s
-    #kill @s (2x)
