@@ -1,7 +1,6 @@
 # Old Entities - executed for each.
 
 # Legacy chair conversion
-say h
 oldTypes = ['chk.chair.basic', 'chk.chair.simple', 'chk.chair.carved', 'chk.chair.fancy.1', 'chk.chair.throne']
 newTypes = ['basic', 'neat', 'carved', 'refined', 'throne']
 
