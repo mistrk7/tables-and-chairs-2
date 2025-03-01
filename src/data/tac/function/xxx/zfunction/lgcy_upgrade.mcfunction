@@ -8,6 +8,7 @@ oldMats = ['chk.chair.acacia', 'chk.chair.bamboo', 'chk.chair.birch', 'chk.chair
 newMats = ['acacia', 'bamboo', 'birch', 'cherry', 'crimson', 'dark_oak', 'jungle', 'mangrove', 'oak', 'pale_oak', 'spruce', 'warped']
 
 execute if entity @s[tag=chk.chair, tag=!chk.interaction] at @s align xyz positioned ~.5 ~ ~.5:
+    scoreboard players add destroy-count tac.main 1
     for x in range(len(oldTypes)):
         for y in range(len(oldMats)):
             execute if entity @s[tag=oldTypes[x], tag=oldMats[y]]:
@@ -16,6 +17,7 @@ execute if entity @s[tag=chk.chair, tag=!chk.interaction] at @s align xyz positi
 
 # Legacy bench conversion (temp)
 execute if entity @s[tag=chk.bench, tag=!chk.interaction] at @s align xyz positioned ~.5 ~ ~.5:
+    scoreboard players add destroy-count tac.main 1
     for x in range(len(oldTypes)):
         for y in range(len(oldMats)):
             execute if entity @s[tag=oldTypes[x], tag=oldMats[y]]:
@@ -23,7 +25,9 @@ execute if entity @s[tag=chk.bench, tag=!chk.interaction] at @s align xyz positi
                 data modify entity @n[type=item_display,tag=chair, distance=..1] Rotation set from entity @s Rotation
 
 # Legacy sawmill conversion
-execute at @s[tag=tac.sawmill] run setblock ~ ~-1 ~ minecraft:barrel replace
+execute at @s[tag=tac.sawmill]:
+    setblock ~ ~-1 ~ minecraft:barrel replace
+    scoreboard players add destroy-count tac.main 1
 
 # Legacy table conversion
 
@@ -35,6 +39,7 @@ oldMats = ['chk.table.acacia', 'chk.table.bamboo', 'chk.table.birch', 'chk.table
 newMats = ['acacia', 'bamboo', 'birch', 'cherry', 'crimson', 'dark_oak', 'jungle', 'mangrove', 'oak', 'pale_oak', 'spruce', 'warped']
 
 execute if entity @s[tag=!chk.interaction, tag=chk.table.legs] at @s align xyz positioned ~.5 ~.5 ~.5:
+    scoreboard players add destroy-count tac.main 1
     for x in range(len(oldTypes)):
         for y in range(len(oldMats)):
             execute if entity @s[tag=oldTypes[x], tag=oldMats[y]]:

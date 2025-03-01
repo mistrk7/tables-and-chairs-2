@@ -7,7 +7,9 @@ kill @e[type=armor_stand, tag=tac]
 #Add table and chair counters (version 0.1 and onward)W
 
 data merge storage tac:main {\
-    version:0\
+    version:0,\
+    destroyCount:0,\
+    objectCount:0\
 }
 
 # WHEN UPDATING VERSION: Replace all instances of 'v(current version)' in the project with 'v(next version)'
