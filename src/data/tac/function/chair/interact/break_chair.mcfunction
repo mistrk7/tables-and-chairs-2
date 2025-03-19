@@ -21,6 +21,12 @@ function ~/action:
             data modify entity @s item.components."minecraft:custom_model_data".strings[0] set value ""
             execute with entity @s:
                 $summon minecraft:item ~ ~0.55 ~ {Item:$(item),Motion:[0.0,0.2,0.0]}
+            
+            # Particles
+            execute with entity @s item.components."minecraft:custom_data":
+                $particle block{block_state:{Name:$(mat)_planks}} ~ ~0 ~ 0 0 0 1 4
+                $particle block{block_state:{Name:$(mat)_planks}} ~ ~.6 ~ 0 0 0 1 4
+                $particle block{block_state:{Name:$(mat)_planks}} ~ ~1.2 ~ 0 0 0 1 4
 
         #Destroy the chair
         kill @s
