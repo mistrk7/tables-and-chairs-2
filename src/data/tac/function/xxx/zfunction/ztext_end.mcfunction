@@ -8,4 +8,5 @@ scoreboard players reset destroy-count tac.main
 scoreboard players reset total tac.main
 
 execute with storage tac:main:
-    $tellraw @a ["",{"text":"[T&C]: "},{"text":"$(destroyCount) ","color":"aqua"},{"text":"out of","color":"yellow"},{"text":" $(objectCount)*","color":"aqua"},{"text":" furniture removed/modified.","color":"yellow"}]
+    $tellraw @a ["",{"text":"[T&C]: "},{"text":"$(destroyCount)","color":"aqua"},{"text":" furniture removed/modified. ","color":"yellow"},{"text":"$(objectCount)*","color":"aqua"},{"text":" still remain.","color":"yellow"}]
+
