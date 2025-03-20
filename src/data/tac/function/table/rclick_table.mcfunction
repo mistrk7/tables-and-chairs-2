@@ -31,7 +31,6 @@ execute run with entity @s:
                         }]\
                     }
                     function tac:table/place_table
-                
                 execute if data entity @s SelectedItem.components."minecraft:custom_data"{model:"chair"} align xyz positioned ~.5 ~1 ~.5 with entity @s SelectedItem.components."minecraft:custom_data":
                     $summon armor_stand ~ ~ ~ {\
                         Invisible:1b,\
@@ -50,6 +49,7 @@ execute run with entity @s:
                     }
                     function tac:chair/place_chair
 
+                # Item Frames
                 execute if data entity @s SelectedItem{id:"minecraft:item_frame"} align y positioned ~ ~1 ~ :
                     summon minecraft:item_frame ~ ~ ~ {Facing:1b}
                     execute unless data entity @s abilities{instabuild:1b} run item modify entity @s weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
