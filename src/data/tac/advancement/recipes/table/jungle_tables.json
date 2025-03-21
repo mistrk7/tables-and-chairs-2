@@ -27,7 +27,9 @@
   "rewards": {
     "recipes": [
       "tac:table/basic/jungle_basic_table",
-      "tac:table/carved/jungle_carved_table"
+      "tac:table/pedestal_basic/jungle_pedestal_basic_table",
+      "tac:table/carved/jungle_carved_table",
+      "tac:table/pedestal_carved/jungle_pedestal_carved_table"
     ]
   }
 }

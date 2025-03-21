@@ -27,7 +27,9 @@
   "rewards": {
     "recipes": [
       "tac:table/basic/bamboo_basic_table",
-      "tac:table/carved/bamboo_carved_table"
+      "tac:table/pedestal_basic/bamboo_pedestal_basic_table",
+      "tac:table/carved/bamboo_carved_table",
+      "tac:table/pedestal_carved/bamboo_pedestal_carved_table"
     ]
   }
 }

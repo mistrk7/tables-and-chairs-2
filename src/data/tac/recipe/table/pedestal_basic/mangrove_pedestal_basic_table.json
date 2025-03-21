@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "table_pedestal_basic",
+  "key": {
+    "#": "minecraft:mangrove_planks",
+    "X": "minecraft:stick"
+  },
+  "pattern": [
+    "###",
+    " X "
+  ],
+  "result": {
+    "components": {
+      "minecraft:item_model": "tac:table/pedestal_basic/mangrove_pedestal_basic_table",
+      "minecraft:custom_model_data": {
+        "floats": [0]
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:entity_data": {
+        "id": "minecraft:armor_stand",
+        "Invisible": true,
+        "Tags": [
+          "table",
+          "tac"
+        ],
+        "ArmorItems": [
+          {
+            "id": "minecraft:armor_stand",
+            "components": {
+              "minecraft:custom_data": {
+                "model": "table",
+                "type": "pedestal_basic",
+                "mat": "mangrove",
+                "tac": true
+              }
+            }
+          }
+        ]
+      },
+      "minecraft:custom_data": {
+        "model": "table",
+        "type": "pedestal_basic",
+        "mat": "mangrove",
+        "tac": true
+      },
+      "minecraft:custom_name": "{\"translate\":\"tac.table.mangrove.pedestal_basic\",\"italic\":false}"
+    },
+    "count": 1,
+    "id": "minecraft:armor_stand"
+  }
+}

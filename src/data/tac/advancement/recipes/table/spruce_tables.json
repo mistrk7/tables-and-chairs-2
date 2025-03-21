@@ -27,7 +27,9 @@
   "rewards": {
     "recipes": [
       "tac:table/basic/spruce_basic_table",
-      "tac:table/carved/spruce_carved_table"
+      "tac:table/pedestal_basic/spruce_pedestal_basic_table",
+      "tac:table/carved/spruce_carved_table",
+      "tac:table/pedestal_carved/spruce_pedestal_carved_table"
     ]
   }
 }

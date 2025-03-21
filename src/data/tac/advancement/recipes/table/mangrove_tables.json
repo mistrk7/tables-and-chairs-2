@@ -27,7 +27,9 @@
   "rewards": {
     "recipes": [
       "tac:table/basic/mangrove_basic_table",
-      "tac:table/carved/mangrove_carved_table"
+      "tac:table/pedestal_basic/mangrove_pedestal_basic_table",
+      "tac:table/carved/mangrove_carved_table",
+      "tac:table/pedestal_carved/mangrove_pedestal_carved_table"
     ]
   }
 }

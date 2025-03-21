@@ -1,0 +1,4 @@
+{
+    "parent": "tac:table/pedestal_basic/legs_template/post_single_basic",
+	"textures": {"0": "block/cherry_planks"}
+}

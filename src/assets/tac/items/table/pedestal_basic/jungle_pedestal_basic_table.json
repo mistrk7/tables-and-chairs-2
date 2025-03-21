@@ -1,0 +1,416 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+    },
+    "entries": [
+      {
+        "threshold": -9,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_wall_w_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": -8,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_skew_w_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": -7,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_wall_s_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": -6,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_skew_s_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": -5,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_wall_e_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": -4,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_skew_e_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": -3,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_wall_n_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": -2,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_skew_n_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 0,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_single_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 1,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_side_n_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 2,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_side_e_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 3,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_corner_e_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 4,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_side_s_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 5,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_side_s_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_side_n_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 6,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_corner_s_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 7,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_side_n_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_side_s_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 8,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_side_w_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 9,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_corner_n_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 10,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_side_e_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_side_w_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 11,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_side_w_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_side_e_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 12,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_corner_w_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 13,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_side_s_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_side_n_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 14,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_side_e_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/legs_post_side_w_basic"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 15,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/pedestal_basic/jungle/top_table_basic"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "parent": "tac:table/pedestal_basic/legs_template/post_side_basic",
+  "textures": {
+    "0": "block/birch_planks"
+  },
+  "display": {
+    "fixed": {
+      "rotation": [
+        0,
+        270,
+        0
+      ]
+    }
+  }
+}

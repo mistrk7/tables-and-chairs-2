@@ -27,7 +27,9 @@
   "rewards": {
     "recipes": [
       "tac:table/basic/acacia_basic_table",
-      "tac:table/carved/acacia_carved_table"
+      "tac:table/pedestal_basic/acacia_pedestal_basic_table",
+      "tac:table/carved/acacia_carved_table",
+      "tac:table/pedestal_carved/acacia_pedestal_carved_table"
     ]
   }
 }

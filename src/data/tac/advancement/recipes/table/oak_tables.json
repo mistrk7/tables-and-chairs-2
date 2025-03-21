@@ -27,7 +27,9 @@
   "rewards": {
     "recipes": [
       "tac:table/basic/oak_basic_table",
-      "tac:table/carved/oak_carved_table"
+      "tac:table/pedestal_basic/oak_pedestal_basic_table",
+      "tac:table/carved/oak_carved_table",
+      "tac:table/pedestal_carved/oak_pedestal_carved_table"
     ]
   }
 }

@@ -27,7 +27,9 @@
   "rewards": {
     "recipes": [
       "tac:table/basic/warped_basic_table",
-      "tac:table/carved/warped_carved_table"
+      "tac:table/pedestal_basic/warped_pedestal_basic_table",
+      "tac:table/carved/warped_carved_table",
+      "tac:table/pedestal_carved/warped_pedestal_carved_table"
     ]
   }
 }
