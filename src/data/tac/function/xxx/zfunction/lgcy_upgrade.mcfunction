@@ -32,7 +32,7 @@ execute at @s[tag=tac.sawmill]:
 # Legacy table conversion
 
 oldTypes = ['chk.table.basic.1', 'chk.table.basic.2', 'chk.table.carved.1', 'chk.table.carved.2']
-newTypes = ['basic', 'basic', 'basic', 'basic']
+newTypes = ['basic', 'pedestal_basic', 'basic', 'basic']
 # newTypes = ['basic', 'pedestal_basic', 'carved', 'pedestal_carved']
 
 oldMats = ['chk.table.acacia', 'chk.table.bamboo', 'chk.table.birch', 'chk.table.cherry', 'chk.table.crimson', 'chk.table.dark_oak', 'chk.table.jungle', 'chk.table.mangrove', 'chk.table.oak', 'chk.table.pale_oak', 'chk.table.spruce', 'chk.table.warped']
