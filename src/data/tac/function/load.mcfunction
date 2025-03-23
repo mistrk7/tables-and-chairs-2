@@ -13,6 +13,7 @@ data merge storage tac:main {\
 }
 
 # Old version detection and suggestion
-execute if entity @e[limit=1, tag=tac.V5.0] run tellraw @a ["",{"text":"[T&C2]: "},{"text":"Old & broken Tables & Chairs detected. ","color":"yellow"},{"text":"Click Here","color":"aqua","clickEvent":{"action":"suggest_command","value":"/function tac:xxx/upgrade"}},{"text":" for the command to upgrade those that are in loaded chunks, or click ","color":"yellow"},{"text":"here","color":"aqua","clickEvent":{"action":"suggest_command","value":"/function tac:xxx/clear/legacy"}},{"text":" to delete them. ","color":"yellow"}]
+schedule function ~/detect_old 1s:
+    execute if entity @e[limit=1, tag=tac.V5.0] run tellraw @a ["",{"text":"[T&C2]: "},{"text":"Old & broken Tables & Chairs detected. ","color":"yellow"},{"text":"Click Here","color":"aqua","clickEvent":{"action":"suggest_command","value":"/function tac:xxx/upgrade"}},{"text":" for the command to upgrade those that are in loaded chunks, or click ","color":"yellow"},{"text":"here","color":"aqua","clickEvent":{"action":"suggest_command","value":"/function tac:xxx/clear/legacy"}},{"text":" to delete them. ","color":"yellow"}]
 
 # WHEN UPDATING VERSION: Replace all instances of 'v(current version)' in the project with 'v(next version)'
