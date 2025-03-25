@@ -15,4 +15,8 @@ execute at @s[tag=chk.table, tag=!chk.interaction]:
     kill @n[tag=chk.interaction,distance=..0.5]
     kill @s
 
+execute at @s[tag=tac.sawmill]:
+    setblock ~ ~-1 ~ minecraft:barrel replace
+    scoreboard players add destroy-count tac.main 1
+
 kill @s
