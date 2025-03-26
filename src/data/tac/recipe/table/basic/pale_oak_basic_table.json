@@ -44,7 +44,7 @@
         "mat": "pale_oak",
         "tac": true
       },
-      "minecraft:custom_name": "{\"translate\":\"tac.table.pale_oak.basic\",\"italic\":false}"
+      "minecraft:custom_name": {"translate":"tac.table.pale_oak.basic","italic":false}
     },
     "count": 1,
     "id": "minecraft:armor_stand"

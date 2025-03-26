@@ -37,14 +37,9 @@ $summon minecraft:item_display ~ ~.6 ~ {\
                 tac:1b\
             },\
             "minecraft:custom_name":\
-                '{"translate":"tac.chair.$(mat).$(type)","italic":false}'\
+                {translate:"tac.chair.$(mat).$(type)",italic:false}\
         }\
     }\
 }
+# (1.21.5) NOTE: ^^ The entity_data changes when the item is placed. The 'ArmorItems' key becomes its own 'data' key, and its contents are of the 'custom_data' value. 
 $summon minecraft:interaction ~ ~ ~ {Tags:["$(type)","$(mat)","chair","tac","v0"], width: 0.75f, height: 1.2f}
-
-# Full command
-#/give @s minecraft:armor_stand[minecraft:max_stack_size=64,minecraft:entity_data={id:"armor_stand", Invisible:1b,Tags:["chair","tac"]},minecraft:custom_data={model:"chair",type:"basic",mat:"oak",tac:1b},"minecraft:custom_name":'{"translate":"$(type).$(mat).chair","italic":false}',minecraft:custom_model_data={strings:["oak_basic_chair"]}]
-
-# Typable command
-#/give @s minecraft:armor_stand[minecraft:entity_data={id:"armor_stand", Invisible:1b,Tags:["chair","tac"]},minecraft:custom_data={model:"chair",type:"basic",mat:"warped","tac":1b},minecraft:custom_model_data={strings:["warped_basic_chair"]}]

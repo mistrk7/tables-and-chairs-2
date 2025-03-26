@@ -8,7 +8,7 @@ execute as @n[type=armor_stand,tag=table] at @s run function ./modify_table
 
 
 # Summon Chair based on item
-execute at @n[type=armor_stand,tag=table] with entity @n[type=armor_stand,tag=table] ArmorItems[0].components."minecraft:custom_data":
+execute at @n[type=armor_stand,tag=table] with entity @n[type=armor_stand,tag=table] data:
     #$say $(type) $(mat) $(state)
     $execute as @n[type=armor_stand,tag=table] at @s align xyz positioned ~.5 ~.5 ~.5 run function tac:table/summon_table {type:$(type),mat:$(mat),state:$(state)}
     kill @n[type=armor_stand,tag=table]

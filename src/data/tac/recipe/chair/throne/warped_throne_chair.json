@@ -45,7 +45,7 @@
           "mat": "warped",
           "tac": true
         },
-        "minecraft:custom_name": "{\"translate\":\"tac.chair.warped.throne\",\"italic\":false}"
+        "minecraft:custom_name": {"translate":"tac.chair.warped.throne","italic":false}
       },
       "count": 1,
       "id": "minecraft:armor_stand"

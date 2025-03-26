@@ -44,7 +44,7 @@
         "mat": "mangrove",
         "tac": true
       },
-      "minecraft:custom_name": "{\"translate\":\"tac.table.mangrove.basic\",\"italic\":false}"
+      "minecraft:custom_name": {"translate":"tac.table.mangrove.basic","italic":false}
     },
     "count": 1,
     "id": "minecraft:armor_stand"

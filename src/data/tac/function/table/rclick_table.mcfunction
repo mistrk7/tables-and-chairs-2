@@ -18,34 +18,24 @@ execute run with entity @s:
                     $summon armor_stand ~ ~ ~ {\
                         Invisible:1b,\
                         Tags:["table","tac"],\
-                        ArmorItems:[{\
-                            id:"minecraft:armor_stand",\
-                            components:{\
-                                "minecraft:custom_data":{\
-                                    model:"table",\
-                                    type:"$(type)",\
-                                    mat:"$(mat)",\
-                                    tac:1b\
-                                }\
-                            }\
-                        }]\
+                        data:{\
+                            model:"table",\
+                            type:"$(type)",\
+                            mat:"$(mat)",\
+                            tac:1b\
+                        }\
                     }
                     function tac:table/place_table
                 execute if data entity @s SelectedItem.components."minecraft:custom_data"{model:"chair"} align xyz positioned ~.5 ~1 ~.5 with entity @s SelectedItem.components."minecraft:custom_data":
                     $summon armor_stand ~ ~ ~ {\
                         Invisible:1b,\
                         Tags:["chair","tac"],\
-                        ArmorItems:[{\
-                            id:"minecraft:armor_stand",\
-                            components:{\
-                                "minecraft:custom_data":{\
-                                    model:"chair",\
-                                    type:"$(type)",\
-                                    mat:"$(mat)",\
-                                    tac:1b\
-                                }\
-                            }\
-                        }]\
+                        data:{\
+                            model:"chair",\
+                            type:"$(type)",\
+                            mat:"$(mat)",\
+                            tac:1b\
+                        }\
                     }
                     function tac:chair/place_chair
 

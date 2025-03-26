@@ -44,7 +44,7 @@
         "mat": "jungle",
         "tac": true
       },
-      "minecraft:custom_name": "{\"translate\":\"tac.table.jungle.basic\",\"italic\":false}"
+      "minecraft:custom_name": {"translate":"tac.table.jungle.basic","italic":false}
     },
     "count": 1,
     "id": "minecraft:armor_stand"
