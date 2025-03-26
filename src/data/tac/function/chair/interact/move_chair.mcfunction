@@ -8,7 +8,7 @@ execute with entity @s:
 function ~/action:
 
     #Check if the chair is in a table
-    execute store result score in-table tac.main run positioned as @n[type=item_display,tag=chair,distance=..0.8] if entity @n[tag=table,distance=..0.51]
+    execute store result score in-table tac.main run positioned as @n[type=item_display,tag=chair,distance=..0.8] if entity @n[tag=table,distance=..0.72]
 
     # If not in a table, Place checker based on facing direction
     execute if score in-table tac.main matches 0:
@@ -42,6 +42,7 @@ function ~/action:
 
         # If projected space is free from another chair, move it (close=0)
         execute if score close tac.main matches 0:
+            tag @s remove tucked-in
             playsound minecraft:item.brush.brushing.generic block @a ~ ~ ~ 0.7 1.2
             playsound minecraft:block.wood.hit block @a ~ ~ ~ 0.3 1
 
@@ -72,6 +73,22 @@ function ~/action:
             for x,y in [("north","south"),("east","west"),("south","north"),("west","east")]: 
                 execute if entity @n[type=block_display, tag= x ] as @s:
                     tag @s add y
+        
+        # Chair tuck-in detection
+        tag @s add tucker
+        execute if score close-table tac.main matches 1:
+            execute as @e[type=item_display,tag=tucker] at @s if entity @n[tag=table,distance=0..0.8]:
+                tag @s remove tucker
+                tag @s add tucked-in
+
+                # Play tucked sound
+                playsound minecraft:block.wood.step block @a ~ ~ ~ 0.5 1.4
+
+                # Rotate the chair to face the table
+                for x,r in [("north",0), ("east",90), ("south",180), ("west",270)]: 
+                    if entity @s[tag= x ]:
+                        rotate @s r 0
+        tag @s remove tucker
 
     # Kills all tac-tagged block displays (checkers). If this causes issues in the futurue please revise.
     kill @e[type=block_display, tag=tac]

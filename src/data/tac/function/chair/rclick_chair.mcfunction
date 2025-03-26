@@ -4,7 +4,7 @@ execute run with entity @s:
     $execute positioned as @e[sort=nearest,tag=chair,type=minecraft:interaction,nbt={interaction:{player:$(UUID)}}] run function tac:chair/rclick_chair/action
     function ~/action:
         # If not holding a carpet, sit on the chair
-        unless items entity @s weapon.mainhand #minecraft:wool_carpets run ride @s mount @n[tag=chair,type=minecraft:item_display]
+        unless items entity @s weapon.mainhand #minecraft:wool_carpets run ride @s mount @n[tag=chair,distance=0..0.8,type=minecraft:item_display]
 
         # If holding a carpet, add the carpet overlay
         if items entity @s weapon.mainhand #minecraft:wool_carpets with entity @s SelectedItem:
