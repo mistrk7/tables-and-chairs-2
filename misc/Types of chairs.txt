@@ -1,0 +1,18 @@
+Types of chairs:
+Book: 'Design Secrets: Furnuture' (Laurel Saville, Brooke Stoddard)
+
+# Boson Chair (designer: Patrick Norguet)
+	"The Boson armchair and footstool use manufacturing processes more commonly used in the automotive industry to create a seating cocoon that is both retro and techno in its outlook"
+https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781592534395/files/bgc.png
+	- Created with fiberglass with a metal base (pedestal).
+	- 'organic and cocoon-like'
+	- Inspired by car companies and their process in developing prototype cars.
+
+# Cikrak Chair
+	"I wanted to study traditional crafts in India and other places in Asia in order to project how they could be reconsidered and made relevant to contemporary design, not for the cheap manufacturing"
+	- A light chair in frame wrapped in woven bamboo to create a comfortable seat.
+	- "Bamboo provides a critical structural element—as well as natural beauty and
+comfort"
+	https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781592534395/files/bg14.png
+
+	
