@@ -18,23 +18,25 @@ schedule function ./load_detect_old 1s:
 
 # WHEN UPDATING VERSION: Replace all instances of 'v(current version)' in the project with 'v(next version)'
 
-# All items
 
+# All items - Looks through recipes folder and creates a give command for all items there. (Python script)
+import os
+
+recipes = './src/data/tac/recipe'
 materials = ['acacia', 'bamboo', 'birch', 'cherry', 'crimson', 'dark_oak', 'jungle', 'mangrove', 'oak', 'pale_oak', 'spruce', 'warped']
-models = {
-    'chair': {
-        'type': [
-            'basic', 'neat', 'carved', 'refined', 'throne' 
-        ],
-        'mat': materials
-    },
-    'table': {
-        'type': [
-            'basic', 'pedestal_basic'
-        ],
-        'mat': materials
-    }
-}
+
+def create_list(recipes):
+    models = {}
+    for model_name in os.listdir(recipes):
+        model_path = os.path.join(recipes, model_name)
+        if os.path.isdir(model_path):
+            models[model_name] = {'type': [], 'mat': materials}
+            for type_name in os.listdir(model_path):
+                type_path = os.path.join(model_path, type_name)
+                if os.path.isdir(type_path):
+                    models[model_name]['type'].append(type_name)
+    return models
+models = create_list(recipes)
 
 # Give command
 
@@ -45,7 +47,7 @@ for model, property in models.items():
         for mat in property['mat']:
             item_components = (
                 f"minecraft:item_model=\"tac:{model}/{type}/{mat}_{type}_{model}\","+
-                f"minecraft:custom_model_data={{floats:[0.0f]}},"+
+                f"minecraft:custom_model_data={{strings:[\"\"]}},"+
                 f"minecraft:max_stack_size=64,"+
                 f"minecraft:entity_data={{id:\"minecraft:armor_stand\",Invisible:1b,Tags:[\"{model}\",\"tac\"],"+
                 f"ArmorItems:[{{id:\"minecraft:armor_stand\",components:{{\"minecraft:custom_data\":{{"+
@@ -57,3 +59,5 @@ for model, property in models.items():
             func_id = f"tac:give/{model}_{mat}_{type}"
             function func_id:
                 give @s the_item 1
+# Known issue: Table items do not stack with the ones made through the crafting table. 
+# Can only fix by changing the data of the item in the crafting table recipe, causing the item to be unstackable with previously made ones.
