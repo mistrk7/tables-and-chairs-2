@@ -40,7 +40,7 @@ function ~/action:
         unless score close-table tac.main matches 1 run scoreboard players operation close tac.main += close-block tac.main
         scoreboard players operation close tac.main += close-floor tac.main
 
-        # If projected space is free from another chair, move it (close=0)
+        # If projected space is free from another chair, move it (close=0)  and trigger bottom observer.
         execute if score close tac.main matches 0:
             tag @s remove tucked-in
             playsound minecraft:item.brush.brushing.generic block @a ~ ~ ~ 0.7 1.2
@@ -50,21 +50,48 @@ function ~/action:
             execute if entity @n[type=minecraft:block_display,tag=east]:
                 tp @s ~.5 ~.6 ~
                 tp @n[type=interaction,tag=chair] ~.5 ~ ~
+
+                # Facing East, trigger an observer beneath. 
+                execute if block ~.4 ~-.5 ~ minecraft:observer:
+                    setblock ~ ~.6 ~ minecraft:acacia_button
+                    setblock ~ ~.6 ~ minecraft:air
+                
+                # /summon minecraft:armor_stand 37 58 78 {Tags:['tac','pressure'], NoAI:1b, Silent:1, Invisible:1b, attributes:[{base:0.01d, id: "minecraft:scale"}]}
+                # Facing East, press a pressure plate beneath. 
+                execute if block ~.7 ~.5 ~ #minecraft:pressure_plates:
+                    execute unless entity @n[distance=0..0.8,type=minecraft:armor_stand, tag=tac, tag=pressure]:
+                        summon minecraft:armor_stand ~.6 ~ ~ {Tags:['tac','pressure'], NoAI:1b, Silent:1, Invisible:1b, attributes:[{base:0.01d, id: "minecraft:scale"}]}
+                    tp @n[distance=0..0.8,type=minecraft:armor_stand, tag=tac, tag=pressure] ~.6 ~ ~
             
             # Facing South, tp
             execute if entity @n[type=minecraft:block_display,tag=south]:
                 tp @s ~ ~.6 ~.5
                 tp @n[type=interaction,tag=chair] ~ ~ ~.5
 
+                # Facing South, trigger an observer beneath. 
+                execute if block ~ ~-.5 ~.4 minecraft:observer:
+                    setblock ~ ~.6 ~ minecraft:acacia_button
+                    setblock ~ ~.6 ~ minecraft:air
+
             # Facing West, tp
             execute if entity @n[type=minecraft:block_display,tag=west]:
                 tp @s ~-.5 ~.6 ~
                 tp @n[type=interaction,tag=chair] ~-.5 ~ ~
 
+                # Facing West, trigger an observer beneath. 
+                execute if block ~-.4 ~-.5 ~ minecraft:observer:
+                    setblock ~-.4 ~.6 ~ minecraft:acacia_button
+                    setblock ~-.4 ~.6 ~ minecraft:air
+
             # Facing North, tp
             execute if score dire tac.main matches 0:
                 tp @s ~ ~.6 ~-.5
                 tp @n[type=interaction,tag=chair] ~ ~ ~-.5
+
+                # Facing North, trigger an observer beneath. 
+                execute if block ~ ~-.5 ~-.4 minecraft:observer:
+                    setblock ~ ~.6 ~-.4 minecraft:acacia_button
+                    setblock ~ ~.6 ~-.4 minecraft:air
 
         # Detect the direction moved and add a direction tag in opposite
         execute if score in-table tac.main matches 0:
