@@ -62,7 +62,12 @@ function ~/action:
                     execute unless entity @n[distance=0..0.8,type=minecraft:armor_stand, tag=tac, tag=pressure]:
                         summon minecraft:armor_stand ~.6 ~ ~ {Tags:['tac','pressure'], NoAI:1b, Silent:1, Invisible:1b, attributes:[{base:0.01d, id: "minecraft:scale"}]}
                     tp @n[distance=0..0.8,type=minecraft:armor_stand, tag=tac, tag=pressure] ~.6 ~ ~
-            
+                execute if block ~.3 ~.5 ~ #minecraft:pressure_plates:
+                    execute unless entity @n[distance=0..0.8,type=minecraft:armor_stand, tag=tac, tag=pressure]:
+                        summon minecraft:armor_stand ~.2 ~ ~ {Tags:['tac','pressure'], NoAI:1b, Silent:1, Invisible:1b, attributes:[{base:0.01d, id: "minecraft:scale"}]}
+                    tp @n[distance=0..0.8,type=minecraft:armor_stand, tag=tac, tag=pressure] ~.6 ~ ~
+                execute if block ~ ~.5 ~ #tac:non_solid_blocks run kill @n[distance=0..0.8,type=minecraft:armor_stand, tag=tac, tag=pressure]
+                                
             # Facing South, tp
             execute if entity @n[type=minecraft:block_display,tag=south]:
                 tp @s ~ ~.6 ~.5
