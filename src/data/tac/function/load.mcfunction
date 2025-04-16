@@ -2,7 +2,7 @@ scoreboard objectives add tac.main dummy
 function tac:loop
 
 # Kill misplaced armor stands if they were placed with the pack disabled. 
-kill @e[type=armor_stand, tag=tac]
+kill @e[type=armor_stand, tag=tac, tag=!pressure]
 
 #Add table and chair counters (version 0.1 and onward)W
 

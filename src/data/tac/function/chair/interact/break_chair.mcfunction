@@ -31,6 +31,7 @@ function ~/action:
         #Destroy the chair
         kill @s
         kill @n[type=item_display,tag=chair,distance=..0.61]
+        kill @n[type=armor_stand,tag=pressure,tag=tac,distance=..0.8]
         scoreboard players remove chairs tac.main 1
 
     # First hit: Put into 'disturbed' state for one second
