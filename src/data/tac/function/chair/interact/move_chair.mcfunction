@@ -43,8 +43,9 @@ function ~/action:
         # If projected space is free from another chair, move it (close=0)  and trigger bottom observer.
         execute if score close tac.main matches 0:
             tag @s remove tucked-in
-            scoreboard players set pressure_plate_L tac.main 0
-            scoreboard players set pressure_plate_R tac.main 0
+            scoreboard players set pressure_plate tac.main 0
+            scoreboard players set pressure_plate tac.main 0
+            scoreboard players set pressure_plate tac.main 0
             playsound minecraft:item.brush.brushing.generic block @a ~ ~ ~ 0.7 1.2
             playsound minecraft:block.wood.hit block @a ~ ~ ~ 0.3 1
 
@@ -59,27 +60,17 @@ function ~/action:
                     setblock ~ ~.6 ~ minecraft:air
                 
                 # Facing East, press a pressure plate beneath. 
-                execute if block ~.7 ~.5 ~.3 #minecraft:pressure_plates run scoreboard players add pressure_plate_L tac.main 1
-                execute if block ~.7 ~.5 ~-.3 #minecraft:pressure_plates run scoreboard players add pressure_plate_R tac.main 1
-                execute if block ~.3 ~.5 ~.3 #minecraft:pressure_plates run scoreboard players add pressure_plate_L tac.main 1
-                execute if block ~.3 ~.5 ~-.3 #minecraft:pressure_plates run scoreboard players add pressure_plate_R tac.main 1
-                execute if score pressure_chain tac.main matches 1:
-                    kill @n[type=minecraft:armor_stand,tag=pressure,tag=tac,distance=0..8]
-                    scoreboard players reset pressure_chain tac.main
-                execute if score pressure_plate_L tac.main matches 2 run scoreboard players set pressure_chain tac.main 1
-                execute if score pressure_plate_R tac.main matches 2 run scoreboard players set pressure_chain tac.main 1
-                # -- continue --
-                scoreboard players operation pressure_plate_L tac.main += pressure_plate_R tac.main
-                execute if score pressure_plate_L tac.main matches 0 run kill @n[type=minecraft:armor_stand,tag=pressure,tag=tac,distance=0..8]
-                execute unless score pressure_plate_L tac.main matches 0 run function ~/east_pressure_plate:
-                    tp @n[distance=0..0.8,type=minecraft:armor_stand, tag=tac, tag=pressure] ~.5 ~-.5 ~
-                    execute unless entity @n[distance=0..0.8,type=minecraft:armor_stand, tag=tac, tag=pressure]:
-                        summon minecraft:armor_stand ~.5 ~ ~ {Tags:['tac','pressure','fresh'], NoAI:1b, Silent:1, Invisible:1b, attributes:[{base:0.3d, id: "minecraft:scale"}]}
-                        schedule function ./kill_pressure_east 2t append:
-                            execute as @e[type=minecraft:armor_stand, limit=1, tag=fresh, tag=pressure] at @s:
-                                tag @s remove fresh
-                                data merge entity @s {NoGravity:1b}
-                                tp @s ~ ~-.5 ~
+                execute if block ~.7 ~.5 ~.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
+                execute if block ~.7 ~.5 ~-.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
+                execute if block ~.3 ~.5 ~.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
+                execute if block ~.3 ~.5 ~-.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
+                kill @n[type=minecraft:armor_stand,tag=pressure,tag=tac,distance=0..8]
+                execute unless score pressure_plate tac.main matches 0 run function ~/east_pressure_plate:
+                    summon minecraft:armor_stand ~.5 ~ ~ {Tags:['tac','pressure','fresh'], NoAI:1b, Silent:1, Invisible:1b, attributes:[{base:0.3d, id: "minecraft:scale"}]}
+                    schedule function ./kill_pressure_east 2t append:
+                        execute as @e[type=minecraft:armor_stand, limit=1, tag=fresh, tag=pressure] at @s:
+                            tag @s remove fresh
+                            data merge entity @s {NoGravity:1b}
 
             # Facing South, tp
             execute if entity @n[type=minecraft:block_display,tag=south]:
@@ -92,27 +83,17 @@ function ~/action:
                     setblock ~ ~.6 ~ minecraft:air
                 
                 # Facing South, press a pressure plate beneath. 
-                execute if block ~.3 ~.5 ~.7 #minecraft:pressure_plates run scoreboard players add pressure_plate_L tac.main 1
-                execute if block ~-.3 ~.5 ~.7 #minecraft:pressure_plates run scoreboard players add pressure_plate_R tac.main 1
-                execute if block ~.3 ~.5 ~.3 #minecraft:pressure_plates run scoreboard players add pressure_plate_L tac.main 1
-                execute if block ~-.3 ~.5 ~.3 #minecraft:pressure_plates run scoreboard players add pressure_plate_R tac.main 1
-                execute if score pressure_chain tac.main matches 1:
-                    kill @n[type=minecraft:armor_stand,tag=pressure,tag=tac,distance=0..8]
-                    scoreboard players reset pressure_chain tac.main
-                execute if score pressure_plate_L tac.main matches 2 run scoreboard players set pressure_chain tac.main 1
-                execute if score pressure_plate_R tac.main matches 2 run scoreboard players set pressure_chain tac.main 1
-                # -- continue --
-                scoreboard players operation pressure_plate_L tac.main += pressure_plate_R tac.main
-                execute if score pressure_plate_L tac.main matches 0 run kill @n[type=minecraft:armor_stand,tag=pressure,tag=tac,distance=0..8]
-                execute unless score pressure_plate_L tac.main matches 0 run function ~/south_pressure_plate:
-                    tp @n[distance=0..0.8,type=minecraft:armor_stand, tag=tac, tag=pressure] ~ ~-.5 ~.5
-                    execute unless entity @n[distance=0..0.8,type=minecraft:armor_stand, tag=tac, tag=pressure]:
-                        summon minecraft:armor_stand ~ ~ ~.5 {Tags:['tac','pressure','fresh'], NoAI:1b, Silent:1, Invisible:1b, attributes:[{base:0.3d, id: "minecraft:scale"}]}
-                        schedule function ./kill_pressure_south 2t append:
-                            execute as @e[type=minecraft:armor_stand, limit=1, tag=fresh, tag=pressure] at @s:
-                                tag @s remove fresh
-                                data merge entity @s {NoGravity:1b}
-                                tp @s ~ ~-.5 ~
+                execute if block ~.3 ~.5 ~.7 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
+                execute if block ~-.3 ~.5 ~.7 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
+                execute if block ~.3 ~.5 ~.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
+                execute if block ~-.3 ~.5 ~.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
+                kill @n[type=minecraft:armor_stand,tag=pressure,tag=tac,distance=0..8]
+                execute unless score pressure_plate tac.main matches 0 run function ~/south_pressure_plate:
+                    summon minecraft:armor_stand ~ ~ ~.5 {Tags:['tac','pressure','fresh'], NoAI:1b, Silent:1, Invisible:1b, attributes:[{base:0.3d, id: "minecraft:scale"}]}
+                    schedule function ./kill_pressure_south 2t append:
+                        execute as @e[type=minecraft:armor_stand, limit=1, tag=fresh, tag=pressure] at @s:
+                            tag @s remove fresh
+                            data merge entity @s {NoGravity:1b}
 
             # Facing West, tp
             execute if entity @n[type=minecraft:block_display,tag=west]:
@@ -125,27 +106,17 @@ function ~/action:
                     setblock ~-.4 ~.6 ~ minecraft:air
                 
                 # Facing West, press a pressure plate beneath. 
-                execute if block ~-.7 ~.5 ~-.3 #minecraft:pressure_plates run scoreboard players add pressure_plate_L tac.main 1
-                execute if block ~-.7 ~.5 ~.3 #minecraft:pressure_plates run scoreboard players add pressure_plate_R tac.main 1
-                execute if block ~-.3 ~.5 ~-.3 #minecraft:pressure_plates run scoreboard players add pressure_plate_L tac.main 1
-                execute if block ~-.3 ~.5 ~.3 #minecraft:pressure_plates run scoreboard players add pressure_plate_R tac.main 1
-                execute if score pressure_chain tac.main matches 1:
-                    kill @n[type=minecraft:armor_stand,tag=pressure,tag=tac,distance=0..8]
-                    scoreboard players reset pressure_chain tac.main
-                execute if score pressure_plate_L tac.main matches 2 run scoreboard players set pressure_chain tac.main 1
-                execute if score pressure_plate_R tac.main matches 2 run scoreboard players set pressure_chain tac.main 1
-                # -- continue --
-                scoreboard players operation pressure_plate_L tac.main += pressure_plate_R tac.main
-                execute if score pressure_plate_L tac.main matches 0 run kill @n[type=minecraft:armor_stand,tag=pressure,tag=tac,distance=0..8]
-                execute unless score pressure_plate_L tac.main matches 0 run function ~/west_pressure_plate:
-                    tp @n[distance=0..0.8,type=minecraft:armor_stand, tag=tac, tag=pressure] ~-.5 ~-.5 ~
-                    execute unless entity @n[distance=0..0.8,type=minecraft:armor_stand, tag=tac, tag=pressure]:
-                        summon minecraft:armor_stand ~-.5 ~ ~ {Tags:['tac','pressure','fresh'], NoAI:1b, Silent:1, Invisible:1b, attributes:[{base:0.3d, id: "minecraft:scale"}]}
-                        schedule function ./kill_pressure_west 2t append:
-                            execute as @e[type=minecraft:armor_stand, limit=1, tag=fresh, tag=pressure] at @s:
-                                tag @s remove fresh
-                                data merge entity @s {NoGravity:1b}
-                                tp @s ~ ~-.5 ~
+                execute if block ~-.7 ~.5 ~-.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
+                execute if block ~-.7 ~.5 ~.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
+                execute if block ~-.3 ~.5 ~-.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
+                execute if block ~-.3 ~.5 ~.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
+                kill @n[type=minecraft:armor_stand,tag=pressure,tag=tac,distance=0..8]
+                execute unless score pressure_plate tac.main matches 0 run function ~/west_pressure_plate:
+                    summon minecraft:armor_stand ~-.5 ~ ~ {Tags:['tac','pressure','fresh'], NoAI:1b, Silent:1, Invisible:1b, attributes:[{base:0.3d, id: "minecraft:scale"}]}
+                    schedule function ./kill_pressure_west 2t append:
+                        execute as @e[type=minecraft:armor_stand, limit=1, tag=fresh, tag=pressure] at @s:
+                            tag @s remove fresh
+                            data merge entity @s {NoGravity:1b}
             
             # Facing North, tp
             execute if score dire tac.main matches 0:
@@ -156,29 +127,19 @@ function ~/action:
                 execute if block ~ ~-.5 ~-.4 minecraft:observer:
                     setblock ~ ~.6 ~-.4 minecraft:acacia_button
                     setblock ~ ~.6 ~-.4 minecraft:air
-                
+
                 # Facing North, press a pressure plate beneath.
-                execute if block ~.3 ~.5 ~-.7 #minecraft:pressure_plates run scoreboard players add pressure_plate_L tac.main 1
-                execute if block ~-.3 ~.5 ~-.7 #minecraft:pressure_plates run scoreboard players add pressure_plate_R tac.main 1
-                execute if block ~.3 ~.5 ~-.3 #minecraft:pressure_plates run scoreboard players add pressure_plate_L tac.main 1
-                execute if block ~-.3 ~.5 ~-.3 #minecraft:pressure_plates run scoreboard players add pressure_plate_R tac.main 1
-                execute if score pressure_chain tac.main matches 1:
-                    kill @n[type=minecraft:armor_stand,tag=pressure,tag=tac,distance=0..8]
-                    scoreboard players reset pressure_chain tac.main
-                execute if score pressure_plate_L tac.main matches 2 run scoreboard players set pressure_chain tac.main 1
-                execute if score pressure_plate_R tac.main matches 2 run scoreboard players set pressure_chain tac.main 1
-                # -- continue --
-                scoreboard players operation pressure_plate_L tac.main += pressure_plate_R tac.main
-                execute if score pressure_plate_L tac.main matches 0 run kill @n[type=minecraft:armor_stand,tag=pressure,tag=tac,distance=0..8]
-                execute unless score pressure_plate_L tac.main matches 0 run function ~/north_pressure_plate:
-                    tp @n[distance=0..0.8,type=minecraft:armor_stand, tag=tac, tag=pressure] ~ ~-.5 ~-.5
-                    execute unless entity @n[distance=0..0.8,type=minecraft:armor_stand, tag=tac, tag=pressure]:
-                        summon minecraft:armor_stand ~ ~ ~-.5 {Tags:['tac','pressure','fresh'], NoAI:1b, Silent:1, Invisible:1b, attributes:[{base:0.3d, id: "minecraft:scale"}]}
-                        schedule function ./kill_pressure_north 2t append:
-                            execute as @e[type=minecraft:armor_stand, limit=1, tag=fresh, tag=pressure] at @s:
-                                tag @s remove fresh
-                                data merge entity @s {NoGravity:1b}
-                                tp @s ~ ~-.5 ~
+                execute if block ~.3 ~.5 ~-.7 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
+                execute if block ~-.3 ~.5 ~-.7 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
+                execute if block ~.3 ~.5 ~-.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
+                execute if block ~-.3 ~.5 ~-.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
+                kill @n[type=minecraft:armor_stand,tag=pressure,tag=tac,distance=0..8]
+                execute unless score pressure_plate tac.main matches 0 run function ~/north_pressure_plate:
+                    summon minecraft:armor_stand ~ ~ ~-.5 {Tags:['tac','pressure','fresh'], NoAI:1b, Silent:1, Invisible:1b, attributes:[{base:0.3d, id: "minecraft:scale"}]}
+                    schedule function ./kill_pressure_north 2t append:
+                        execute as @e[type=minecraft:armor_stand, limit=1, tag=fresh, tag=pressure] at @s:
+                            tag @s remove fresh
+                            data merge entity @s {NoGravity:1b}
                 
         # Detect the direction moved and add a direction tag in opposite
         execute if score in-table tac.main matches 0:
@@ -213,5 +174,6 @@ function ~/action:
     scoreboard players reset close-floor tac.main
     scoreboard players reset close-table tac.main
     scoreboard players reset in-table tac.main
-    scoreboard players reset pressure_plate_L tac.main
-    scoreboard players reset pressure_plate_R tac.main
+    scoreboard players reset pressure_plate tac.main
+    scoreboard players reset pressure_plate tac.main
+    scoreboard players reset pressure_plate tac.main
