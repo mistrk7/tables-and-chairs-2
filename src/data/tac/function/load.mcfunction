@@ -58,6 +58,6 @@ for model, property in models.items():
             the_item = 'minecraft:armor_stand['+item_components+']'
             func_id = f"tac:give/{model}_{mat}_{type}"
             function func_id:
-                give @s the_item 1
+                give @s the_item 16
 # Known issue: Table items do not stack with the ones made through the crafting table. 
 # Can only fix by changing the data of the item in the crafting table recipe, causing the item to be unstackable with previously made ones.
