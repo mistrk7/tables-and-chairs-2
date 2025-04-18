@@ -17,3 +17,6 @@ execute at @n[type=armor_stand,tag=chair] with entity @n[type=armor_stand,tag=ch
     $execute as @n[type=armor_stand,tag=west] align xyz positioned ~.5 ~ ~.5 run function tac:chair/summon_chair {type:$(type),mat:$(mat),facing: 90 }
     $execute as @n[type=armor_stand,tag=north] align xyz positioned ~.5 ~ ~.5 run function tac:chair/summon_chair {type:$(type),mat:$(mat),facing: 180 }
     kill @n[type=armor_stand,tag=chair]
+    
+    # If in a pressure plate push it down
+    execute at @n[type=interaction,tag=chair,distance=..0.8] if block ~ ~.5 ~ #pressure_plates run function tac:chair/interact/move_chair/action/pressure_plate_east

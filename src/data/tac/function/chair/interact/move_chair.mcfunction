@@ -65,9 +65,9 @@ function ~/action:
                 execute if block ~.3 ~.5 ~.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
                 execute if block ~.3 ~.5 ~-.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
                 kill @n[type=minecraft:armor_stand,tag=pressure,tag=tac,distance=..0.8]
-                execute unless score pressure_plate tac.main matches 0 run function ~/east_pressure_plate:
+                execute unless score pressure_plate tac.main matches 0 run function ~/pressure_plate_east:
                     summon minecraft:armor_stand ~.5 ~ ~ {Tags:['tac','pressure','fresh'], NoAI:1b, Silent:1, Invisible:1b, attributes:[{base:0.3d, id: "minecraft:scale"}]}
-                    schedule function ./kill_pressure_east 2t append:
+                    schedule function ~/pressure_kill_east 2t append:
                         execute as @e[type=minecraft:armor_stand, limit=1, tag=fresh, tag=pressure] at @s:
                             tag @s remove fresh
                             data merge entity @s {NoGravity:1b}
@@ -88,9 +88,9 @@ function ~/action:
                 execute if block ~.3 ~.5 ~.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
                 execute if block ~-.3 ~.5 ~.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
                 kill @n[type=minecraft:armor_stand,tag=pressure,tag=tac,distance=..0.8]
-                execute unless score pressure_plate tac.main matches 0 run function ~/south_pressure_plate:
+                execute unless score pressure_plate tac.main matches 0 run function ~/pressure_plate_south:
                     summon minecraft:armor_stand ~ ~ ~.5 {Tags:['tac','pressure','fresh'], NoAI:1b, Silent:1, Invisible:1b, attributes:[{base:0.3d, id: "minecraft:scale"}]}
-                    schedule function ./kill_pressure_south 2t append:
+                    schedule function ~/pressure_kill_south 2t append:
                         execute as @e[type=minecraft:armor_stand, limit=1, tag=fresh, tag=pressure] at @s:
                             tag @s remove fresh
                             data merge entity @s {NoGravity:1b}
@@ -111,9 +111,9 @@ function ~/action:
                 execute if block ~-.3 ~.5 ~-.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
                 execute if block ~-.3 ~.5 ~.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
                 kill @n[type=minecraft:armor_stand,tag=pressure,tag=tac,distance=..0.8]
-                execute unless score pressure_plate tac.main matches 0 run function ~/west_pressure_plate:
+                execute unless score pressure_plate tac.main matches 0 run function ~/pressure_plate_west:
                     summon minecraft:armor_stand ~-.5 ~ ~ {Tags:['tac','pressure','fresh'], NoAI:1b, Silent:1, Invisible:1b, attributes:[{base:0.3d, id: "minecraft:scale"}]}
-                    schedule function ./kill_pressure_west 2t append:
+                    schedule function ~/pressure_kill_west 2t append:
                         execute as @e[type=minecraft:armor_stand, limit=1, tag=fresh, tag=pressure] at @s:
                             tag @s remove fresh
                             data merge entity @s {NoGravity:1b}
@@ -134,9 +134,9 @@ function ~/action:
                 execute if block ~.3 ~.5 ~-.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
                 execute if block ~-.3 ~.5 ~-.3 #minecraft:pressure_plates run scoreboard players add pressure_plate tac.main 1
                 kill @n[type=minecraft:armor_stand,tag=pressure,tag=tac,distance=..0.8]
-                execute unless score pressure_plate tac.main matches 0 run function ~/north_pressure_plate:
+                execute unless score pressure_plate tac.main matches 0 run function ~/pressure_plate_north:
                     summon minecraft:armor_stand ~ ~ ~-.5 {Tags:['tac','pressure','fresh'], NoAI:1b, Silent:1, Invisible:1b, attributes:[{base:0.3d, id: "minecraft:scale"}]}
-                    schedule function ./kill_pressure_north 2t append:
+                    schedule function ~/pressure_kill_north 2t append:
                         execute as @e[type=minecraft:armor_stand, limit=1, tag=fresh, tag=pressure] at @s:
                             tag @s remove fresh
                             data merge entity @s {NoGravity:1b}
