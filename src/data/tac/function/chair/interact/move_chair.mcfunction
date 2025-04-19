@@ -44,8 +44,6 @@ function ~/action:
         execute if score close tac.main matches 0:
             tag @s remove tucked-in
             scoreboard players set pressure_plate tac.main 0
-            scoreboard players set pressure_plate tac.main 0
-            scoreboard players set pressure_plate tac.main 0
             playsound minecraft:item.brush.brushing.generic block @a ~ ~ ~ 0.7 1.2
             playsound minecraft:block.wood.hit block @a ~ ~ ~ 0.3 1
 
@@ -174,6 +172,4 @@ function ~/action:
     scoreboard players reset close-floor tac.main
     scoreboard players reset close-table tac.main
     scoreboard players reset in-table tac.main
-    scoreboard players reset pressure_plate tac.main
-    scoreboard players reset pressure_plate tac.main
     scoreboard players reset pressure_plate tac.main
