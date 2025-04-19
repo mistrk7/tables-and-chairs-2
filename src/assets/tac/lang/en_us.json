@@ -1,6 +1,5 @@
 {   
-    "tac.sawmill": "Sawmill",
-    "tac.hammer": "Furniture Hammer",
+    "tac.title": "Tables and Chairs",
 
     "tac.chair.oak.basic": "Oak Chair",
     "tac.chair.oak.neat": "Neat Oak Chair",
@@ -141,10 +140,6 @@
     "tac.chair.diamond.throne": "Diamond Throne",
     "tac.chair.netherite.throne": "Netherite Throne",
 
-    "tac.chair.carved_description.1": "Carved Variants are ",
-    "tac.chair.carved_description.2": "Unique to Each Material",
-
-
     "tac.table.oak.basic": "Oak Table",
     "tac.table.oak.pedestal_basic": "Oak Pedestal Table",
     "tac.table.oak.carved": "Carved Oak Table",
@@ -238,19 +233,7 @@
     "tac.table.endstone_brick.basic": "End Stone Brick Table",
     "tac.table.endstone_brick.pedestal_basic": "End Stone Brick Pedestal Table",
     "tac.table.endstone_brick.carved": "Carved End Stone Brick Table",
-    "tac.table.endstone_brick.pedestal_carved": "Carved End Stone Brick Pedestal Table",
-
-
-    "tac.table.carved_description.1": "Carved Variants are ",
-    "tac.table.carved_description.2": "Unique to Each Material",
-    
-
-    "trophy.silverfish": "Silverfish Trophy",
-    "trophy.creeper": "Creeper Trophy",
-    "trophy.enderman": "Enderman Trophy",
-
-    "pack.mob_trophy": "Mob Trophy",
-    "pack.tac_chk": "Tables and Chairs"
+    "tac.table.endstone_brick.pedestal_carved": "Carved End Stone Brick Pedestal Table"
 }
 
 
