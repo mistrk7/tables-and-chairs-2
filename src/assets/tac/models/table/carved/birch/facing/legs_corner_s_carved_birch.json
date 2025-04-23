@@ -1,0 +1,6 @@
+{
+  "parent": "tac:table/carved/birch/legs_corner_carved_birch",
+  "textures": {
+    "0": "block/birch_planks"
+  }
+}

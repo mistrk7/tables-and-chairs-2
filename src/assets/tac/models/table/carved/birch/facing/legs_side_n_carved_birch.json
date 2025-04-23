@@ -1,0 +1,15 @@
+{
+  "parent": "tac:table/carved/birch/legs_side_carved_birch",
+    "textures": {
+      "0": "block/birch_planks"
+    },
+    "display": {
+      "fixed": {
+        "rotation": [
+          0,
+          180,
+          0
+        ]
+      }
+    }
+  }

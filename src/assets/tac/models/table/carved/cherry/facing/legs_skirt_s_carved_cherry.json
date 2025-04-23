@@ -1,0 +1,4 @@
+{
+  "parent": "tac:table/carved/cherry/legs_skirt_carved_cherry",
+  "textures": {"0": "block/cherry_planks"}
+}

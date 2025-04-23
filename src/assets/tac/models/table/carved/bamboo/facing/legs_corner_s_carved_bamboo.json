@@ -1,0 +1,6 @@
+{
+  "parent": "tac:table/carved/bamboo/legs_corner_carved_bamboo",
+  "textures": {
+    "0": "block/bamboo_planks"
+  }
+}
