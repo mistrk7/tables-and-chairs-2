@@ -1,0 +1,6 @@
+{
+  "parent": "tac:table/carved/acacia/legs_corner_carved_acacia",
+  "textures": {
+    "0": "block/acacia_planks"
+  }
+}

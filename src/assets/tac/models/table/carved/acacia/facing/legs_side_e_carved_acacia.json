@@ -1,0 +1,15 @@
+{
+  "parent": "tac:table/carved/acacia/legs_side_carved_acacia",
+    "textures": {
+      "0": "block/acacia_planks"
+    },
+    "display": {
+      "fixed": {
+        "rotation": [
+          0,
+          90,
+          0
+        ]
+      }
+    }
+  }

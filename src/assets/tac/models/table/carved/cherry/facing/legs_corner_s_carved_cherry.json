@@ -1,0 +1,6 @@
+{
+  "parent": "tac:table/carved/cherry/legs_corner_carved_cherry",
+  "textures": {
+    "0": "block/cherry_planks"
+  }
+}
