@@ -19,7 +19,7 @@ function ~/action:
             # When the table is detected to be broken
             unless block ~ ~ ~ #minecraft:trapdoors :
                 function ./break_table/destroy
-                scoreboard players set repeat_modify tac.main 1
+                scoreboard players set #repeat_modify tac.main 1
                 align y run function ./modify_table
 
             if entity @s[tag=table_break] run schedule function ~/ 1t replace

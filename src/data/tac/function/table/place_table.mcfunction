@@ -3,7 +3,7 @@ playsound minecraft:block.wood.place block @a ~ ~ ~ 0.5 0.8
 
 
 # Run function to check for what state it should be in
-scoreboard players set repeat_modify tac.main 1
+scoreboard players set #repeat_modify tac.main 1
 execute as @n[type=armor_stand,tag=table] at @s run function ./modify_table
 
 
