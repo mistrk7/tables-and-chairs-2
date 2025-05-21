@@ -1,16 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "group": "chair_carved",
-  "key": {
-    "#": "minecraft:crimson_stairs",
-    "X": "minecraft:stick"
-  },
-  "pattern": [
-    "#  ",
-    "## ",
-    "XX "
-  ],
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "chair_carved",
+    "key": {
+      "#": "minecraft:crimson_stairs",
+      "X": "minecraft:stick"
+    },
+    "pattern": [
+      "#  ",
+      "## ",
+      "XX "
+    ],
     "result": {
       "components": {
         "minecraft:item_model": "tac:chair/carved/crimson_carved_chair",
@@ -24,6 +24,19 @@
             "chair",
             "tac"
           ],
+          "equipment":{
+            "feet": {
+              "id": "minecraft:armor_stand",
+              "components": {
+                "minecraft:custom_data": {
+                  "model": "chair",
+                  "type": "carved",
+                  "mat": "crimson",
+                  "tac": true
+                }
+              }
+            }
+          },
           "ArmorItems": [
             {
               "id": "minecraft:armor_stand",

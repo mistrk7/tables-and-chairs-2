@@ -18,6 +18,19 @@ $summon minecraft:item_display ~ ~.6 ~ {\
                 id:"minecraft:armor_stand",\
                 Invisible:1b,\
                 Tags:["chair","tac"],\
+                equipment:{\
+                    feet: {\
+                        id: "minecraft:armor_stand",\
+                        components: {\
+                            "minecraft:custom_data": {\
+                            type: "$(type)",\
+                            mat: "$(mat)",\
+                            model: "chair",\
+                            tac: 1b\
+                            }\
+                        }\
+                    }\
+                },\
                 ArmorItems:[{\
                     id:"minecraft:armor_stand",\
                     components:{\
@@ -42,4 +55,5 @@ $summon minecraft:item_display ~ ~.6 ~ {\
     }\
 }
 # (1.21.5) NOTE: ^^ The entity_data changes when the item is placed. The 'ArmorItems' key becomes its own 'data' key, and its contents are of the 'custom_data' value. 
+# (1.21.5 v0.3) NOTE: Added 'equipment' key for backwards compatiblity with v0.0 items. For reference, every time a data type is completely revised, it may just duplicate the key. 
 $summon minecraft:interaction ~ ~ ~ {Tags:["$(type)","$(mat)","chair","tac","v0"], width: 0.75f, height: 1.2f}

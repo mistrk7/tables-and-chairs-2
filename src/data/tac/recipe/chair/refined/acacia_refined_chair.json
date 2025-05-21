@@ -24,6 +24,19 @@
             "chair",
             "tac"
           ],
+          "equipment":{
+            "feet": {
+              "id": "minecraft:armor_stand",
+              "components": {
+                "minecraft:custom_data": {
+                  "model": "chair",
+                  "type": "refined",
+                  "mat": "acacia",
+                  "tac": true
+                }
+              }
+            }
+          },
           "ArmorItems": [
             {
               "id": "minecraft:armor_stand",

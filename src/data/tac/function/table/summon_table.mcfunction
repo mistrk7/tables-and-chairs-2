@@ -16,6 +16,19 @@ $summon minecraft:item_display ~ ~ ~ {\
                 id:"minecraft:armor_stand",\
                 Invisible:1b,\
                 Tags:["table","tac"],\
+                equipment:{\
+                    feet: {\
+                        id: "minecraft:armor_stand",\
+                        components: {\
+                            "minecraft:custom_data": {\
+                            type: "$(type)",\
+                            mat: "$(mat)",\
+                            model: "table",\
+                            tac: 1b\
+                            }\
+                        }\
+                    }\
+                },\
                 ArmorItems:[{\
                     id:"minecraft:armor_stand",\
                     components:{\

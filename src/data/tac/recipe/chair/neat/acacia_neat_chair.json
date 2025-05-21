@@ -1,16 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "group": "chair_neat",
-  "key": {
-    "#": "minecraft:stripped_acacia_log",
-    "X": "minecraft:stick"
-  },
-  "pattern": [
-    "#  ",
-    "## ",
-    "XX "
-  ],
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "chair_neat",
+    "key": {
+      "#": "minecraft:stripped_acacia_log",
+      "X": "minecraft:stick"
+    },
+    "pattern": [
+      "#  ",
+      "## ",
+      "XX "
+    ],
     "result": {
       "components": {
         "minecraft:item_model": "tac:chair/neat/acacia_neat_chair",
@@ -24,6 +24,19 @@
             "chair",
             "tac"
           ],
+          "equipment":{
+            "feet": {
+              "id": "minecraft:armor_stand",
+              "components": {
+                "minecraft:custom_data": {
+                  "model": "chair",
+                  "type": "neat",
+                  "mat": "acacia",
+                  "tac": true
+                }
+              }
+            }
+          },
           "ArmorItems": [
             {
               "id": "minecraft:armor_stand",

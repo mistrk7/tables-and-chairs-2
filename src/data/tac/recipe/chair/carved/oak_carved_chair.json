@@ -1,53 +1,66 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "group": "chair_carved",
-  "key": {
-    "#": "minecraft:oak_stairs",
-    "X": "minecraft:stick"
-  },
-  "pattern": [
-    "#  ",
-    "## ",
-    "XX "
-  ],
-  "result": {
-    "components": {
-      "minecraft:item_model": "tac:chair/carved/oak_carved_chair",
-      "minecraft:custom_model_data": {
-        "strings": [""]
-      },
-      "minecraft:max_stack_size": 64,
-      "minecraft:entity_data": {
-        "id": "minecraft:armor_stand",
-        "Tags": [
-          "chair",
-          "tac"
-        ],
-        "ArmorItems": [
-          {
-            "id": "minecraft:armor_stand",
-            "components": {
-              "minecraft:custom_data": {
-                "model": "chair",
-                "type": "carved",
-                "mat": "oak",
-                "tac": true
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "chair_carved",
+    "key": {
+      "#": "minecraft:oak_stairs",
+      "X": "minecraft:stick"
+    },
+    "pattern": [
+      "#  ",
+      "## ",
+      "XX "
+    ],
+    "result": {
+      "components": {
+        "minecraft:item_model": "tac:chair/carved/oak_carved_chair",
+        "minecraft:custom_model_data": {
+          "strings": [""]
+        },
+        "minecraft:max_stack_size": 64,
+        "minecraft:entity_data": {
+          "id": "minecraft:armor_stand",
+          "Invisible": true,
+          "Tags": [
+            "chair",
+            "tac"
+          ],
+          "equipment":{
+            "feet": {
+              "id": "minecraft:armor_stand",
+              "components": {
+                "minecraft:custom_data": {
+                  "model": "chair",
+                  "type": "carved",
+                  "mat": "oak",
+                  "tac": true
+                }
               }
             }
-          }
-        ],
-        "Invisible": true
+          },
+          "ArmorItems": [
+            {
+              "id": "minecraft:armor_stand",
+              "components": {
+                "minecraft:custom_data": {
+                  "model": "chair",
+                  "type": "carved",
+                  "mat": "oak",
+                  "tac": true
+                }
+              }
+            }
+          ]
+        },
+        "minecraft:custom_data": {
+          "model": "chair",
+          "type": "carved",
+          "mat": "oak",
+          "tac": true
+        },
+        "minecraft:custom_name": {"translate":"tac.chair.oak.carved","italic":false}
       },
-      "minecraft:custom_data": {
-        "model": "chair",
-        "type": "carved",
-        "mat": "oak",
-        "tac": true
-      },
-      "minecraft:custom_name": {"translate":"tac.chair.oak.carved","italic":false}
-    },
-    "count": 1,
-    "id": "minecraft:armor_stand"
+      "count": 1,
+      "id": "minecraft:armor_stand"
+    }
   }
-}

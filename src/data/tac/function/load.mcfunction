@@ -50,6 +50,7 @@ for model, property in models.items():
                 f"minecraft:custom_model_data={{strings:[\"\"]}},"+
                 f"minecraft:max_stack_size=64,"+
                 f"minecraft:entity_data={{id:\"minecraft:armor_stand\",Invisible:1b,Tags:[\"{model}\",\"tac\"],"+
+                f"equipment:{{feet:{{id:\"minecraft:armor_stand\",components:{{\"minecraft:custom_data\":{{type:\"{type}\",mat:\"{mat}\",model:\"{model}\",tac:1b}}}}}}}},"+
                 f"ArmorItems:[{{id:\"minecraft:armor_stand\",components:{{\"minecraft:custom_data\":{{"+
                 f"model:\"{model}\",type:\"{type}\",mat:\"{mat}\",tac:1b}}}}}}]}},"+
                 f"minecraft:custom_data={{model:\"{model}\",type:\"{type}\",mat:\"{mat}\",tac:1b}},"+
