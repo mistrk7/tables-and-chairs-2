@@ -23,6 +23,7 @@ schedule function ./load_detect_old 1s:
 import os
 
 recipes = './src/data/tac/recipe'
+    # ^ you can change this path to '.src\assets\tac\items' to generate commands for furniture without recipes.
 materials = ['acacia', 'bamboo', 'birch', 'cherry', 'crimson', 'dark_oak', 'jungle', 'mangrove', 'oak', 'pale_oak', 'spruce', 'warped']
 
 def create_list(recipes):
