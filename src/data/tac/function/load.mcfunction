@@ -40,6 +40,14 @@ models = create_list(recipes)
 
 # Give command
 
+def data_component(model, mat, type):
+    if model == 'chair':
+        return (f"{{strings:[\"\"]}},")
+    elif model == 'table':
+        return (f"{{floats:[0.0f]}},")
+    else:
+        return (f"{{strings:[\"\"]}},")
+
 for model, property in models.items():
     for type in property['type']:
         if type == 'throne':
@@ -47,7 +55,7 @@ for model, property in models.items():
         for mat in property['mat']:
             item_components = (
                 f"minecraft:item_model=\"tac:{model}/{type}/{mat}_{type}_{model}\","+
-                f"minecraft:custom_model_data={{strings:[\"\"]}},"+
+                f"minecraft:custom_model_data="+data_component(model, mat, type)+
                 f"minecraft:max_stack_size=64,"+
                 f"minecraft:entity_data={{id:\"minecraft:armor_stand\",Invisible:1b,Tags:[\"{model}\",\"tac\"],"+
                 f"equipment:{{feet:{{id:\"minecraft:armor_stand\",components:{{\"minecraft:custom_data\":{{type:\"{type}\",mat:\"{mat}\",model:\"{model}\",tac:1b}}}}}}}},"+
@@ -60,5 +68,3 @@ for model, property in models.items():
             func_id = f"tac:give/{model}_{mat}_{type}"
             function func_id:
                 give @s the_item 16
-# Known issue: Table items do not stack with the ones made through the crafting table. 
-# Can only fix by changing the data of the item in the crafting table recipe, causing the item to be unstackable with previously made ones.
