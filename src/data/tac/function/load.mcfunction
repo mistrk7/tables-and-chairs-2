@@ -22,7 +22,7 @@ schedule function ./load_detect_old 1s:
 # All items - Looks through recipes folder and creates a give command for all items there. (Python script)
 import os
 
-recipes = './src/data/tac/recipe'
+recipes = './src/assets/tac/items'
 materials = ['acacia', 'bamboo', 'birch', 'cherry', 'crimson', 'dark_oak', 'jungle', 'mangrove', 'oak', 'pale_oak', 'spruce', 'warped']
 
 def create_list(recipes):
