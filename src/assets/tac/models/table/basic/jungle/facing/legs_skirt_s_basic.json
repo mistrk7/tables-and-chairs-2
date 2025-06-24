@@ -1,0 +1,4 @@
+{
+  "parent": "tac:table/basic/legs_template/skirt_basic",
+  "textures": {"0": "block/jungle_planks"}
+}

@@ -7,11 +7,11 @@
 
     "data_pack":{
         "load":["src"],
-        "pack_format": 71
+        "pack_format": 80
     },
     "resource_pack":{
         "load":["src"],
-        "pack_format": 55
+        "pack_format": 63
     },
     
     "pipeline":["mecha"],
