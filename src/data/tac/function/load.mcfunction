@@ -41,10 +41,8 @@ models = create_list(recipes)
 
 # Give command
 
-def data_component(model, mat, type):
-    if model == 'chair':
-        return (f"{{strings:[\"\"]}},")
-    elif model == 'table':
+def data_component(model):
+    if model == 'table':
         return (f"{{floats:[0.0f]}},")
     else:
         return (f"{{strings:[\"\"]}},")
@@ -56,7 +54,7 @@ for model, property in models.items():
         for mat in property['mat']:
             item_components = (
                 f"minecraft:item_model=\"tac:{model}/{type}/{mat}_{type}_{model}\","+
-                f"minecraft:custom_model_data="+data_component(model, mat, type)+
+                f"minecraft:custom_model_data="+data_component(model)+
                 f"minecraft:max_stack_size=64,"+
                 f"minecraft:entity_data={{id:\"minecraft:armor_stand\",Invisible:1b,Tags:[\"{model}\",\"tac\"],"+
                 f"equipment:{{feet:{{id:\"minecraft:armor_stand\",components:{{\"minecraft:custom_data\":{{type:\"{type}\",mat:\"{mat}\",model:\"{model}\",tac:1b}}}}}}}},"+
