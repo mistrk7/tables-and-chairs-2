@@ -34,7 +34,7 @@
         },
         {
           "type": "minecraft:model",
-          "model": "tac:table/basic/warped/legs_side_s_basic"
+          "model": "tac:table/basic/warped/facing/legs_side_s_basic"
         }
           ]
         }
@@ -50,7 +50,7 @@
         },
         {
           "type": "minecraft:model",
-          "model": "tac:table/basic/warped/legs_side_w_basic"
+          "model": "tac:table/basic/warped/facing/legs_side_w_basic"
         }
           ]
         }
@@ -66,7 +66,7 @@
         },
         {
           "type": "minecraft:model",
-          "model": "tac:table/basic/warped/legs_corner_w_basic"
+          "model": "tac:table/basic/warped/facing/legs_corner_w_basic"
         }
           ]
         }
@@ -76,14 +76,14 @@
         "model": {
           "type": "minecraft:composite",
           "models": [
-        {
-          "type": "minecraft:model",
-          "model": "tac:table/basic/warped/top_table_basic"
-        },
-        {
-          "type": "minecraft:model",
-          "model": "tac:table/basic/warped/legs_side_n_basic"
-        }
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/basic/warped/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/basic/warped/facing/legs_side_n_basic"
+            }
           ]
         }
       },
@@ -92,10 +92,18 @@
         "model": {
           "type": "minecraft:composite",
           "models": [
-        {
-          "type": "minecraft:model",
-          "model": "tac:table/basic/warped/top_table_basic"
-        }
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/basic/warped/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/basic/warped/facing/legs_skirt_e_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/basic/warped/facing/legs_skirt_w_basic"
+            }
           ]
         }
       },
@@ -110,7 +118,7 @@
         },
         {
           "type": "minecraft:model",
-          "model": "tac:table/basic/warped/legs_corner_n_basic"
+          "model": "tac:table/basic/warped/facing/legs_corner_n_basic"
         }
           ]
         }
@@ -120,10 +128,14 @@
         "model": {
           "type": "minecraft:composite",
           "models": [
-        {
-          "type": "minecraft:model",
-          "model": "tac:table/basic/warped/top_table_basic"
-        }
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/basic/warped/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/basic/warped/facing/legs_skirt_w_basic"
+            }
           ]
         }
       },
@@ -138,7 +150,7 @@
         },
         {
           "type": "minecraft:model",
-          "model": "tac:table/basic/warped/legs_side_e_basic"
+          "model": "tac:table/basic/warped/facing/legs_side_e_basic"
         }
           ]
         }
@@ -154,7 +166,7 @@
         },
         {
           "type": "minecraft:model",
-          "model": "tac:table/basic/warped/legs_corner_s_basic"
+          "model": "tac:table/basic/warped/facing/legs_corner_s_basic"
         }
           ]
         }
@@ -164,10 +176,18 @@
         "model": {
           "type": "minecraft:composite",
           "models": [
-        {
-          "type": "minecraft:model",
-          "model": "tac:table/basic/warped/top_table_basic"
-        }
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/basic/warped/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/basic/warped/facing/legs_skirt_s_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/basic/warped/facing/legs_skirt_n_basic"
+            }
           ]
         }
       },
@@ -176,10 +196,14 @@
         "model": {
           "type": "minecraft:composite",
           "models": [
-        {
-          "type": "minecraft:model",
-          "model": "tac:table/basic/warped/top_table_basic"
-        }
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/basic/warped/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/basic/warped/facing/legs_skirt_s_basic"
+            }
           ]
         }
       },
@@ -194,7 +218,7 @@
         },
         {
           "type": "minecraft:model",
-          "model": "tac:table/basic/warped/legs_corner_e_basic"
+          "model": "tac:table/basic/warped/facing/legs_corner_e_basic"
         }
           ]
         }
@@ -204,10 +228,14 @@
         "model": {
           "type": "minecraft:composite",
           "models": [
-        {
-          "type": "minecraft:model",
-          "model": "tac:table/basic/warped/top_table_basic"
-        }
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/basic/warped/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/basic/warped/facing/legs_skirt_e_basic"
+            }
           ]
         }
       },
@@ -216,10 +244,14 @@
         "model": {
           "type": "minecraft:composite",
           "models": [
-        {
-          "type": "minecraft:model",
-          "model": "tac:table/basic/warped/top_table_basic"
-        }
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/basic/warped/top_table_basic"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "tac:table/basic/warped/facing/legs_skirt_n_basic"
+            }
           ]
         }
       },

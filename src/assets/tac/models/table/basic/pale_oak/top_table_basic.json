@@ -1,6 +1,4 @@
 {
-  "parent": "tac:table/top_table_template",
-  "textures": {
-    "0": "block/pale_oak_planks"
-  }
+    "parent": "tac:table/top_table_template",
+	"textures": {"0": "block/pale_oak_planks"}
 }
