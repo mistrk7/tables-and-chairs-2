@@ -2,7 +2,7 @@ execute at @s[tag=chair]:
 
     # Destroy the chair
     execute as @n[tag=chair,type=interaction,distance=0..0.8]:
-        function tac:chair/interact/break_chair/action/destroy
+        function tac:chair/break_chair/action/destroy
         scoreboard players add destroy-count tac.main 1
 
 execute at @s[tag=table]:

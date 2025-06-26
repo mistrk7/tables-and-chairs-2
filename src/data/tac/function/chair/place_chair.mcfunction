@@ -19,4 +19,4 @@ execute at @n[type=armor_stand,tag=chair] with entity @n[type=armor_stand,tag=ch
     kill @n[type=armor_stand,tag=chair]
     
     # If in a pressure plate push it down
-    execute at @n[type=interaction,tag=chair,distance=..0.8] if block ~ ~.5 ~ #pressure_plates run function tac:chair/interact/move_chair/action/pressure_plate_east
+    execute at @n[type=interaction,tag=chair,distance=..0.8] if block ~ ~.5 ~ #pressure_plates run function tac:chair/move_chair/action/pressure_plate_east

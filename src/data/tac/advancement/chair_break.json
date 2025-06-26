@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "tac:chair/interact/break_chair"
+    "function": "tac:chair/break_chair"
   }
 }
