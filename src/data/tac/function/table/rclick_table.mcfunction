@@ -14,30 +14,18 @@ execute run with entity @s:
 
             #Custom detection for the custom blocks
             execute if score place tac.main matches 1:
-                execute if data entity @s SelectedItem.components."minecraft:custom_data"{model:"table"} align xyz positioned ~.5 ~1 ~.5 with entity @s SelectedItem.components."minecraft:custom_data":
+                execute if data entity @s SelectedItem.components."minecraft:custom_data"{tac:1b} align xyz positioned ~.5 ~1 ~.5 with entity @s SelectedItem.components."minecraft:custom_data":
                     $summon armor_stand ~ ~ ~ {\
                         Invisible:1b,\
-                        Tags:["table","tac"],\
+                        Tags:["$(model)","tac"],\
                         data:{\
-                            model:"table",\
+                            model:"$(model)",\
                             type:"$(type)",\
                             mat:"$(mat)",\
                             tac:1b\
                         }\
                     }
-                    function tac:table/place_table
-                execute if data entity @s SelectedItem.components."minecraft:custom_data"{model:"chair"} align xyz positioned ~.5 ~1 ~.5 with entity @s SelectedItem.components."minecraft:custom_data":
-                    $summon armor_stand ~ ~ ~ {\
-                        Invisible:1b,\
-                        Tags:["chair","tac"],\
-                        data:{\
-                            model:"chair",\
-                            type:"$(type)",\
-                            mat:"$(mat)",\
-                            tac:1b\
-                        }\
-                    }
-                    function tac:chair/place_chair
+                    $function tac:$(model)/place_$(model)
 
                 # Item Frames
                 execute if data entity @s SelectedItem{id:"minecraft:item_frame"} align y positioned ~ ~1 ~ :
