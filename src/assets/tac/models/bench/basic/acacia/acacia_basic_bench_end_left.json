@@ -1,0 +1,8 @@
+{
+  "parent": "tac:bench/basic/shapes_template/basic_bench_end_left",
+  "textures": {
+    "0": "minecraft:block/acacia_planks",
+    "1": "minecraft:block/stripped_acacia_log",
+    "particle": "block/stripped_acacia_log"
+  }
+}

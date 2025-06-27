@@ -1,0 +1,54 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "full",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:bench/basic/acacia/acacia_basic_bench_full"
+        }
+      },
+      {
+        "when": "mid",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:bench/basic/acacia/acacia_basic_bench_mid"
+        }
+      },
+      {
+        "when": "end_left",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:bench/basic/acacia/acacia_basic_bench_end_left"
+        }
+      },
+      {
+        "when": "end_right",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:bench/basic/acacia/acacia_basic_bench_end_right"
+        }
+      },
+      {
+        "when": "corner_inner",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:bench/basic/acacia/acacia_basic_bench_corner_inner"
+        }
+      },
+      {
+        "when": "corner_outer",
+        "model": {
+          "type": "minecraft:model",
+          "model": "tac:bench/basic/acacia/acacia_basic_bench_corner_outer"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "tac:bench/basic/acacia/acacia_basic_bench_full"
+    }
+  }
+}
