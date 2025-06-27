@@ -9,7 +9,8 @@
             }
           },
           "entity": {
-            "tag": "chair"
+            "type": "minecraft:interaction",
+            "nbt": "{Tags:[\"chair\"]}"
           }
         }
       }
