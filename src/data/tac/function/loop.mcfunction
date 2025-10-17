@@ -1,2 +1,2 @@
-execute as @e[type=interaction,tag=table] at @s unless block ~ ~ ~ #minecraft:trapdoors[half=top] run function tac:table/break_table/destroy
-schedule function ~/ 8s
+execute as @e[type=interaction,tag=table] at @s unless predicate tac:table_trapdoor run function tac:table/break_table/destroy
+schedule function ~/ 15s replace
