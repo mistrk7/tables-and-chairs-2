@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "example": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:armor_stand",
+              "predicates": {
+                "minecraft:custom_data": "{model:\"bench\",tac:1b}"
+              }
+            }
+          }]
+      }
+    }
+  },
+  "rewards": {
+    "function": "tac:bench/place_bench"
+  }
+}

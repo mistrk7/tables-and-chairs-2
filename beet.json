@@ -7,7 +7,7 @@
 
     "data_pack":{
         "load":["src"],
-        "pack_format": 80
+        "pack_format": 88
     },
     "resource_pack":{
         "load":["src"],

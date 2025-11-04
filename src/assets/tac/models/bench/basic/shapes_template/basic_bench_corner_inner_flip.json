@@ -1,0 +1,15 @@
+{
+  "parent": "tac:bench/basic/shapes_template/basic_bench_corner_inner",
+  "textures": {
+    "0": "block/acacia_planks"
+  },
+  "display": {
+    "fixed": {
+      "rotation": [
+        0,
+        -90,
+        0
+      ]
+    }
+  }
+}

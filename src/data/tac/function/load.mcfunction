@@ -41,10 +41,10 @@ models = create_list(recipes)
 # Give command
 
 def data_component(model):
-    if model == 'table':
-        return (f"{{floats:[0.0f]}},")
-    else:
+    if model == 'chair':
         return (f"{{strings:[\"\"]}},")
+    else:
+        return (f"{{floats:[0.0f]}},")
 
 for model, property in models.items():
     for type in property['type']:
