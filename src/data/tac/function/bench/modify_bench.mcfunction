@@ -7,7 +7,7 @@ scoreboard players set @s tac.main 0
 
 # For north, east, south, west
 for x,z,v in [(0,-1,1),(1,0,2),(0,1,4),(-1,0,8)]:
-    execute positioned ~x ~0.5 ~z:
+    execute positioned ^x ^0.5 ^z:
         if entity @n[type=item_display,tag=bench,distance=..0.5] :
             scoreboard players add @s tac.main v
             execute if score #repeat_modify tac.main matches 1 :
