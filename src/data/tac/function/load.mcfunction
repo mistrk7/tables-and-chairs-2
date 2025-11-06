@@ -4,6 +4,9 @@ function tac:loop
 # Kill misplaced armor stands if they were placed with the pack disabled. 
 kill @e[type=armor_stand, tag=tac, tag=!pressure]
 
+# Kill misplaced block displays if they were placed with the pack disabled. 
+kill @e[type=block_display, tag=tac]
+
 #Add table and chair counters (version 0.1 and onward)W
 
 data merge storage tac:main {
@@ -46,6 +49,12 @@ def data_component(model):
     else:
         return (f"{{floats:[0.0f]}},")
 
+def bench_data_component(model):
+    if model == 'bench':
+        return (f"rotation:0,")
+    else:
+        return ("")
+
 for model, property in models.items():
     for type in property['type']:
         if type == 'throne':
@@ -56,10 +65,10 @@ for model, property in models.items():
                 f"minecraft:custom_model_data="+data_component(model)+
                 f"minecraft:max_stack_size=64,"+
                 f"minecraft:entity_data={{id:\"minecraft:armor_stand\",Invisible:1b,Tags:[\"{model}\",\"tac\"],"+
-                f"equipment:{{feet:{{id:\"minecraft:armor_stand\",components:{{\"minecraft:custom_data\":{{type:\"{type}\",mat:\"{mat}\",model:\"{model}\",tac:1b}}}}}}}},"+
+                f"equipment:{{feet:{{id:\"minecraft:armor_stand\",components:{{\"minecraft:custom_data\":{{type:\"{type}\",mat:\"{mat}\","+bench_data_component(model)+f"model:\"{model}\",tac:1b}}}}}}}},"+
                 f"ArmorItems:[{{id:\"minecraft:armor_stand\",components:{{\"minecraft:custom_data\":{{"+
-                f"model:\"{model}\",type:\"{type}\",mat:\"{mat}\",tac:1b}}}}}}]}},"+
-                f"minecraft:custom_data={{model:\"{model}\",type:\"{type}\",mat:\"{mat}\",tac:1b}},"+
+                f"model:\"{model}\","+bench_data_component(model)+f"type:\"{type}\",mat:\"{mat}\",tac:1b}}}}}}]}},"+
+                f"minecraft:custom_data={{model:\"{model}\",type:\"{type}\",mat:\"{mat}\","+bench_data_component(model)+f"tac:1b}},"+
                 f"minecraft:custom_name={{translate:\"tac.{model}.{mat}.{type}\",italic:false}}"
             )
             the_item = 'minecraft:armor_stand['+item_components+']'

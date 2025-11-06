@@ -25,6 +25,7 @@ $summon minecraft:item_display ~ ~.6 ~ {\
                             "minecraft:custom_data": {\
                             type: "$(type)",\
                             mat: "$(mat)",\
+                            rotation:0,\
                             model: "bench",\
                             tac: 1b\
                             }\
@@ -38,6 +39,7 @@ $summon minecraft:item_display ~ ~.6 ~ {\
                             model:"bench",\
                             type:"$(type)",\
                             mat:"$(mat)",\
+                            rotation:0,\
                             tac:1b\
                         }\
                     }\
@@ -47,6 +49,7 @@ $summon minecraft:item_display ~ ~.6 ~ {\
                 model:"bench",\
                 type:"$(type)",\
                 mat:"$(mat)",\
+                rotation:$(facing),\
                 tac:1b\
             },\
             "minecraft:custom_name":\

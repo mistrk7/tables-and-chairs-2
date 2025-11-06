@@ -17,6 +17,7 @@ function ~/action:
         # Drop the item
         execute if entity @s[tag=wait] as @n[type=item_display,tag=bench,distance=..0.61]:
             data modify entity @s item.components."minecraft:custom_model_data".floats[0] set value 0.0f
+            data modify entity @s item.components."minecraft:custom_data".rotation set value 0
             execute with entity @s:
                 $summon minecraft:item ~ ~0.55 ~ {Item:$(item),Motion:[0.0,0.2,0.0]}
             
