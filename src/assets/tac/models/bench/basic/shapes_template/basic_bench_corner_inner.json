@@ -256,8 +256,7 @@
 			"translation": [0, 2.4, 0]
 		},
 		"fixed": {
-			"translation": [0, -3.5, -4.1],
-			"scale": [0.8, 0.8, 0.8]
+			"translation": [0, -1.6, 0]
 		}
 	},
 	"groups": [

@@ -3,7 +3,7 @@ scoreboard players add chairs tac.main 1
 
 $summon minecraft:item_display ~ ~.6 ~ {\
     Rotation:[$(facing).0f,0.0f],\
-    transformation:{scale:[1.0f,1.0f,1.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,-0.1f,0.0f]},\
+    item_display: "fixed",\
     Tags:["$(type)","$(mat)","bench","tac","v0"],\
     interpolation_duration: 2,\
     item:{\

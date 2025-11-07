@@ -13,11 +13,11 @@ scoreboard players reset dir tac.main
 
 # Run function to check for what state it should be in
 scoreboard players set #repeat_modify tac.main 1
-execute as @n[type=armor_stand,tag=bench] at @s run function ./modify_bench
+execute as @n[type=armor_stand,tag=bench] at @s align y run function ./modify_bench
 
 # Summon Bench based on item
 execute at @n[type=armor_stand,tag=bench] with entity @n[type=armor_stand,tag=bench] equipment.feet.components."minecraft:custom_data":
-    $say $(state) $(rotation)
+    #$say $(state) $(rotation)
     $execute align xyz positioned ~.5 ~ ~.5 run function tac:bench/summon_bench {type:$(type),mat:$(mat),state:$(state),facing:$(rotation)}
     # tag poles are reversed ^^
     kill @n[type=armor_stand,tag=bench]

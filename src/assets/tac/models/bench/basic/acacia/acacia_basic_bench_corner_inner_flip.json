@@ -4,5 +4,11 @@
     "0": "minecraft:block/acacia_planks",
     "1": "minecraft:block/stripped_acacia_log",
     "particle": "block/stripped_acacia_log"
+  },
+  "display": {
+    "fixed": {
+      "rotation": [0, -90, 0],
+      "translation": [0, -1.6, 0]
+    }
   }
 }
