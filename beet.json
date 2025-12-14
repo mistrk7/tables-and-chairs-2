@@ -14,6 +14,13 @@
         "pack_format": 69
     },
     
-    "pipeline":["mecha"],
-    "output": "build"
+    "output": "build",
+    "pipeline":[
+        "mecha",
+        "assets.generate"
+    ],
+    "meta": {
+        "wood_types": ["acacia", "bamboo", "birch", "cherry", "crimson", "dark_oak", "jungle", "mangrove", "oak", "pale_oak", "spruce", "warped"],
+        "mineral_types": ["quartz", "stone_brick", "obsidian", "netherite", "iron", "gold", "diamond", "copper"]
+    }
 }

@@ -22,16 +22,17 @@ schedule function ./load_detect_old 1s:
 # WHEN UPDATING VERSION: Replace all instances of 'v(current version)' in the project with 'v(next version)'
 
 
-# All items - Looks through recipes folder and creates a give command for all items there. (Python script)
+# All items - Looks through assets folder and creates a give command for all items there. (Python script)
 import os
 
-recipes = './src/assets/tac/items'
-materials = ['acacia', 'bamboo', 'birch', 'cherry', 'crimson', 'dark_oak', 'jungle', 'mangrove', 'oak', 'pale_oak', 'spruce', 'warped']
+assets = './src/assets/tac/items'
+materials = ctx.meta["wood_types"]
+minerals = ctx.meta["mineral_types"]
 
-def create_list(recipes):
+def create_list(assets):
     models = {}
-    for model_name in os.listdir(recipes):
-        model_path = os.path.join(recipes, model_name)
+    for model_name in os.listdir(assets):
+        model_path = os.path.join(assets, model_name)
         if os.path.isdir(model_path):
             models[model_name] = {'type': [], 'mat': materials}
             for type_name in os.listdir(model_path):
@@ -39,7 +40,7 @@ def create_list(recipes):
                 if os.path.isdir(type_path):
                     models[model_name]['type'].append(type_name)
     return models
-models = create_list(recipes)
+models = create_list(assets)
 
 # Give command
 
@@ -58,7 +59,7 @@ def bench_data_component(model):
 for model, property in models.items():
     for type in property['type']:
         if type == 'throne':
-            property['mat'] = materials + ['iron', 'gold', 'diamond', 'netherite', 'copper', 'obsidian', 'quartz', 'stone_brick'] 
+            property['mat'] = materials + minerals
         for mat in property['mat']:
             item_components = (
                 f"minecraft:item_model=\"tac:{model}/{type}/{mat}_{type}_{model}\","+
