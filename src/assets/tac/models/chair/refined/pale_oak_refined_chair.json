@@ -1,7 +1,0 @@
-{
-	"parent": "tac:chair/refined/refined_chair_1",
-	"textures": {
-    "0": "block/pale_oak_planks",
-    "1": "block/stripped_pale_oak_log"
-  }
-}

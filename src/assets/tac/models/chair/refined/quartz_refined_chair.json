@@ -1,7 +1,0 @@
-{
-	"parent": "tac:chair/refined/refined_chair_1",
-	"textures": {
-    "0": "block/quartz_bricks",
-    "1": "block/quartz_pillar_top"
-  }
-}

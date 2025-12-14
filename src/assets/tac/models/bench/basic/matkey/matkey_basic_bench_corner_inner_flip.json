@@ -1,0 +1,14 @@
+{
+  "parent": "tac:bench/basic/shapes_template/basic_bench_corner_inner",
+  "textures": {
+    "0": "minecraft:block/matkey_planks",
+    "1": "minecraft:block/stripped_matkey_log",
+    "particle": "block/stripped_matkey_log"
+  },
+  "display": {
+    "fixed": {
+      "rotation": [0, -90, 0],
+      "translation": [0, -1.6, 0]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "tac:bench/basic/shapes_template/basic_bench_end_right",
+  "textures": {
+    "0": "minecraft:block/matkey_planks",
+    "1": "minecraft:block/stripped_matkey_log",
+    "particle": "block/stripped_matkey_log"
+  }
+}

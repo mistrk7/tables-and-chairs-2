@@ -1,6 +1,0 @@
-{
-	"parent": "tac:chair/refined/refined_chair_1",
-	"textures": {
-    "0": "block/bamboo_planks",
-    "1": "block/stripped_bamboo_block"}
-}
