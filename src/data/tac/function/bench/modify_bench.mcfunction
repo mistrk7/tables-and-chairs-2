@@ -5,9 +5,6 @@ function ~/once :
 
 scoreboard players set @s tac.main 0
 
-
-#execute store result score @s tac.main run data get entity @s item.components."minecraft:custom_data".rotation
-
 #Execute on North, south
 execute if entity @s[type=armor_stand,tag=tac] positioned ~ ~.5 ~ run function ~/execute_on_poles with entity @s equipment.feet.components."minecraft:custom_data"
 execute if entity @s[type=block_display,tag=tac] positioned ~ ~.5 ~ run function ~/execute_on_poles with entity @n[type=item_display,tag=bench,distance=..0.5] item.components."minecraft:custom_data"
@@ -20,7 +17,7 @@ function ~/execute_on_poles:
     $execute rotated $(rotation) 0 run function tac:bench/modify_bench/set_action_west
 
 # Logic for north, south, east, west.
-for x,z,va,vb,vc,pole in [(0,1,1,2,3,'north'),(0,-1,4,8,12,'south'),(1,0,16,16,16,'east'),(-1,0,32,32,32,'west')]:
+for x,z,va,vb,vc,pole in [(0,1,1,2,0,'north'),(0,-1,4,8,0,'south'),(1,0,16,16,16,'east'),(-1,0,32,32,32,'west')]:
 
     # Spaghetti setup - basically ignore
     func_set_action = f"tac:bench/modify_bench/set_action_{pole}"
@@ -33,32 +30,26 @@ for x,z,va,vb,vc,pole in [(0,1,1,2,3,'north'),(0,-1,4,8,12,'south'),(1,0,16,16,1
     function func_action :
         execute if entity @s[type=armor_stand,tag=tac] if entity @n[type=item_display,tag=bench,distance=..0.5] run function ~/bulk_action with entity @s equipment.feet.components."minecraft:custom_data"
         execute if entity @s[type=block_display,tag=tac] if entity @n[type=item_display,tag=bench,distance=..0.5] run function ~/bulk_action with entity @n[type=block_display,tag=tac,tag=origin] data
-
-        # optimisation: don't let it use predicate if no bench is there. ^^^
-        #I would like a unique set of rules that works across block displays and armor stands
+        #optimisation I would like a unique set of rules that works across block displays and armor stands
 
         function ~/bulk_action :
             #say detected
             execute if score #repeat_modify tac.main matches 1 :
                 summon minecraft:block_display ~ ~ ~ {Tags:["tac"]}
                 schedule function tac:bench/modify_bench/once 1t replace
-
-            
             #say message3 #$say orig angle $(rotation) #message3 = f"Checking bench at {pole}"
-            
+        
             #Check if the rotation matches - left, right, middle.
             for r,v in [(-90, va), (90, vb), (0, vc)]:
-                #summon arrow
 
                 #Summon another block display to compare rotations (if from first batch of block displays)
                 execute if entity @s[type=block_display,tag=tac] run summon minecraft:block_display ~ ~ ~ {Tags:["tac","secondary"]}
 
-              #Add origin angle, to comparison angle, and apply it to the block display.
+              #Add origin angle to comparison angle, and apply it to the block display.
                 scoreboard players set @n[type=block_display,tag=tac,distance=..0.5] tac.main r
                 $scoreboard players add @n[type=block_display,tag=tac,distance=..0.5] tac.main $(rotation)
                 execute if score @n[type=block_display,tag=tac,distance=..0.5] tac.main matches -90 run scoreboard players set @n[type=block_display,tag=tac,distance=..0.5] tac.main 270
                 execute store result entity @n[type=block_display,tag=tac,distance=..0.5] Rotation[0] float 1 run scoreboard players get @n[type=block_display,tag=tac,distance=..0.5] tac.main
-                
                 #execute as @a run tellraw @s [{"text":f"comparison angle {r} is "},{"score":{"name":"@n[type=block_display,tag=tac,distance=..0.5]","objective":"tac.main"}}]
 
                 #Store a success if the compared entity rotation matches into block display.
@@ -69,7 +60,6 @@ for x,z,va,vb,vc,pole in [(0,1,1,2,3,'north'),(0,-1,4,8,12,'south'),(1,0,16,16,1
                     scoreboard players add @s tac.main v
                     #message1 = f"It's equivalent: {r}^ . adding {v} "
                     #say message1
-
                 #2. on success (is different):
                 execute if score @n[type=block_display,tag=tac,distance=..0.5] tac.main matches 1 :
                     rotate @n[type=block_display,tag=tac,distance=..0.5] -v ~   
