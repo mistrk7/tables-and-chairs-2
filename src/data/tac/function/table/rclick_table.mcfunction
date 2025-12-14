@@ -14,7 +14,7 @@ execute run with entity @s:
 
             #Custom detection for the custom blocks
             execute if score place tac.main matches 1:
-                execute if data entity @s SelectedItem.components."minecraft:custom_data"{tac:1b} align xyz positioned ~.5 ~1 ~.5 with entity @s SelectedItem.components."minecraft:custom_data":
+                execute unless data entity @s SelectedItem.components."minecraft:custom_data"{model:bench} if data entity @s SelectedItem.components."minecraft:custom_data"{tac:1b} align xyz positioned ~.5 ~1 ~.5 with entity @s SelectedItem.components."minecraft:custom_data":
                     $summon armor_stand ~ ~ ~ {\
                         Invisible:1b,\
                         Tags:["$(model)","tac"],\
@@ -44,7 +44,7 @@ execute run with entity @s:
                 execute unless data entity @s abilities{instabuild:1b} run item modify entity @s weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
                 playsound minecraft:block.wood.place block @a ~ ~ ~
             
-            execute unless data entity @s abilities{instabuild:1b} if score place tac.main matches 1 if data entity @s SelectedItem.components."minecraft:custom_data"{tac:1b} with entity @s SelectedItem.components."minecraft:custom_data":
+            execute unless data entity @s abilities{instabuild:1b} if score place tac.main matches 1 unless data entity @s SelectedItem.components."minecraft:custom_data"{model:bench} if data entity @s SelectedItem.components."minecraft:custom_data"{tac:1b} with entity @s SelectedItem.components."minecraft:custom_data":
                     item modify entity @s weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
             
             scoreboard players reset place tac.main
