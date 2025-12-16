@@ -38,12 +38,20 @@ execute run with entity @s:
                     playsound minecraft:entity.item_frame.place block @a ~ ~ ~
 
             # If successful, place and remove the item
-            #$say $(id)
+
+            # Place vanilla blocks
             execute if score place tac.main matches 1 unless data entity @s SelectedItem.components."minecraft:custom_data"{tac:1b} with entity @s SelectedItem:
                 $setblock ~ ~1 ~ $(id)
+                data modify block ~ ~1 ~ components set from entity @s SelectedItem.components
                 execute unless data entity @s abilities{instabuild:1b} run item modify entity @s weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
                 playsound minecraft:block.wood.place block @a ~ ~ ~
+
+                # Player Heads
+                execute if data entity @s SelectedItem{id:"minecraft:player_head"} align y positioned ~ ~1 ~ run function ~/place_player_head with entity @s SelectedItem.components."minecraft:profile"
+                function ~/place_player_head:
+                    $setblock ~ ~ ~ minecraft:player_head{profile:{properties:$(properties)}}
             
+            # Place t&c blocks
             execute unless data entity @s abilities{instabuild:1b} if score place tac.main matches 1 unless data entity @s SelectedItem.components."minecraft:custom_data"{model:bench} if data entity @s SelectedItem.components."minecraft:custom_data"{tac:1b} with entity @s SelectedItem.components."minecraft:custom_data":
                     item modify entity @s weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
             
