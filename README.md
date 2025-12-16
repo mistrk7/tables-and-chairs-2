@@ -1,5 +1,6 @@
 ## Tables and Chairs 2
 #### A remake of Axel's Tables and Chairs for 1.21 versions. WIP!
+https://modrinth.com/datapack/tables-chairs-2
 
 #### Setup:
 This datapack needs to be compiled with [Beet](https://github.com/mcbeet/beet) and [Bolt](https://github.com/mcbeet/bolt).  
