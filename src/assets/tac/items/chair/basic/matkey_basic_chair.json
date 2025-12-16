@@ -4,7 +4,7 @@
     "property": "minecraft:custom_model_data",
     "fallback": {
       "type": "minecraft:model",
-      "model": "tac:chair/refined/crimson_refined_chair"
+      "model": "tac:chair/basic/matkey_basic_chair"
     },
     "cases": [
       {
@@ -14,11 +14,11 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/refined/crimson_refined_chair"
+              "model": "tac:chair/basic/matkey_basic_chair"
             },
             {
               "type": "minecraft:model",
-              "model": "tac:chair/carpet_layer/armchair/white"
+              "model": "tac:chair/carpet_layer/standard/white"
             }
           ]
         }
@@ -30,11 +30,11 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/refined/crimson_refined_chair"
+              "model": "tac:chair/basic/matkey_basic_chair"
             },
             {
               "type": "minecraft:model",
-              "model": "tac:chair/carpet_layer/armchair/orange"
+              "model": "tac:chair/carpet_layer/standard/orange"
             }
           ]
         }
@@ -46,11 +46,11 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/refined/crimson_refined_chair"
+              "model": "tac:chair/basic/matkey_basic_chair"
             },
             {
               "type": "minecraft:model",
-              "model": "tac:chair/carpet_layer/armchair/magenta"
+              "model": "tac:chair/carpet_layer/standard/magenta"
             }
           ]
         }
@@ -62,11 +62,11 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/refined/crimson_refined_chair"
+              "model": "tac:chair/basic/matkey_basic_chair"
             },
             {
               "type": "minecraft:model",
-              "model": "tac:chair/carpet_layer/armchair/light_blue"
+              "model": "tac:chair/carpet_layer/standard/light_blue"
             }
           ]
         }
@@ -78,11 +78,11 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/refined/crimson_refined_chair"
+              "model": "tac:chair/basic/matkey_basic_chair"
             },
             {
               "type": "minecraft:model",
-              "model": "tac:chair/carpet_layer/armchair/yellow"
+              "model": "tac:chair/carpet_layer/standard/yellow"
             }
           ]
         }
@@ -94,11 +94,11 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/refined/crimson_refined_chair"
+              "model": "tac:chair/basic/matkey_basic_chair"
             },
             {
               "type": "minecraft:model",
-              "model": "tac:chair/carpet_layer/armchair/lime"
+              "model": "tac:chair/carpet_layer/standard/lime"
             }
           ]
         }
@@ -110,11 +110,11 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/refined/crimson_refined_chair"
+              "model": "tac:chair/basic/matkey_basic_chair"
             },
             {
               "type": "minecraft:model",
-              "model": "tac:chair/carpet_layer/armchair/pink"
+              "model": "tac:chair/carpet_layer/standard/pink"
             }
           ]
         }
@@ -126,11 +126,11 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/refined/crimson_refined_chair"
+              "model": "tac:chair/basic/matkey_basic_chair"
             },
             {
               "type": "minecraft:model",
-              "model": "tac:chair/carpet_layer/armchair/gray"
+              "model": "tac:chair/carpet_layer/standard/gray"
             }
           ]
         }
@@ -142,11 +142,11 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/refined/crimson_refined_chair"
+              "model": "tac:chair/basic/matkey_basic_chair"
             },
             {
               "type": "minecraft:model",
-              "model": "tac:chair/carpet_layer/armchair/light_gray"
+              "model": "tac:chair/carpet_layer/standard/light_gray"
             }
           ]
         }
@@ -158,11 +158,11 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/refined/crimson_refined_chair"
+              "model": "tac:chair/basic/matkey_basic_chair"
             },
             {
               "type": "minecraft:model",
-              "model": "tac:chair/carpet_layer/armchair/cyan"
+              "model": "tac:chair/carpet_layer/standard/cyan"
             }
           ]
         }
@@ -174,11 +174,11 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/refined/crimson_refined_chair"
+              "model": "tac:chair/basic/matkey_basic_chair"
             },
             {
               "type": "minecraft:model",
-              "model": "tac:chair/carpet_layer/armchair/purple"
+              "model": "tac:chair/carpet_layer/standard/purple"
             }
           ]
         }
@@ -190,11 +190,11 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/refined/crimson_refined_chair"
+              "model": "tac:chair/basic/matkey_basic_chair"
             },
             {
               "type": "minecraft:model",
-              "model": "tac:chair/carpet_layer/armchair/blue"
+              "model": "tac:chair/carpet_layer/standard/blue"
             }
           ]
         }
@@ -206,11 +206,11 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/refined/crimson_refined_chair"
+              "model": "tac:chair/basic/matkey_basic_chair"
             },
             {
               "type": "minecraft:model",
-              "model": "tac:chair/carpet_layer/armchair/brown"
+              "model": "tac:chair/carpet_layer/standard/brown"
             }
           ]
         }
@@ -222,11 +222,11 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/refined/crimson_refined_chair"
+              "model": "tac:chair/basic/matkey_basic_chair"
             },
             {
               "type": "minecraft:model",
-              "model": "tac:chair/carpet_layer/armchair/green"
+              "model": "tac:chair/carpet_layer/standard/green"
             }
           ]
         }
@@ -238,11 +238,11 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/refined/crimson_refined_chair"
+              "model": "tac:chair/basic/matkey_basic_chair"
             },
             {
               "type": "minecraft:model",
-              "model": "tac:chair/carpet_layer/armchair/red"
+              "model": "tac:chair/carpet_layer/standard/red"
             }
           ]
         }
@@ -254,11 +254,11 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/refined/crimson_refined_chair"
+              "model": "tac:chair/basic/matkey_basic_chair"
             },
             {
               "type": "minecraft:model",
-              "model": "tac:chair/carpet_layer/armchair/black"
+              "model": "tac:chair/carpet_layer/standard/black"
             }
           ]
         }

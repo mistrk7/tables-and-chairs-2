@@ -4,7 +4,7 @@
     "property": "minecraft:custom_model_data",
     "fallback": {
       "type": "minecraft:model",
-      "model": "tac:chair/basic/warped_basic_chair"
+      "model": "tac:chair/neat/matkey_neat_chair"
     },
     "cases": [
       {
@@ -14,7 +14,7 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/basic/warped_basic_chair"
+              "model": "tac:chair/neat/matkey_neat_chair"
             },
             {
               "type": "minecraft:model",
@@ -30,7 +30,7 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/basic/warped_basic_chair"
+              "model": "tac:chair/neat/matkey_neat_chair"
             },
             {
               "type": "minecraft:model",
@@ -46,7 +46,7 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/basic/warped_basic_chair"
+              "model": "tac:chair/neat/matkey_neat_chair"
             },
             {
               "type": "minecraft:model",
@@ -62,7 +62,7 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/basic/warped_basic_chair"
+              "model": "tac:chair/neat/matkey_neat_chair"
             },
             {
               "type": "minecraft:model",
@@ -78,7 +78,7 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/basic/warped_basic_chair"
+              "model": "tac:chair/neat/matkey_neat_chair"
             },
             {
               "type": "minecraft:model",
@@ -94,7 +94,7 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/basic/warped_basic_chair"
+              "model": "tac:chair/neat/matkey_neat_chair"
             },
             {
               "type": "minecraft:model",
@@ -110,7 +110,7 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/basic/warped_basic_chair"
+              "model": "tac:chair/neat/matkey_neat_chair"
             },
             {
               "type": "minecraft:model",
@@ -126,7 +126,7 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/basic/warped_basic_chair"
+              "model": "tac:chair/neat/matkey_neat_chair"
             },
             {
               "type": "minecraft:model",
@@ -142,7 +142,7 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/basic/warped_basic_chair"
+              "model": "tac:chair/neat/matkey_neat_chair"
             },
             {
               "type": "minecraft:model",
@@ -158,7 +158,7 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/basic/warped_basic_chair"
+              "model": "tac:chair/neat/matkey_neat_chair"
             },
             {
               "type": "minecraft:model",
@@ -174,7 +174,7 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/basic/warped_basic_chair"
+              "model": "tac:chair/neat/matkey_neat_chair"
             },
             {
               "type": "minecraft:model",
@@ -190,7 +190,7 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/basic/warped_basic_chair"
+              "model": "tac:chair/neat/matkey_neat_chair"
             },
             {
               "type": "minecraft:model",
@@ -206,7 +206,7 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/basic/warped_basic_chair"
+              "model": "tac:chair/neat/matkey_neat_chair"
             },
             {
               "type": "minecraft:model",
@@ -222,7 +222,7 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/basic/warped_basic_chair"
+              "model": "tac:chair/neat/matkey_neat_chair"
             },
             {
               "type": "minecraft:model",
@@ -238,7 +238,7 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/basic/warped_basic_chair"
+              "model": "tac:chair/neat/matkey_neat_chair"
             },
             {
               "type": "minecraft:model",
@@ -254,7 +254,7 @@
           "models": [
             {
               "type": "minecraft:model",
-              "model": "tac:chair/basic/warped_basic_chair"
+              "model": "tac:chair/neat/matkey_neat_chair"
             },
             {
               "type": "minecraft:model",
