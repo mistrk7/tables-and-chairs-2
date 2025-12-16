@@ -73,6 +73,6 @@ for model, property in models.items():
                 f"minecraft:custom_name={{translate:\"tac.{model}.{mat}.{type}\",italic:false}}"
             )
             the_item = 'minecraft:armor_stand['+item_components+']'
-            func_id = f"tac:give/{model}_{mat}_{type}"
+            func_id = f"tac:give/{mat}_{model}_{type}"
             function func_id:
                 give @s the_item 16
