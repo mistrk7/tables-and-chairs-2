@@ -7,6 +7,8 @@ def generate(ctx: Context):                                           # [1]
 
     list_models = ctx.assets.models.match("matkey*")
     list_items = ctx.assets.item_models.match("matkey*")
+    list_recipes = ctx.data.recipes.match("matkey*")
+    list_advancements = ctx.data.advancements.match("matkey*")
 
     for model in list_models:
         for type in wood_types:
@@ -25,6 +27,8 @@ def generate(ctx: Context):                                           # [1]
             # Generate new model file
             newfile_location = model.replace('matkey', type)
             ctx.assets.models[newfile_location] = handle
+        
+        del ctx.assets.models[model]
 
     for item in list_items:
         for type in wood_types:
@@ -43,3 +47,46 @@ def generate(ctx: Context):                                           # [1]
             # Generate new model file
             newfile_location = item.replace('matkey', type)
             ctx.assets.item_models[newfile_location] = handle
+        
+        del ctx.assets.item_models[item]
+
+    for recipe in list_recipes:
+        for type in wood_types:
+            
+            # Get the source recipe in namespace
+            src_recipe = ctx.data.recipes[recipe]
+            # Get the source recipe in system path
+            handle = JsonFile(source_path= src_recipe.source_path)
+
+            # Replace instances of 'matkey' in handle with material
+            handle.text = handle.text.replace('matkey', type)
+            if type == 'crimson' or type == 'warped':
+                handle.text = handle.text.replace('log', 'stem')
+            if type == 'bamboo':
+                handle.text = handle.text.replace('log', 'block')
+            # Generate new model file
+            newfile_location = recipe.replace('matkey', type)
+            ctx.data.recipes[newfile_location] = handle
+        
+        del ctx.data.recipes[recipe]
+
+    for advancement in list_advancements:
+        for type in wood_types:
+            
+            # Get the source advancement in namespace
+            src_advancement = ctx.data.advancements[advancement]
+            # Get the source advancement in system path
+            handle = JsonFile(source_path= src_advancement.source_path)
+
+            # Replace instances of 'matkey' in handle with material
+            handle.text = handle.text.replace('matkey', type)
+            if type == 'crimson' or type == 'warped':
+                handle.text = handle.text.replace('xlog', 'stem')
+            if type == 'bamboo':
+                handle.text = handle.text.replace('xlog', 'block')
+            handle.text = handle.text.replace('xlog', 'log')
+            # Generate new model file
+            newfile_location = advancement.replace('matkey', type)
+            ctx.data.advancements[newfile_location] = handle
+        
+        del ctx.data.advancements[advancement]
