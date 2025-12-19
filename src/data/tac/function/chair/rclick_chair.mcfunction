@@ -9,7 +9,19 @@ execute run with entity @s:
 
         # If not holding a carpet or shears, sit on the chair
         unless entity @n[tag=is_occupied,type=player,distance=0..0.8] unless items entity @s weapon.mainhand #minecraft:wool_carpets unless items entity @s weapon.mainhand minecraft:shears:
+
+            scoreboard players set is_seated tac.main 1
+            execute if entity @s on vehicle run scoreboard players reset is_seated tac.main
+
+            #Sit on the chair
             ride @s mount @n[tag=chair,distance=0..0.8,type=minecraft:item_display]
+
+            # Play seated sound if player is not already seated
+            execute if score is_seated tac.main matches 1:
+                playsound minecraft:block.wood.step block @a ~ ~ ~ 0.3 1
+                playsound minecraft:item.armor.equip_leather block @a ~ ~ ~ 0.3 1.0
+            scoreboard players reset is_seated tac.main
+
         # (detag the rider if was there)
         execute as @n[tag=is_occupied,type=player,distance=0..0.8] run tag @s remove is_occupied
 
