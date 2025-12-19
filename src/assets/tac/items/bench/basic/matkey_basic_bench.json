@@ -7,82 +7,26 @@
       "model": "tac:bench/basic/matkey/matkey_basic_bench_full"
     },
     "entries": [
-      {
-        "threshold": 0,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_full" }
-      },
-      {
-        "threshold": 1,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_inner" }
-      },
-      {
-        "threshold": 2,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_inner_flip" }
-      },
-      {
-        "threshold": 3,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_full" }
-      },
-      {
-        "threshold": 4,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_outer" }
-      },
-      {
-        "threshold": 5,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_outer" }
-      },
-      {
-        "threshold": 6,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_outer" }
-      },
-      {
-        "threshold": 7,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_outer" }
-      },
-      {
-        "threshold": 8,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_outer_flip" }
-      },
-      {
-        "threshold": 9,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_outer_flip" }
-      },
-      {
-        "threshold": 10,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_outer_flip" }
-      },
-      {
-        "threshold": 11,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_outer_flip" }
-      },
-      {
-        "threshold": 12,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_full" }
-      },
-      {
-        "threshold": 13,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_inner" }
-      },
-      {
-        "threshold": 14,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_inner_flip" }
-      },
-      {
-        "threshold": 15,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_full" }
-      },
-      {
-        "threshold": 16,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_end_right" }
-      },
-      {
-        "threshold": 32,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_end_left" }
-      },
-      {
-        "threshold": 48,
-        "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_mid" }
-      }
+      {"threshold": 0, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_full" }},
+      {"threshold": 1, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_inner" }},
+      {"threshold": 2, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_inner_flip" }},
+      {"threshold": 3, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_full" }},
+      {"threshold": 4, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_outer" }},
+      {"threshold": 5, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_outer" }},
+      {"threshold": 6, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_outer" }},
+      {"threshold": 7, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_outer" }},
+      {"threshold": 8, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_outer_flip" }},
+      {"threshold": 9, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_outer_flip" }},
+      {"threshold": 10, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_outer_flip" }},
+      {"threshold": 11, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_outer_flip" }},
+      {"threshold": 12, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_full" }},
+      {"threshold": 13, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_inner" }},
+      {"threshold": 14, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_corner_inner_flip" }},
+      {"threshold": 15, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_full" }},
+      {"threshold": 16, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_end_right" }},
+      
+      {"threshold": 32, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_end_left" }},
+      {"threshold": 48, "model": { "type": "minecraft:model", "model": "tac:bench/basic/matkey/matkey_basic_bench_mid" }}
     ]
   }
 }
