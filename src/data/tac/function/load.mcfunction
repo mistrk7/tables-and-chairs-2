@@ -22,8 +22,19 @@ schedule function ./load_detect_old 1s:
 # WHEN UPDATING VERSION: Replace all instances of 'v(current version)' in the project with 'v(next version)'
 
 
-# All items - Looks through assets folder and creates a give command for all items there. (Python script)
+# Remove all trigger advancements in case one is left out - (Python / bolt script)
 import os
+
+advancements_dir = './src/data/tac/advancement'
+
+if os.path.isdir(advancements_dir):
+    for filename in os.listdir(advancements_dir):
+        if filename.endswith('.json'):
+            advancement_name = filename[:-5]  # remove '.json'
+            remove_adv = f"tac:{advancement_name}"
+            advancement revoke @s only remove_adv
+
+# All items - Looks through assets folder and creates a give command for all items there. (Python / bolt script)
 
 assets = './src/assets/tac/items'
 materials = ctx.meta["wood_types"]
