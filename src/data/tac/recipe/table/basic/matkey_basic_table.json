@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "table_pedestal_basic",
+  "group": "table_basic",
   "key": {
-    "#": "minecraft:bamboo_planks",
+    "#": "minecraft:matkey_planks",
     "X": "minecraft:stick"
   },
   "pattern": [
     "###",
-    " X "
+    "X X"
   ],
   "result": {
     "components": {
-      "minecraft:item_model": "tac:table/pedestal_basic/bamboo_pedestal_basic_table",
+      "minecraft:item_model": "tac:table/basic/matkey_basic_table",
       "minecraft:custom_model_data": {
         "floats": [0]
       },
@@ -30,8 +30,8 @@
             "components": {
               "minecraft:custom_data": {
                 "model": "table",
-                "type": "pedestal_basic",
-                "mat": "bamboo",
+                "type": "basic",
+                "mat": "matkey",
                 "tac": true
               }
             }
@@ -43,8 +43,8 @@
             "components": {
               "minecraft:custom_data": {
                 "model": "table",
-                "type": "pedestal_basic",
-                "mat": "bamboo",
+                "type": "basic",
+                "mat": "matkey",
                 "tac": true
               }
             }
@@ -53,11 +53,11 @@
       },
       "minecraft:custom_data": {
         "model": "table",
-        "type": "pedestal_basic",
-        "mat": "bamboo",
+        "type": "basic",
+        "mat": "matkey",
         "tac": true
       },
-      "minecraft:custom_name": {"translate":"tac.table.bamboo.pedestal_basic","italic":false}
+      "minecraft:custom_name": {"translate":"tac.table.matkey.basic","italic":false}
     },
     "count": 1,
     "id": "minecraft:armor_stand"

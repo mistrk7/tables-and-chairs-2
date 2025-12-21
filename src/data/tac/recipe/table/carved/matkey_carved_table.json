@@ -3,7 +3,7 @@
   "category": "misc",
   "group": "table_carved",
   "key": {
-    "#": "minecraft:pale_oak_stairs",
+    "#": "minecraft:matkey_stairs",
     "X": "minecraft:stick"
   },
   "pattern": [
@@ -12,7 +12,7 @@
   ],
   "result": {
     "components": {
-      "minecraft:item_model": "tac:table/carved/pale_oak_carved_table",
+      "minecraft:item_model": "tac:table/carved/matkey_carved_table",
       "minecraft:custom_model_data": {
         "floats": [0]
       },
@@ -31,7 +31,7 @@
               "minecraft:custom_data": {
                 "model": "table",
                 "type": "carved",
-                "mat": "pale_oak",
+                "mat": "matkey",
                 "tac": true
               }
             }
@@ -44,7 +44,7 @@
               "minecraft:custom_data": {
                 "model": "table",
                 "type": "carved",
-                "mat": "pale_oak",
+                "mat": "matkey",
                 "tac": true
               }
             }
@@ -54,10 +54,10 @@
       "minecraft:custom_data": {
         "model": "table",
         "type": "carved",
-        "mat": "pale_oak",
+        "mat": "matkey",
         "tac": true
       },
-      "minecraft:custom_name": {"translate":"tac.table.pale_oak.carved","italic":false}
+      "minecraft:custom_name": {"translate":"tac.table.matkey.carved","italic":false}
     },
     "count": 1,
     "id": "minecraft:armor_stand"
