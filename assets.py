@@ -26,7 +26,12 @@ def generate(ctx: Context):                                           # [1]
                 handle.text = handle.text.replace('log', 'block')
             # Generate new model file
             newfile_location = model.replace('matkey', type)
-            ctx.assets.models[newfile_location] = handle
+            try:
+                ctx.assets.models[newfile_location]
+            except:
+                ctx.assets.models[newfile_location] = handle
+            else:
+                print(f"{newfile_location} already exists, skipping.") 
         
         del ctx.assets.models[model]
 
@@ -46,7 +51,12 @@ def generate(ctx: Context):                                           # [1]
                 handle.text = handle.text.replace('log', 'block')
             # Generate new model file
             newfile_location = item.replace('matkey', type)
-            ctx.assets.item_models[newfile_location] = handle
+            try:
+                ctx.assets.item_models[newfile_location]
+            except:
+                ctx.assets.item_models[newfile_location] = handle
+            else:
+                print(f"{newfile_location} already exists, skipping.")
         
         del ctx.assets.item_models[item]
 
@@ -66,7 +76,12 @@ def generate(ctx: Context):                                           # [1]
                 handle.text = handle.text.replace('log', 'block')
             # Generate new model file
             newfile_location = recipe.replace('matkey', type)
-            ctx.data.recipes[newfile_location] = handle
+            try:
+                ctx.data.recipes[newfile_location]
+            except:
+                ctx.data.recipes[newfile_location] = handle
+            else:
+                print(f"{newfile_location} already exists, skipping.")
         
         del ctx.data.recipes[recipe]
 
@@ -87,6 +102,11 @@ def generate(ctx: Context):                                           # [1]
             handle.text = handle.text.replace('xlog', 'log')
             # Generate new model file
             newfile_location = advancement.replace('matkey', type)
-            ctx.data.advancements[newfile_location] = handle
-        
+            try:
+                ctx.data.advancements[newfile_location]
+            except:
+                ctx.data.advancements[newfile_location] = handle
+            else:
+                print(f"{newfile_location} already exists, skipping.")  
+                      
         del ctx.data.advancements[advancement]
