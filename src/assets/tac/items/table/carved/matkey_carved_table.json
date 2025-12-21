@@ -1,0 +1,76 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "fallback": {"type": "minecraft:model",
+      "model": "tac:table/carved/matkey/top_table_carved_matkey"
+    },
+    "entries": [
+      {"threshold": 0, "model": {"type": "minecraft:composite","models": [
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/top_table_carved_matkey"},
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/legs_whole_carved_matkey"}
+      ]}},
+      {"threshold": 1, "model": {"type": "minecraft:composite","models": [
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/top_table_carved_matkey"},
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/facing/legs_side_s_carved_matkey"}
+      ]}},
+      {"threshold": 2, "model": {"type": "minecraft:composite","models": [
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/top_table_carved_matkey"},
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/facing/legs_side_w_carved_matkey"}
+      ]}},
+      {"threshold": 3, "model": {"type": "minecraft:composite","models": [
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/top_table_carved_matkey"},
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/facing/legs_corner_w_carved_matkey"}
+      ]}},
+      {"threshold": 4, "model": {"type": "minecraft:composite","models": [
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/top_table_carved_matkey"},
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/facing/legs_side_n_carved_matkey"}
+      ]}},
+      {"threshold": 5, "model": {"type": "minecraft:composite","models": [
+          {"type": "minecraft:model","model": "tac:table/carved/matkey/top_table_carved_matkey"},
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/facing/legs_skirt_e_carved_matkey"},
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/facing/legs_skirt_w_carved_matkey"}
+      ]}},
+      {"threshold": 6, "model": {"type": "minecraft:composite","models": [
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/top_table_carved_matkey"},
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/facing/legs_corner_n_carved_matkey"}
+      ]}},
+      {"threshold": 7, "model": {"type": "minecraft:composite","models": [
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/top_table_carved_matkey"},
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/facing/legs_skirt_w_carved_matkey"}
+      ]}},
+      {"threshold": 8, "model": {"type": "minecraft:composite","models": [
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/top_table_carved_matkey"},
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/facing/legs_side_e_carved_matkey"}
+      ]}},
+      {"threshold": 9, "model": {"type": "minecraft:composite","models": [
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/top_table_carved_matkey"},
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/facing/legs_corner_s_carved_matkey"}
+      ]}},
+      {"threshold": 10, "model": {"type": "minecraft:composite","models": [
+          {"type": "minecraft:model","model": "tac:table/carved/matkey/top_table_carved_matkey"},
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/facing/legs_skirt_s_carved_matkey"},
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/facing/legs_skirt_n_carved_matkey"}
+      ]}},
+      {"threshold": 11, "model": {"type": "minecraft:composite","models": [
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/top_table_carved_matkey"},
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/facing/legs_skirt_s_carved_matkey"}
+      ]}},
+      {"threshold": 12, "model": {"type": "minecraft:composite","models": [
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/top_table_carved_matkey"},
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/facing/legs_corner_e_carved_matkey"}
+      ]}},
+      {"threshold": 13, "model": {"type": "minecraft:composite","models": [
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/top_table_carved_matkey"},
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/facing/legs_skirt_e_carved_matkey"}
+      ]}},
+      {"threshold": 14, "model": {"type": "minecraft:composite","models": [
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/top_table_carved_matkey"},
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/facing/legs_skirt_n_carved_matkey"}
+      ]}},
+      {"threshold": 15, "model": {"type": "minecraft:composite","models": [
+        {"type": "minecraft:model","model": "tac:table/carved/matkey/top_table_carved_matkey" }
+      ]}}
+    ]
+  }
+}

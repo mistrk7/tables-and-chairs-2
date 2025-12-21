@@ -1,4 +1,0 @@
-{
-    "parent": "tac:table/top_table_template",
-	"textures": {"0": "block/cherry_planks"}
-}
