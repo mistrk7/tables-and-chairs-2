@@ -7,7 +7,7 @@
       "X": "minecraft:stick"
     },
     "pattern": [
-      "#  ",
+      "#X ",
       "## ",
       "XX "
     ],
