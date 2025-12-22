@@ -27,12 +27,18 @@ function ~/action:
                 $particle block{block_state:{Name:$(mat)_planks}} ~ ~.6 ~ 0 0 0 1 4
                 $particle block{block_state:{Name:$(mat)_planks}} ~ ~1.2 ~ 0 0 0 1 4
 
+        # Update Sourrounding Benches
+        execute summon minecraft:block_display:
+            tag @s add tac
+            scoreboard players set #repeat_modify tac.main 1
+            function tac:bench/modify_bench
+
         #Destroy the bench
         tag @s add killinteraction
         schedule function ./killinteraction 0.1s append:
             kill @e[tag=killinteraction]
         kill @n[type=item_display,tag=bench,distance=..0.61]
-        #kill @n[type=armor_stand,tag=pressure,tag=tac,distance=..0.8]
+        
         setblock ~ ~1 ~ minecraft:air
         scoreboard players remove chairs tac.main 1
         ## ^^ Benches count as chairs for now on the scoreboard
