@@ -30,7 +30,8 @@
   "rewards": {
     "recipes": [
       "tac:chair/basic/matkey_basic_chair",
-      "tac:chair/carved/matkey_carved_chair"
+      "tac:chair/carved/matkey_carved_chair",
+      "tac:bench/basic/matkey_basic_bench"
     ]
   }
 }
