@@ -6,6 +6,7 @@ execute store result storage tac:main objectCount int 1 run scoreboard players g
 
 scoreboard players reset destroy-count tac.main
 scoreboard players reset total tac.main
+scoreboard players reset #is-destroying tac.main
 
 execute with storage tac:main:
     $tellraw @a ["",{"text":"[T&C]: "},{"text":"$(destroyCount)","color":"aqua"},{"text":" furniture removed/modified. ","color":"yellow"},{"text":"$(objectCount)*","color":"aqua"},{"text":" still remain.","color":"yellow"}]

@@ -1,3 +1,4 @@
+scoreboard players set #is-destroying tac.main 1
 execute at @s[tag=chair]:
     scoreboard players set @s tac.main 0
 
@@ -12,6 +13,25 @@ execute at @s[tag=chair]:
     # Destroy the chair
     execute as @n[tag=chair,type=interaction,distance=0..0.8]:
         function tac:chair/break_chair/action/destroy
+        scoreboard players add destroy-count tac.main 1
+
+    scoreboard players reset @s tac.main
+
+execute at @s[tag=bench] positioned ~ ~ ~:
+    scoreboard players set @s tac.main 0
+
+    # Replace the bench with stairs
+    execute as @n[tag=bench,type=item_display,distance=0..0.8]:
+        execute with entity @s item.components."minecraft:custom_data":
+            $execute store success score @s tac.main if entity @s[y_rotation= -135..-45] run setblock ~ ~.2 ~ $(mat)_stairs[facing=west]
+            $execute store success score @s tac.main if entity @s[y_rotation= -45..45] run setblock ~ ~.2 ~ $(mat)_stairs[facing=north]
+            $execute store success score @s tac.main if entity @s[y_rotation= 45..135] run setblock ~ ~.2 ~ $(mat)_stairs[facing=east]
+            $execute if score @s tac.main matches 0 run setblock ~ ~ ~ $(mat)_stairs[facing=south]
+    
+    # Destroy the bench
+    execute as @n[tag=bench,type=interaction,distance=0..0.8]:
+        function tac:bench/break_bench/action/destroy
+        kill @s
         scoreboard players add destroy-count tac.main 1
 
     scoreboard players reset @s tac.main

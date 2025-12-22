@@ -1,5 +1,6 @@
 # tac:x/clear : Clears all loaded trace of T&C
 scoreboard players set destroy-count tac.main 0
+scoreboard players set #is-destroying tac.main 1
 
 execute as @e[tag=tac] at @s run function ./zfunction/mdrn_clear
 execute as @e[tag=tac.V5.0] at @s run function ./zfunction/lgcy_clear

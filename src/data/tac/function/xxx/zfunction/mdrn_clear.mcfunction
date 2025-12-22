@@ -14,6 +14,14 @@ execute at @s[tag=table]:
         function tac:table/break_table/destroy
         scoreboard players add destroy-count tac.main 1
 
+execute at @s[tag=bench]:
+    
+    # Destroy the bench
+    execute as @s[tag=bench,type=interaction,distance=0..0.8]:
+        setblock ~ ~1 ~ air
+        function tac:bench/break_bench/action/destroy
+        scoreboard players add destroy-count tac.main 1
+
 #execute at @s[tag=table] run kill @n[tag=table,distance=0.1..0.4]
 #execute at @s[tag=chair] run kill @n[tag=chair,distance=0.1..0.61]
 

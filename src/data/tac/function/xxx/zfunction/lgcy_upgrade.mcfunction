@@ -21,7 +21,7 @@ execute if entity @s[tag=chk.bench, tag=!chk.interaction] at @s align xyz positi
     for x in range(len(oldTypes)):
         for y in range(len(oldMats)):
             execute if entity @s[tag=oldTypes[x], tag=oldMats[y]]:
-                function tac:chair/summon_chair {mat: newMats[y], type: newTypes[x], facing: 0}
+                function tac:bench/summon_bench {mat: newMats[y], type: newTypes[x], facing: 0}
                 data modify entity @n[type=item_display,tag=chair, distance=..1] Rotation set from entity @s Rotation
 
 # Legacy sawmill conversion
