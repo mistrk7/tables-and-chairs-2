@@ -15,7 +15,9 @@
     "resource_pack":{
         "load":["src"],
         "pack_format": 63,
-        "supported_formats": [63,75]
+        "supported_formats": [63,75],
+        "min_format": 63,
+        "max_format": 75
     },
     
     "output": "build",
