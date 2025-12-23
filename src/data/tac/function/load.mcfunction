@@ -63,7 +63,7 @@ def data_component(model):
 
 def bench_data_component(model):
     if model == 'bench':
-        return (f"rotation:0,")
+        return (f"rotation:0b,")
     else:
         return ("")
 

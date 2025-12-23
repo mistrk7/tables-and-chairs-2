@@ -32,7 +32,7 @@
                   "model": "bench",
                   "type": "basic",
                   "mat": "matkey",
-                  "rotation":0,
+                  "rotation": 0,
                   "tac": true
                 }
               }
@@ -46,7 +46,7 @@
                   "model": "bench",
                   "type": "basic",
                   "mat": "matkey",
-                  "rotation":0,
+                  "rotation": 0,
                   "tac": true
                 }
               }
@@ -58,7 +58,7 @@
           "model": "bench",
           "type": "basic",
           "mat": "matkey",
-          "rotation":0,
+          "rotation": 0,
           "tac": true
         },
         "minecraft:custom_name": {"translate":"tac.bench.matkey.basic","italic":false}
