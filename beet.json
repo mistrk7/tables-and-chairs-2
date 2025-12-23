@@ -7,11 +7,13 @@
 
     "data_pack":{
         "load":["src"],
-        "pack_format": 88
+        "pack_format": 94,
+        "supported_formats": [80,94.1]
     },
     "resource_pack":{
         "load":["src"],
-        "pack_format": 69
+        "pack_format": 63,
+        "supported_formats": [63,75]
     },
     
     "output": "build",
