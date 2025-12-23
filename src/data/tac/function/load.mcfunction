@@ -32,7 +32,7 @@ if os.path.isdir(advancements_dir):
         if filename.endswith('.json'):
             advancement_name = filename[:-5]  # remove '.json'
             remove_adv = f"tac:{advancement_name}"
-            advancement revoke @s only remove_adv
+            advancement revoke @p only remove_adv
 
 # All items - Looks through assets folder and creates a give command for all items there. (Python / bolt script)
 
