@@ -81,7 +81,7 @@ for model, property in models.items():
                 f"ArmorItems:[{{id:\"minecraft:armor_stand\",components:{{\"minecraft:custom_data\":{{"+
                 f"model:\"{model}\","+bench_data_component(model)+f"type:\"{type}\",mat:\"{mat}\",tac:1b}}}}}}]}},"+
                 f"minecraft:custom_data={{model:\"{model}\",type:\"{type}\",mat:\"{mat}\","+bench_data_component(model)+f"tac:1b}},"+
-                f"minecraft:custom_name={{translate:\"tac.{model}.{mat}.{type}\",italic:false}}"
+                f"minecraft:custom_name={{translate:\"tac.{model}.{mat}.{type}\",italic:false,fallback:\"tac.{model}.{mat}.{type}\"}}"
             )
             the_item = 'minecraft:armor_stand['+item_components+']'
             func_id = f"tac:give/{mat}_{model}_{type}"

@@ -53,7 +53,7 @@ $summon minecraft:item_display ~ ~.6 ~ {\
                 tac:1b\
             },\
             "minecraft:custom_name":\
-                {translate:"tac.bench.$(mat).$(type)",italic:false}\
+                {translate:"tac.bench.$(mat).$(type)",italic:false, fallback: "tac.bench.$(mat).$(type)"}\
         }\
     }\
 }
