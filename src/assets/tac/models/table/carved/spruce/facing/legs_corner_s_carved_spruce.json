@@ -1,0 +1,6 @@
+{
+  "parent": "tac:table/carved/spruce/legs_corner_carved_spruce",
+  "textures": {
+    "0": "block/spruce_planks"
+  }
+}
