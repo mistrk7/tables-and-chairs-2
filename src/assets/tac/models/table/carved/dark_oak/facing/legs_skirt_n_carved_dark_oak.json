@@ -1,0 +1,15 @@
+{
+  "parent": "tac:table/carved/dark_oak/legs_skirt_carved_dark_oak",
+    "textures": {
+      "0": "block/dark_oak_planks"
+    },
+    "display": {
+      "fixed": {
+        "rotation": [
+          0,
+          180,
+          0
+        ]
+      }
+    }
+  }
