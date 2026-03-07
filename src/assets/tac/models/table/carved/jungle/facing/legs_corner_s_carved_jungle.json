@@ -1,0 +1,6 @@
+{
+  "parent": "tac:table/carved/jungle/legs_corner_carved_jungle",
+  "textures": {
+    "0": "block/jungle_planks"
+  }
+}
