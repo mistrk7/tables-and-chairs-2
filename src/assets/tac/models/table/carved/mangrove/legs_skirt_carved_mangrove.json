@@ -1,0 +1,70 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "block/mangrove_trapdoor",
+		"particle": "block/mangrove_trapdoor"
+	},
+	"elements": [
+		{
+			"name": "Decoration.4",
+			"from": [1, 9, 10],
+			"to": [1, 13, 14],
+			"rotation": {"x": 0, "y": 90, "z": 0, "origin": [1, 11, 3]},
+			"faces": {
+				"east": {"uv": [8, 3, 12, 7], "texture": "#1"},
+				"west": {"uv": [4, 3, 8, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Decoration.6",
+			"from": [-3, 9, 10],
+			"to": [-3, 13, 14],
+			"rotation": {"x": 0, "y": 90, "z": 0, "origin": [-3, 11, 3]},
+			"faces": {
+				"east": {"uv": [4, 3, 8, 7], "texture": "#1"},
+				"west": {"uv": [8, 3, 12, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Decoration.6",
+			"from": [-7, 9, 10],
+			"to": [-7, 13, 12],
+			"rotation": {"x": 0, "y": 90, "z": 0, "origin": [-7, 11, 3]},
+			"faces": {
+				"east": {"uv": [7, 3, 9, 7], "texture": "#1"},
+				"west": {"uv": [7, 3, 9, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Decoration.7",
+			"from": [-5, 9, 10],
+			"to": [-5, 13, 12],
+			"rotation": {"x": 0, "y": 90, "z": 0, "origin": [-5, 11, 3]},
+			"faces": {
+				"east": {"uv": [7, 3, 9, 7], "texture": "#1"},
+				"west": {"uv": [7, 3, 9, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Decoration.7",
+			"from": [7, 9, 10],
+			"to": [7, 13, 12],
+			"rotation": {"x": 0, "y": 90, "z": 0, "origin": [7, 11, 3]},
+			"faces": {
+				"east": {"uv": [7, 3, 9, 7], "texture": "#1"},
+				"west": {"uv": [7, 3, 9, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Decoration.8",
+			"from": [5, 9, 10],
+			"to": [5, 13, 12],
+			"rotation": {"x": 0, "y": 90, "z": 0, "origin": [5, 11, 3]},
+			"faces": {
+				"east": {"uv": [7, 3, 9, 7], "texture": "#1"},
+				"west": {"uv": [7, 3, 9, 7], "texture": "#1"}
+			}
+		}
+	]
+}
