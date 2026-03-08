@@ -1,0 +1,15 @@
+{
+  "parent": "tac:table/carved/crimson/legs_skirt_carved_crimson",
+    "textures": {
+      "0": "block/crimson_planks"
+    },
+    "display": {
+      "fixed": {
+        "rotation": [
+          0,
+          90,
+          0
+        ]
+      }
+    }
+  }
