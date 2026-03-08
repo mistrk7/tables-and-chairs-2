@@ -1,0 +1,4 @@
+{
+  "parent": "tac:table/carved/warped/legs_side_carved_warped",
+  "textures": {"0": "block/warped_planks"}
+}
