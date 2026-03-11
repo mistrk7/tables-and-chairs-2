@@ -1,0 +1,15 @@
+{
+  "parent": "tac:table/carved/pale_oak/legs_side_carved_pale_oak",
+    "textures": {
+      "0": "block/pale_oak_planks"
+    },
+    "display": {
+      "fixed": {
+        "rotation": [
+          0,
+          90,
+          0
+        ]
+      }
+    }
+  }
