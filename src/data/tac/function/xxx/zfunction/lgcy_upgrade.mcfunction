@@ -15,13 +15,19 @@ execute if entity @s[tag=chk.chair, tag=!chk.interaction] at @s align xyz positi
                 function tac:chair/summon_chair {mat: newMats[y], type: newTypes[x], facing: 0}
                 data modify entity @n[type=item_display,tag=chair, distance=..1] Rotation set from entity @s Rotation
 
-# Legacy bench conversion (temp)
+# Legacy bench conversion
+oldTypes = ['chk.bench.basic', 'chk.bench.simple', 'chk.bench.carved', 'chk.bench.fancy.1']
+newTypes = ['basic', 'neat', 'carved', 'refined']
+
+oldMats = ['chk.bench.acacia', 'chk.bench.bamboo', 'chk.bench.birch', 'chk.bench.cherry', 'chk.bench.crimson', 'chk.bench.dark_oak', 'chk.bench.jungle', 'chk.bench.mangrove', 'chk.bench.oak', 'chk.bench.pale_oak', 'chk.bench.spruce', 'chk.bench.warped']
+newMats = ['acacia', 'bamboo', 'birch', 'cherry', 'crimson', 'dark_oak', 'jungle', 'mangrove', 'oak', 'pale_oak', 'spruce', 'warped']
+
 execute if entity @s[tag=chk.bench, tag=!chk.interaction] at @s align xyz positioned ~.5 ~ ~.5:
     scoreboard players add destroy-count tac.main 1
     for x in range(len(oldTypes)):
         for y in range(len(oldMats)):
             execute if entity @s[tag=oldTypes[x], tag=oldMats[y]]:
-                function tac:bench/summon_bench {mat: newMats[y], type: newTypes[x], facing: 0}
+                function tac:bench/summon_bench {type: newTypes[x], mat: newMats[y], state: 0, facing: 0}
                 data modify entity @n[type=item_display,tag=chair, distance=..1] Rotation set from entity @s Rotation
 
 # Legacy sawmill conversion
@@ -32,7 +38,7 @@ execute at @s[tag=tac.sawmill]:
 # Legacy table conversion
 
 oldTypes = ['chk.table.basic.1', 'chk.table.basic.2', 'chk.table.carved.1', 'chk.table.carved.2']
-newTypes = ['basic', 'pedestal_basic', 'basic', 'basic']
+newTypes = ['basic', 'pedestal_basic', 'carved', 'pedestal_carved']
 # newTypes = ['basic', 'pedestal_basic', 'carved', 'pedestal_carved']
 
 oldMats = ['chk.table.acacia', 'chk.table.bamboo', 'chk.table.birch', 'chk.table.cherry', 'chk.table.crimson', 'chk.table.dark_oak', 'chk.table.jungle', 'chk.table.mangrove', 'chk.table.oak', 'chk.table.pale_oak', 'chk.table.spruce', 'chk.table.warped']
