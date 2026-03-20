@@ -48,7 +48,7 @@ $summon minecraft:item_display ~ ~ ~ {\
                 tac:1b\
             },\
             "minecraft:custom_name":\
-                {translate:"tac.table.$(mat).$(type)",italic:false}\
+                {translate:"tac.table.$(mat).$(type)",italic:false, fallback: "tac.table.$(mat).$(type)"}\
         }\
     }\
 }
