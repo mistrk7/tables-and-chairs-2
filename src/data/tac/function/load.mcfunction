@@ -69,7 +69,7 @@ def bench_data_component(model):
 
 def trans_fallback(model):
     if model == 'bench':
-        return (f"fallback:\"tac.{model}.{mat}.{type}")
+        return (f",fallback:\"tac.{model}.{mat}.{type}\"")
     else:
         return ("")
 
