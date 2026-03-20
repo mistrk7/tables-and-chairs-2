@@ -4,38 +4,6 @@
     "property": "minecraft:custom_model_data",
     "fallback": {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/top_table_basic"},
     "entries": [
-      {"threshold": -9, "model": {"type": "minecraft:composite","models": [
-        {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/top_table_basic"},
-        {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/legs_wall_w_basic"}
-      ]}},
-      {"threshold": -8, "model": {"type": "minecraft:composite","models": [
-        {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/top_table_basic"},
-        {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/legs_skew_w_basic"}
-      ]}},
-      {"threshold": -7, "model": {"type": "minecraft:composite","models": [
-        {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/top_table_basic"},
-        {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/legs_wall_s_basic"}
-      ]}},
-      {"threshold": -6, "model": {"type": "minecraft:composite","models": [
-        {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/top_table_basic"},
-        {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/legs_skew_s_basic"}
-      ]}},
-      {"threshold": -5, "model": {"type": "minecraft:composite","models": [
-        {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/top_table_basic"},
-        {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/legs_wall_e_basic"}
-      ]}},
-      {"threshold": -4, "model": {"type": "minecraft:composite","models": [
-        {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/top_table_basic"},
-        {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/legs_skew_e_basic"}
-      ]}},
-      {"threshold": -3, "model": {"type": "minecraft:composite","models": [
-        {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/top_table_basic"},
-        {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/legs_wall_n_basic"}
-      ]}},
-      {"threshold": -2, "model": {"type": "minecraft:composite","models": [
-        {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/top_table_basic"},
-        {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/legs_skew_n_basic"}
-      ]}},
       {"threshold": 0, "model": {"type": "minecraft:composite","models": [
         {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/top_table_basic"},
         {"type": "minecraft:model","model": "tac:table/pedestal_basic/matkey/legs_post_single_basic"}
