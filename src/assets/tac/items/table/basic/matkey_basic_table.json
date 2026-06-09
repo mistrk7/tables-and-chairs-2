@@ -69,10 +69,9 @@
         {"type": "minecraft:model","model": "tac:table/basic/matkey/top_table_basic"},
         {"type": "minecraft:model","model": "tac:table/basic/matkey/facing/legs_skirt_n_basic"}
       ]}},
-    {"threshold": 15, "model": {"type": "minecraft:composite", "models": [
-          {"type": "minecraft:model","model": "tac:table/matkey/top_table_basic"}
-        ]
-      }}
+        {"threshold": 15, "model": {"type": "minecraft:composite", "models": [
+        {"type": "minecraft:model","model": "tac:table/basic/matkey/top_table_basic"}
+      ]}}
     ]
   }
 }
