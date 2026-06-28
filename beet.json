@@ -7,11 +7,14 @@
 
     "data_pack":{
         "load":["src"],
-        "min_format": [82],
+
+        "pack_format": 80,
+
+        "min_format": 82,
         "max_format": [107,1],
         "overlays": [
             {
-                "min_format": [82],
+                "min_format": 82,
                 "max_format": [101,1],
                 "directory": "tac_upto26-1"
             }
@@ -19,8 +22,11 @@
     },
     "resource_pack":{
         "load":["src"],
-        "min_format": [65],
-        "max_format": [88]
+
+        "pack_format": 63,
+
+        "min_format": 65,
+        "max_format": 88
     },
     
     "output": "build",
