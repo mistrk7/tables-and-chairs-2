@@ -9,7 +9,11 @@
           }
         },
         "entity": {
-          "tag": "chair"
+            "entity_tags": {
+            "any_of": [
+                "chair"
+            ]
+          }
         }
       }
     }

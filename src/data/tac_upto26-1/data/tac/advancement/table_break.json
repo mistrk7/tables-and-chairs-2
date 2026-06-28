@@ -14,7 +14,7 @@
             }
           },
           "entity": {
-            "entity_type":"minecraft:interaction",
+            "type": "minecraft:interaction",
             "nbt": "{Tags:[\"table\"]}"
           }
         }

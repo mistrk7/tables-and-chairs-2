@@ -1,7 +1,7 @@
 {
     "criteria": {
       "example": {
-        "trigger": "minecraft:player_hurt_entity",
+        "trigger": "minecraft:player_interacted_with_entity",
         "conditions": {
           "player": {
             "equipment": {
@@ -14,13 +14,13 @@
             }
           },
           "entity": {
-            "entity_type":"minecraft:interaction",
+            "type": "minecraft:interaction",
             "nbt": "{Tags:[\"table\"]}"
           }
         }
       }
     },
     "rewards": {
-      "function": "tac:table/break_table"
+      "function": "tac:table/rclick_table"
     }
   }

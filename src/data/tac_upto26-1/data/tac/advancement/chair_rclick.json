@@ -1,6 +1,6 @@
 {
     "criteria": {
-      "interact_with_bench": {
+      "interact_with_chair": {
         "trigger": "minecraft:player_interacted_with_entity",
         "conditions": {
           "player": {
@@ -9,14 +9,14 @@
             }
           },
           "entity": {
-            "entity_type":"minecraft:interaction",
-            "nbt": "{Tags:[\"bench\"]}"
+            "type": "minecraft:interaction",
+            "nbt": "{Tags:[\"chair\"]}"
           }
         }
       }
     },
     "rewards": {
-        "function": "tac:bench/rclick_bench"
+        "function": "tac:chair/rclick_chair"
     }
   }
   

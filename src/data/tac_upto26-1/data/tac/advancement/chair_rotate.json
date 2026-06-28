@@ -1,7 +1,7 @@
 {
   "criteria": {
-    "example": {
-      "trigger": "minecraft:player_hurt_entity",
+    "interact_with_chair": {
+      "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "player": {
           "flags": {
@@ -9,13 +9,12 @@
           }
         },
         "entity": {
-          "entity_type":"minecraft:interaction",
-          "nbt": "{Tags:[\"chair\"]}"
+          "tag": "chair"
         }
       }
     }
   },
   "rewards": {
-    "function": "tac:chair/move_chair"
+      "function": "tac:chair/rotate_chair"
   }
 }
