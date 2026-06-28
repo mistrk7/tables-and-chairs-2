@@ -31,8 +31,7 @@
     "recipes": [
       "tac:table/basic/matkey_basic_table",
       "tac:table/pedestal_basic/matkey_pedestal_basic_table",
-      "tac:tablexxx/carved/matkey_carved_table",
-      "tac:tablexxx/pedestal_carved/matkey_pedestal_carved_table"
+      "tac:tablexxx/carved/matkey_carved_table"
     ]
   }
 }
