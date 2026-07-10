@@ -1,0 +1,147 @@
+{   
+    "tac.title": "Trestles 'n Thwarts",
+
+    "tac.chair.oak.basic": "Stool o' oak",
+    "tac.chair.oak.neat": "Trim stool o' oak",
+    "tac.chair.oak.carved": "Graven stool o' oak",
+    "tac.chair.oak.refined": "Tub chair o' oak",
+    "tac.bench.oak.basic": "Thwart o' oak",
+    "tac.chair.oak.throne": "Cap'n's chair o' oak",
+    
+    "tac.chair.spruce.basic": "Stool o' spruce",
+    "tac.chair.spruce.neat": "Trim stool o' spruce",
+    "tac.chair.spruce.carved": "Graven stool o' spruce",
+    "tac.chair.spruce.refined": "Tub chair o' spruce",
+    "tac.bench.spruce.basic": "Thwart o' spruce",
+    "tac.chair.spruce.throne": "Cap'n's chair o' spruce",
+
+    "tac.chair.birch.basic": "Stool o' birch",
+    "tac.chair.birch.neat": "Trim stool o' birch",
+    "tac.chair.birch.carved": "Graven stool o' birch",
+    "tac.chair.birch.refined": "Tub chair o' birch",
+    "tac.bench.birch.basic": "Thwart o' birch",
+    "tac.chair.birch.throne": "Cap'n's chair o' birch",
+    
+    "tac.chair.jungle.basic": "Stool o' jungle",
+    "tac.chair.jungle.neat": "Trim stool o' jungle",
+    "tac.chair.jungle.carved": "Graven stool o' jungle",
+    "tac.chair.jungle.refined": "Tub chair o' jungle",
+    "tac.bench.jungle.basic": "Thwart o' jungle",
+    "tac.chair.jungle.throne": "Cap'n's chair o' jungle",
+    
+    "tac.chair.acacia.basic": "Stool o' acacia",
+    "tac.chair.acacia.neat": "Trim stool o' acacia",
+    "tac.chair.acacia.carved": "Graven stool o' acacia",
+    "tac.chair.acacia.refined": "Tub chair o' acacia",
+    "tac.bench.acacia.basic": "Thwart o' acacia",
+    "tac.chair.acacia.throne": "Cap'n's chair o' acacia",
+
+    "tac.chair.dark_oak.basic": "Stool o' dusky oak",
+    "tac.chair.dark_oak.neat": "Trim stool o' dusky oak",
+    "tac.chair.dark_oak.carved": "Graven stool o' dusky oak",
+    "tac.chair.dark_oak.refined": "Tub chair o' dusky oak",
+    "tac.bench.dark_oak.basic": "Thwart o' dusky oak",
+    "tac.chair.dark_oak.throne": "Cap'n's chair o' dusky oak",
+    
+    "tac.chair.crimson.basic": "Stool o' ichor",
+    "tac.chair.crimson.neat": "Trim stool o' ichor",
+    "tac.chair.crimson.carved": "Graven stool o' ichor",
+    "tac.chair.crimson.refined": "Tub chair o' ichor",
+    "tac.bench.crimson.basic": "Thwart o' ichor",
+    "tac.chair.crimson.throne": "Cap'n's chair o' ichor",
+
+    "tac.chair.warped.basic": "Stool o' hyphae",
+    "tac.chair.warped.neat": "Trim stool o' hyphae",
+    "tac.chair.warped.carved": "Graven stool o' hyphae",
+    "tac.chair.warped.refined": "Tub chair o' hyphae",
+    "tac.bench.warped.basic": "Thwart o' hyphae",
+    "tac.chair.warped.throne": "Cap'n's chair o' hyphae",
+
+    "tac.chair.mangrove.basic": "Stool o' mangrove",
+    "tac.chair.mangrove.neat": "Trim stool o' mangrove",
+    "tac.chair.mangrove.carved": "Graven stool o' mangrove",
+    "tac.chair.mangrove.refined": "Tub chair o' mangrove",
+    "tac.bench.mangrove.basic": "Thwart o' mangrove",
+    "tac.chair.mangrove.throne": "Cap'n's chair o' mangrove",
+
+    "tac.chair.cherry.basic": "Stool o' cherry",
+    "tac.chair.cherry.neat": "Trim stool o' cherry",
+    "tac.chair.cherry.carved": "Graven stool o' cherry",
+    "tac.chair.cherry.refined": "Tub chair o' cherry",
+    "tac.bench.cherry.basic": "Thwart o' cherry",
+    "tac.chair.cherry.throne": "Cap'n's chair o' cherry",
+
+    "tac.chair.bamboo.basic": "Stool o' bambarrr",
+    "tac.chair.bamboo.neat": "Trim stool o' bambarrr",
+    "tac.chair.bamboo.carved": "Graven stool o' bambarrr",
+    "tac.chair.bamboo.refined": "Tub chair o' bambarrr",
+    "tac.bench.bamboo.basic": "Thwart o' bambarrr",
+    "tac.chair.bamboo.throne": "Cap'n's chair o' bambarrr",
+
+    "tac.chair.pale_oak.basic": "Stool o' wash'd out oak",
+    "tac.chair.pale_oak.neat": "Trim stool o' wash'd out oak",
+    "tac.chair.pale_oak.carved": "Graven stool o' wash'd out oak",
+    "tac.chair.pale_oak.refined": "Tub chair o' wash'd out oak",
+    "tac.bench.pale_oak.basic": "Thwart o' wash'd out oak",
+    "tac.chair.pale_oak.throne": "Cap'n's chair o' wash'd out oak",
+
+    "tac.chair.obsidian.throne": "Cap'n's chair o' rock o' tears",
+    "tac.chair.quartz.throne": "Cap'n's chair o' white rock",
+    "tac.chair.stone_brick.throne": "Cap'n's chair o' bricks o' rock",
+    "tac.chair.iron.throne": "Cap'n's chair o' steel",
+    "tac.chair.copper.throne": "Cap'n's chair o' copper",
+    "tac.chair.gold.throne": "Cap'n's chair o' gold",
+    "tac.chair.diamond.throne": "Cap'n's chair o' diamond",
+    "tac.chair.netherite.throne": "Blackbeard's chair",
+
+    "tac.table.oak.basic": "Mess table o' oak",
+    "tac.table.oak.pedestal_basic": "Pillar table o' oak",
+    "tac.table.oak.carved": "Graven table o' oak",
+
+    "tac.table.pale_oak.basic": "Mess table o' wash'd out oak",
+    "tac.table.pale_oak.pedestal_basic": "Pillar table o' wash'd out oak",
+    "tac.table.pale_oak.carved": "Graven table o' wash'd out oak",
+
+    "tac.table.spruce.basic": "Mess table o' spruce",
+    "tac.table.spruce.pedestal_basic": "Pillar table o' spruce",
+    "tac.table.spruce.carved": "Graven table o' spruce",
+
+    "tac.table.birch.basic": "Mess table o' birch",
+    "tac.table.birch.pedestal_basic": "Pillar table o' birch",
+    "tac.table.birch.carved": "Graven table o' birch",
+
+    "tac.table.jungle.basic": "Mess table o' jungle",
+    "tac.table.jungle.pedestal_basic": "Pillar table o' jungle",
+    "tac.table.jungle.carved": "Graven table o' jungle",
+
+    "tac.table.acacia.basic": "Mess table o' acacia",
+    "tac.table.acacia.pedestal_basic": "Pillar table o' acacia",
+    "tac.table.acacia.carved": "Graven table o' acacia",
+    
+    "tac.table.dark_oak.basic": "Mess table o' dusky oak",
+    "tac.table.dark_oak.pedestal_basic": "Pillar table o' dusky oak",
+    "tac.table.dark_oak.carved": "Graven table o' dusky oak",
+
+    "tac.table.crimson.basic": "Mess table o' ichor",
+    "tac.table.crimson.pedestal_basic": "Pillar table o' ichor",
+    "tac.table.crimson.carved": "Graven table o' ichor",
+
+    "tac.table.warped.basic": "Mess table o' hyphae",
+    "tac.table.warped.pedestal_basic": "Pillar table o' hyphae",
+    "tac.table.warped.carved": "Graven table o' hyphae",
+
+    "tac.table.mangrove.basic": "Mess table o' mangrove",
+    "tac.table.mangrove.pedestal_basic": "Pillar table o' mangrove",
+    "tac.table.mangrove.carved": "Graven table o' mangrove",
+
+    "tac.table.cherry.basic": "Mess table o' cherry",
+    "tac.table.cherry.pedestal_basic": "Pillar table o' cherry",
+    "tac.table.cherry.carved": "Graven table o' cherry",
+
+    "tac.table.bamboo.basic": "Mess table o' bambarrr",
+    "tac.table.bamboo.pedestal_basic": "Pillar table o' bambarrr",
+    "tac.table.bamboo.carved": "Graven table o' bambarrr"
+}
+
+
+

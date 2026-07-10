@@ -1,0 +1,147 @@
+{   
+    "tac.title": "Tayblz an Sitz",
+
+    "tac.chair.oak.basic": "Oak sit",
+    "tac.chair.oak.neat": "Oak sit but pretier",
+    "tac.chair.oak.carved": "Oak sit but fancy",
+    "tac.chair.oak.refined": "Oak sit wif arm thingys",
+    "tac.bench.oak.basic": "Oak outdor sit",
+    "tac.chair.oak.throne": "OAK BIG BOSS SIT",
+    
+    "tac.chair.spruce.basic": "Sproos sit",
+    "tac.chair.spruce.neat": "Sproos sit but pretier",
+    "tac.chair.spruce.carved": "Sproos sit but fancy",
+    "tac.chair.spruce.refined": "Sproos sit wif arm thingys",
+    "tac.bench.spruce.basic": "Sproos outdor sit",
+    "tac.chair.spruce.throne": "SPROOS BIG BOSS SIT",
+
+    "tac.chair.birch.basic": "Burch sit",
+    "tac.chair.birch.neat": "Burch sit but pretier",
+    "tac.chair.birch.carved": "Burch sit but fancy",
+    "tac.chair.birch.refined": "Burch sit wif arm thingys",
+    "tac.bench.birch.basic": "Burch outdor sit",
+    "tac.chair.birch.throne": "BURCH BIG BOSS SIT",
+    
+    "tac.chair.jungle.basic": "Junggel sit",
+    "tac.chair.jungle.neat": "Junggel sit but pretier",
+    "tac.chair.jungle.carved": "Junggel sit but fancy",
+    "tac.chair.jungle.refined": "Junggel sit wif arm thingys",
+    "tac.bench.jungle.basic": "Junggel outdor sit",
+    "tac.chair.jungle.throne": "JUNGGEL BIG BOSS SIT",
+    
+    "tac.chair.acacia.basic": "Acaci sit",
+    "tac.chair.acacia.neat": "Acaci sit but pretier",
+    "tac.chair.acacia.carved": "Acaci sit but fancy",
+    "tac.chair.acacia.refined": "Acaci sit wif arm thingys",
+    "tac.bench.acacia.basic": "Acaci outdor sit",
+    "tac.chair.acacia.throne": "ACACI BIG BOSS SIT",
+
+    "tac.chair.dark_oak.basic": "Darkz ook sit",
+    "tac.chair.dark_oak.neat": "Darkz ook sit but pretier",
+    "tac.chair.dark_oak.carved": "Darkz ook sit but fancy",
+    "tac.chair.dark_oak.refined": "Darkz ook sit wif arm thingys",
+    "tac.bench.dark_oak.basic": "Darkz ook outdor sit",
+    "tac.chair.dark_oak.throne": "DARKZ OOK BIG BOSS SIT",
+    
+    "tac.chair.crimson.basic": "Crimzn sit",
+    "tac.chair.crimson.neat": "Crimzn sit but pretier",
+    "tac.chair.crimson.carved": "Crimzn sit but fancy",
+    "tac.chair.crimson.refined": "Crimzn sit wif arm thingys",
+    "tac.bench.crimson.basic": "Crimzn outdor sit",
+    "tac.chair.crimson.throne": "CRIMZN BIG BOSS SIT",
+
+    "tac.chair.warped.basic": "Warpt sit",
+    "tac.chair.warped.neat": "Warpt sit but pretier",
+    "tac.chair.warped.carved": "Warpt sit but fancy",
+    "tac.chair.warped.refined": "Warpt sit wif arm thingys",
+    "tac.bench.warped.basic": "Warpt outdor sit",
+    "tac.chair.warped.throne": "WARPT BIG BOSS SIT",
+
+    "tac.chair.mangrove.basic": "Mengruv sit",
+    "tac.chair.mangrove.neat": "Mengruv sit but pretier",
+    "tac.chair.mangrove.carved": "Mengruv sit but fancy",
+    "tac.chair.mangrove.refined": "Mengruv sit wif arm thingys",
+    "tac.bench.mangrove.basic": "Mengruv outdor sit",
+    "tac.chair.mangrove.throne": "MENGRUV BIG BOSS SIT",
+
+    "tac.chair.cherry.basic": "Sakura sit",
+    "tac.chair.cherry.neat": "Sakura sit but pretier",
+    "tac.chair.cherry.carved": "Sakura sit but fancy",
+    "tac.chair.cherry.refined": "Sakura sit wif arm thingys",
+    "tac.bench.cherry.basic": "Sakura outdor sit",
+    "tac.chair.cherry.throne": "SAKURA BIG BOSS SIT",
+
+    "tac.chair.bamboo.basic": "Gren stik sit",
+    "tac.chair.bamboo.neat": "Gren stik sit but pretier",
+    "tac.chair.bamboo.carved": "Gren stik sit but fancy",
+    "tac.chair.bamboo.refined": "Gren stik sit wif arm thingys",
+    "tac.bench.bamboo.basic": "Gren stik outdor sit",
+    "tac.chair.bamboo.throne": "BAMBOOO BIG BOSS SIT",
+
+    "tac.chair.pale_oak.basic": "Wite oke sit",
+    "tac.chair.pale_oak.neat": "Wite oke sit but pretier",
+    "tac.chair.pale_oak.carved": "Wite oke sit but fancy",
+    "tac.chair.pale_oak.refined": "Wite oke sit wif arm thingys",
+    "tac.bench.pale_oak.basic": "Wite oke outdor sit",
+    "tac.chair.pale_oak.throne": "WITE OKE BIG BOSS SIT",
+
+    "tac.chair.obsidian.throne": "HARD ROC BIG BOSS SIT",
+    "tac.chair.quartz.throne": "KWORTS BIG BOSS SIT",
+    "tac.chair.stone_brick.throne": "STON BRIK BIG BOSS SIT",
+    "tac.chair.iron.throne": "IRUN BIG BOSS SIT",
+    "tac.chair.copper.throne": "COPURR BIG BOSS SIT",
+    "tac.chair.gold.throne": "GOLDAN BIG BOSS SIT",
+    "tac.chair.diamond.throne": "SHINY BIG BOSS SIT",
+    "tac.chair.netherite.throne": "NETHERITE BIG BOSS SIT",
+
+    "tac.table.oak.basic": "Oak taybl",
+    "tac.table.oak.pedestal_basic": "Oak standy taybl",
+    "tac.table.oak.carved": "Fancy oak taybl",
+
+    "tac.table.pale_oak.basic": "Wite oke taybl",
+    "tac.table.pale_oak.pedestal_basic": "Wite oke standy taybl",
+    "tac.table.pale_oak.carved": "Fancy wite oke taybl",
+
+    "tac.table.spruce.basic": "Sproos taybl",
+    "tac.table.spruce.pedestal_basic": "Sproos standy taybl",
+    "tac.table.spruce.carved": "Fancy sproos taybl",
+
+    "tac.table.birch.basic": "Burch taybl",
+    "tac.table.birch.pedestal_basic": "Burch standy taybl",
+    "tac.table.birch.carved": "Fancy burch taybl",
+
+    "tac.table.jungle.basic": "Junggel taybl",
+    "tac.table.jungle.pedestal_basic": "Junggel standy taybl",
+    "tac.table.jungle.carved": "Fancy junggel taybl",
+
+    "tac.table.acacia.basic": "Acaci taybl",
+    "tac.table.acacia.pedestal_basic": "Acaci standy taybl",
+    "tac.table.acacia.carved": "Fancy acaci taybl",
+    
+    "tac.table.dark_oak.basic": "Darkz ook taybl",
+    "tac.table.dark_oak.pedestal_basic": "Darkz ook standy taybl",
+    "tac.table.dark_oak.carved": "Fancy darkz ook taybl",
+
+    "tac.table.crimson.basic": "Crimzn taybl",
+    "tac.table.crimson.pedestal_basic": "Crimzn standy taybl",
+    "tac.table.crimson.carved": "Fancy crimzn taybl",
+
+    "tac.table.warped.basic": "Warpt taybl",
+    "tac.table.warped.pedestal_basic": "Warpt standy taybl",
+    "tac.table.warped.carved": "Fancy warpt taybl",
+
+    "tac.table.mangrove.basic": "Mengruv taybl",
+    "tac.table.mangrove.pedestal_basic": "Mengruv standy taybl",
+    "tac.table.mangrove.carved": "Fancy mengruv taybl",
+
+    "tac.table.cherry.basic": "Sakura taybl",
+    "tac.table.cherry.pedestal_basic": "Sakura standy taybl",
+    "tac.table.cherry.carved": "Fancy sakura taybl",
+
+    "tac.table.bamboo.basic": "Gren stik taybl",
+    "tac.table.bamboo.pedestal_basic": "Gren stik standy taybl",
+    "tac.table.bamboo.carved": "Fancy gren stik taybl"
+}
+
+
+
