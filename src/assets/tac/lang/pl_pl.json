@@ -180,10 +180,10 @@
     "tac.table.crimson.carved": "Rzeźbiony szkarłatny stół",
     "tac.table.crimson.pedestal_carved": "Rzeźbiony szkarłatny stół kolumnowy",
 
-    "tac.table.warped.basic": "Warped stół",
-    "tac.table.warped.pedestal_basic": "Warped stół kolumnowy",
-    "tac.table.warped.carved": "Rzeźbione Warped stół",
-    "tac.table.warped.pedestal_carved": "Rzeźbione Warped stół kolumnowy",
+    "tac.table.warped.basic": "Spaczony stół",
+    "tac.table.warped.pedestal_basic": "Spaczony stół kolumnowy",
+    "tac.table.warped.carved": "Rzeźbiony spaczony stół",
+    "tac.table.warped.pedestal_carved": "Rzeźbiony spaczony stół kolumnowy",
 
     "tac.table.mangrove.basic": "Namorzynowy stół",
     "tac.table.mangrove.pedestal_basic": "Namorzynowy stół kolumnowy",
@@ -235,6 +235,5 @@
     "tac.table.endstone_brick.carved": "Rzeźbiony endowy kamienny ceglany stół",
     "tac.table.endstone_brick.pedestal_carved": "Rzeźbiony endowy kamienny ceglany stół kolumnowy"
 }
-
 
 
