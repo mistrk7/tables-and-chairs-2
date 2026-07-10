@@ -23,7 +23,7 @@ execute run with entity @s:
             scoreboard players reset is_seated tac.main
         
         # (detag the rider if was there)
-        execute as @n[tag=is_occupied,type=player,distance=0.60..0.61] run tag @s remove is_occupied
+        execute as @n[tag=is_occupied,type=player,distance=..0.8] run tag @s remove is_occupied
 
         # If holding a carpet, add the carpet overlay
         #if items entity @s weapon.mainhand #minecraft:wool_carpets with entity @s SelectedItem:
