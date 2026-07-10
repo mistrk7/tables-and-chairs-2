@@ -5,7 +5,7 @@ execute run with entity @s:
     function ~/action:
 
         # If the bench is already occupied, tag the rider (player)
-        execute as @n[tag=bench,distance=0..0.8,type=minecraft:item_display] on passengers run tag @s add is_occupied
+        execute as @n[type=item_display,tag=bench,distance=0.60..0.61] on passengers run tag @s add is_occupied
 
         # If not holding a carpet or shears, sit on the bench
         unless entity @n[tag=is_occupied,type=player,distance=0..0.8] unless items entity @s weapon.mainhand #minecraft:wool_carpets unless items entity @s weapon.mainhand minecraft:shears:
@@ -14,7 +14,7 @@ execute run with entity @s:
             execute if entity @s on vehicle run scoreboard players reset is_seated tac.main
 
             #Sit on the bench
-            ride @s mount @n[tag=bench,distance=0..0.8,type=minecraft:item_display]
+            ride @s mount @n[type=item_display,tag=bench,distance=0.60..0.61]
 
             # Play seated sound if player is not already seated
             execute if score is_seated tac.main matches 1:
@@ -23,14 +23,14 @@ execute run with entity @s:
             scoreboard players reset is_seated tac.main
         
         # (detag the rider if was there)
-        execute as @n[tag=is_occupied,type=player,distance=0..0.8] run tag @s remove is_occupied
+        execute as @n[tag=is_occupied,type=player,distance=0.60..0.61] run tag @s remove is_occupied
 
         # If holding a carpet, add the carpet overlay
         #if items entity @s weapon.mainhand #minecraft:wool_carpets with entity @s SelectedItem:
             ## To be revised
             
         # If holding shears, drop the carpet
-        #unless data entity @n[type=item_display,tag=bench,distance=..0.61] {item:{components:{"minecraft:custom_model_data":{strings:[""]}}}} if items entity @s weapon.mainhand minecraft:shears:
+        #unless data entity @n[type=item_display,tag=bench,distance=0.60..0.61] {item:{components:{"minecraft:custom_model_data":{strings:[""]}}}} if items entity @s weapon.mainhand minecraft:shears:
             ## To be revised
 
     $data remove entity @e[limit=1,tag=bench,type=minecraft:interaction,nbt={interaction:{player:$(UUID)}}] interaction
