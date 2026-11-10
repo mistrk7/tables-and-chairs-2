@@ -3,19 +3,17 @@
     "interact_with_trapdoor": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "blocks": "#minecraft:trapdoors",
-                "state": {
-                  "open": "true"
-                }
+        "location": {
+          "type": "minecraft:location_check",
+          "predicate": {
+            "block": {
+              "blocks": "#minecraft:trapdoors",
+              "state": {
+                "open": "true"
               }
             }
           }
-        ]
+        }
       }
     }
   },

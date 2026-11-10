@@ -1,6 +1,4 @@
 {
-  "condition": "minecraft:location_check",
-  "terms": [],
   "predicate": {
     "block": {
       "blocks": "#minecraft:trapdoors",
@@ -8,5 +6,6 @@
         "half": "top"
       }
     }
-  }
+  },
+  "type": "minecraft:location_check"
 }

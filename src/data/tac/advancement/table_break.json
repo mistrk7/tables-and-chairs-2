@@ -1,10 +1,13 @@
 {
-    "criteria": {
-      "example": {
-        "trigger": "minecraft:player_hurt_entity",
-        "conditions": {
-          "player": {
-            "equipment": {
+  "criteria": {
+    "example": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:equipment": {
               "mainhand": {
                 "count": {
                   "min": 1,
@@ -12,15 +15,20 @@
                 }
               }
             }
-          },
-          "entity": {
-            "entity_type":"minecraft:interaction",
-            "nbt": "{Tags:[\"table\"]}"
+          }
+        },
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:interaction",
+            "minecraft:nbt": "{Tags:[\"table\"]}"
           }
         }
       }
-    },
-    "rewards": {
-      "function": "tac:table/break_table"
     }
+  },
+  "rewards": {
+    "function": "tac:table/break_table"
   }
+}

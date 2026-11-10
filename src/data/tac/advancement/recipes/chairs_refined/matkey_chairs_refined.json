@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "tac:chair/neat/matkey_neat_chair"
+        "recipes": "tac:chair/neat/matkey_neat_chair"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
