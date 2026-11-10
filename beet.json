@@ -8,10 +8,10 @@
     "data_pack":{
         "load":["src"],
 
-        "pack_format": 82,
+        "pack_format": 121,
 
         "min_format": 82,
-        "max_format": [107,1],
+        "max_format": [121,0],
         "overlays": [
             {
                 "min_format": 82,
@@ -23,10 +23,10 @@
     "resource_pack":{
         "load":["src"],
 
-        "pack_format": 65,
+        "pack_format": 97,
 
         "min_format": 65,
-        "max_format": 88
+        "max_format": 97
     },
     
     "output": "build",
