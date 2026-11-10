@@ -31,11 +31,11 @@ execute run with entity @s:
                 # Item Frames
                 execute if data entity @s SelectedItem{id:"minecraft:item_frame"} align y positioned ~ ~1 ~ :
                     summon minecraft:item_frame ~ ~ ~ {Facing:1b}
-                    execute unless data entity @s abilities{instabuild:1b} run item modify entity @s weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
+                    execute unless data entity @s abilities{instabuild:1b} run item modify entity @s weapon.mainhand {type:"minecraft:set_count",count:-1,add:1b}
                     playsound minecraft:entity.item_frame.place block @a ~ ~ ~
                 execute if data entity @s SelectedItem{id:"minecraft:glow_item_frame"} align y positioned ~ ~1 ~ :
                     summon minecraft:glow_item_frame ~ ~ ~ {Facing:1b}
-                    execute unless data entity @s abilities{instabuild:1b} run item modify entity @s weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
+                    execute unless data entity @s abilities{instabuild:1b} run item modify entity @s weapon.mainhand {type:"minecraft:set_count",count:-1,add:1b}
                     playsound minecraft:entity.item_frame.place block @a ~ ~ ~
 
             # If successful, place and remove the item
@@ -44,7 +44,7 @@ execute run with entity @s:
             execute if score place tac.main matches 1 unless data entity @s SelectedItem.components."minecraft:custom_data"{tac:1b} with entity @s SelectedItem:
                 $setblock ~ ~1 ~ $(id)
                 data modify block ~ ~1 ~ components set from entity @s SelectedItem.components
-                execute unless data entity @s abilities{instabuild:1b} run item modify entity @s weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
+                execute unless data entity @s abilities{instabuild:1b} run item modify entity @s weapon.mainhand {type:"minecraft:set_count",count:-1,add:1b}
                 playsound minecraft:block.wood.place block @a ~ ~ ~
 
                 # Player Heads
@@ -54,7 +54,7 @@ execute run with entity @s:
             
             # Place t&c blocks
             execute unless data entity @s abilities{instabuild:1b} if score place tac.main matches 1 unless data entity @s SelectedItem.components."minecraft:custom_data"{model:bench} if data entity @s SelectedItem.components."minecraft:custom_data"{tac:1b} with entity @s SelectedItem.components."minecraft:custom_data":
-                    item modify entity @s weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
+                    item modify entity @s weapon.mainhand {type:"minecraft:set_count",count:-1,add:1b}
             
             scoreboard players reset place tac.main
 
