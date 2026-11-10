@@ -10,22 +10,15 @@
 
         "pack_format": 121,
 
-        "min_format": 82,
-        "max_format": [121,0],
-        "overlays": [
-            {
-                "min_format": 82,
-                "max_format": [101,1],
-                "directory": "tac_upto26-1"
-            }
-        ]
+        "min_format": 121,
+        "max_format": [121,0]
     },
     "resource_pack":{
         "load":["src"],
 
         "pack_format": 97,
 
-        "min_format": 65,
+        "min_format": 97,
         "max_format": 97
     },
     
