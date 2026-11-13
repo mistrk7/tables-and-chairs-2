@@ -40,12 +40,12 @@ execute run with entity @s:
             function ~/set_carpet:
                 data modify entity @n[type=minecraft:item_display,tag=chair,distance=0.60..0.61] item.components."minecraft:custom_model_data".strings[0] set from entity @s SelectedItem.id
                 playsound minecraft:block.wool.place block @a ~ ~ ~
-                item modify entity @s weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
+                item modify entity @s weapon.mainhand {type:"minecraft:set_damage",count:-1,damage:-0.005,add:1b}
             
         # If holding shears, drop the carpet
         unless data entity @n[type=item_display,tag=chair,distance=0.60..0.61] {item:{components:{"minecraft:custom_model_data":{strings:[""]}}}} if items entity @s weapon.mainhand minecraft:shears:
             playsound minecraft:entity.sheep.shear block @a ~ ~ ~
-            item modify entity @s weapon.mainhand {"function":"minecraft:set_damage","damage":-0.005,"add":true,"conditions":[]}
+            item modify entity @s weapon.mainhand {type:"minecraft:set_damage",count:-1,damage:-0.005,add:1b}
             execute as @n[type=item_display,tag=chair,distance=0.60..0.61] run function tac:chair/rclick_chair/action/drop_carpet
             data modify entity @n[type=item_display,tag=chair,distance=0.60..0.61] item.components."minecraft:custom_model_data".strings[0] set value ""
 
